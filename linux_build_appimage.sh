@@ -7,24 +7,24 @@
 # Create a sandpit with the following directory and file structure
 -----------------------------------
 # usr-
-#    | bin - create and copy XyGrib executable to here
+#    | bin - create and copy OceanRoute executable to here
 #    | lib - empty - deploytool will copy stuff needed from the release build
 #    | plugins - empty - deploytool will copy stuff needed from the release build
 #    | share     - create
 #         | doc  - empty - deploy tool will copy stuff needed from the release build
 #         | applications
-#               XyGrib.desktop (* see contents below)
+#               OceanRoute.desktop (* see contents below)
 #         | icons
 #              | hicolor
-#                   xyGrib_32.png
+#                   OceanRoute_32.png
 
 # Desktop file needs to be as follows:
 # [Desktop Entry] 
 # Type=Application
-# Name=XyGrib
+# Name=OceanRoute
 # Comment=Grib reader and weather visualization software
-# Exec=XyGrib
-# Icon=xyGrib_32
+# Exec=OceanRoute
+# Icon=OceanRoute_32
 # Categories=Education;Science;Geoscience;
 
 
@@ -49,8 +49,8 @@ if [ -z "$QMK" ]; then
 fi
 
 ## create the AppImage
-$DEPLOY usr/share/applications/xygrib.desktop -qmake=$QMK -no-translations -bundle-non-qt-libs -appimage -verbose=2
+$DEPLOY usr/share/applications/oceanroute.desktop -qmake=$QMK -no-translations -bundle-non-qt-libs -appimage -verbose=2
 
 ## rename it
-mv XyGrib-x86_64.AppImage XyGrib.AppImage
+mv OceanRoute-x86_64.AppImage OceanRoute.AppImage
 

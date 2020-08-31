@@ -10,6 +10,6 @@ data/config
 *.zip
 *.app
 .qmake.stash
-mac_online_installer/packages/org.opengribs.xygrib.core.mac/.DS_Store
+mac_online_installer/packages/org.opengribs.oceanroute.core.mac/.DS_Store
 .DS_Store
 *.autosave

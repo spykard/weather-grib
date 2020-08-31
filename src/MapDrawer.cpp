@@ -1,5 +1,5 @@
 /**********************************************************************
-XyGrib: meteorological GRIB file viewer
+OceanRoute: meteorological GRIB file viewer
 Copyright (C) 2008-2012 - Jacques Zaninetti - http://www.zygrib.org
 
 This program is free software: you can redistribute it and/or modify
@@ -798,9 +798,9 @@ void MapDrawer::draw_Cartouche_Gridded
 			}
 		}
 		//--------------------------------------------------
-        // Signature XyGrib (coin bas droite)
+        // Signature OceanRoute (coin bas droite)
 		//--------------------------------------------------
-        QString sign = tr("XyGrib");
+        QString sign = tr("OceanRoute");
         pnt.setFont(fontsign);
 		w = fmsign.width(sign)+5;
 		dy = fontsign.pointSize()+1;

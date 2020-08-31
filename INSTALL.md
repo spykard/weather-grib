@@ -1,10 +1,10 @@
-# XyGrib ver 1.1.1 - Cmake build system
+# OceanRoute ver 1.1.1 - Cmake build system
 
-This includes instructions to download sources and build XyGrib yourself. 
+This includes instructions to download sources and build OceanRoute yourself. 
 
 There is an option to use pre-build binaries
 for all desktops by downloading the appropriate installer for your system. These are found both in
-https://gihub.com/opengribs/XyGrib/releases or on https://opengribs.org in the download section.
+https://gihub.com/opengribs/OceanRoute/releases or on https://opengribs.org in the download section.
 
 ## Prerequisities
 
@@ -22,9 +22,9 @@ https://gihub.com/opengribs/XyGrib/releases or on https://opengribs.org in the d
   	- Build: `sudo dnf install gcc cmake make qt5-devel libpng-devel openjpeg2-devel libnova-devel proj-devel zlib-devel bzip2-devel`
   	- Run: `libnova openjpeg2 qt5-qtbase qt5-qtbase-gui proj`
   - openSUSE Tumbleweed: `sudo zypper install gcc git cmake libqt5-qtbase-devel libpng-devel openjpeg2-devel libnova-devel libproj-devel zlib-devel libbz2-devel
-  - NIXOS: [`nixpkgs` contains a package for XyGrib](https://github.com/NixOS/nixpkgs/tree/master/pkgs/applications/misc/xygrib)
-    - To get a a build environment containing all prerequisities run `nix-shell -p xygrib`
-    - If you simply want to install it, use `nix-env -i xygrib`
+  - NIXOS: [`nixpkgs` contains a package for OceanRoute](https://github.com/NixOS/nixpkgs/tree/master/pkgs/applications/misc/oceanroute)
+    - To get a a build environment containing all prerequisities run `nix-shell -p oceanroute`
+    - If you simply want to install it, use `nix-env -i oceanroute`
 
 ## Build and package
 
@@ -32,7 +32,7 @@ https://gihub.com/opengribs/XyGrib/releases or on https://opengribs.org in the d
 
 - Get the source
 ```
-git clone https://github.com/opengribs/XyGrib.git
+git clone https://github.com/opengribs/OceanRoute.git
 ```
 - Build
 
@@ -47,7 +47,7 @@ make
 - Package (To be integrated to the cmake build process)
 ```
 cd ..
-mv build/src/XyGrib.app .
+mv build/src/OceanRoute.app .
 ./mac-package.sh
 ```
 
@@ -55,11 +55,11 @@ mv build/src/XyGrib.app .
 
 - Get the source
 ```
-git clone https://github.com/opengribs/XyGrib.git
+git clone https://github.com/opengribs/OceanRoute.git
 ```
 - Build
 ```
-git clone https://github.com/opengribs/XyGrib.git
+git clone https://github.com/opengribs/OceanRoute.git
 mkdir build
 cd build
 cmake ..
@@ -80,11 +80,11 @@ dpkg-buildpackage -b
 
 - Get the source
 ```
-git clone https://github.com/opengribs/XyGrib.git
+git clone https://github.com/opengribs/OceanRoute.git
 ```
 - Build
 ```
-git clone https://github.com/opengribs/XyGrib.git
+git clone https://github.com/opengribs/OceanRoute.git
 mkdir build
 cd build
 cmake ..

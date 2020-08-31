@@ -1,5 +1,5 @@
 /**********************************************************************
-XyGrib: meteorological GRIB file viewer
+OceanRoute: meteorological GRIB file viewer
 Copyright (C) 2008-2012 - Jacques Zaninetti - http://www.zygrib.org
 
 This program is free software: you can redistribute it and/or modify
@@ -42,7 +42,7 @@ int main (int argc, char *argv[])
 
     QCoreApplication::setOrganizationName("openGribs");
     QCoreApplication::setOrganizationDomain("opengribs.org");
-    QCoreApplication::setApplicationName("XyGrib");
+    QCoreApplication::setApplicationName("OceanRoute");
 
     Util::setSetting("AppVersion", Version::getCompleteName());
 
@@ -80,7 +80,7 @@ int main (int argc, char *argv[])
 	//----------------------------------------------------------
     // Load language
     //----------------------------------------------------------
-    QTranslator trXygrib;
+    QTranslator trOceanRoute;
     QTranslator trSystem;
 
     // A. Degwerth [Cassidian]: added new parsing of command line options
@@ -124,7 +124,7 @@ int main (int argc, char *argv[])
     QString lang = Util::getSetting("appLanguage", "").toString();
     if (lang == "") {
 		//----------------------------------------------------------
-        // first call of XyGrib : choice language
+        // first call of OceanRoute : choice language
 		//----------------------------------------------------------
         DialogChooseLang langChooser (nullptr, "");
 		langChooser.exec ();
@@ -138,100 +138,100 @@ int main (int argc, char *argv[])
     if (lang == "fr") {
         QLocale::setDefault(QLocale("fr_FR"));
         trSystem.load( QString("qt_fr"), QLibraryInfo::location(QLibraryInfo::TranslationsPath));
-        trXygrib.load( Util::pathTr(lang));
-        QApplication::installTranslator(&trXygrib);
+        trOceanRoute.load( Util::pathTr(lang));
+        QApplication::installTranslator(&trOceanRoute);
         QApplication::installTranslator(&trSystem);
     }
     else if (lang == "fi") {
         QLocale::setDefault(QLocale("fi_FI"));
         trSystem.load( QString("qt_fi"), QLibraryInfo::location(QLibraryInfo::TranslationsPath));
-        trXygrib.load( Util::pathTr(lang));
-        QApplication::installTranslator(&trXygrib);
+        trOceanRoute.load( Util::pathTr(lang));
+        QApplication::installTranslator(&trOceanRoute);
         QApplication::installTranslator(&trSystem);
     }
     else if (lang == "de") {
         QLocale::setDefault(QLocale("de_DE"));
         trSystem.load( QString("qt_de"), QLibraryInfo::location(QLibraryInfo::TranslationsPath));
-        trXygrib.load( Util::pathTr(lang));
-        QApplication::installTranslator(&trXygrib);
+        trOceanRoute.load( Util::pathTr(lang));
+        QApplication::installTranslator(&trOceanRoute);
         QApplication::installTranslator(&trSystem);
     }
     else if (lang == "ru") {
         QLocale::setDefault(QLocale("ru_RU"));
         trSystem.load( QString("qt_ru"), QLibraryInfo::location(QLibraryInfo::TranslationsPath));
-        trXygrib.load( Util::pathTr(lang));
-        QApplication::installTranslator(&trXygrib);
+        trOceanRoute.load( Util::pathTr(lang));
+        QApplication::installTranslator(&trOceanRoute);
         QApplication::installTranslator(&trSystem);
     }
     else if (lang == "pl") {
         QLocale::setDefault(QLocale("pl_PL"));
         trSystem.load( QString("qt_pl"), QLibraryInfo::location(QLibraryInfo::TranslationsPath));
-        trXygrib.load( Util::pathTr(lang));
-        QApplication::installTranslator(&trXygrib);
+        trOceanRoute.load( Util::pathTr(lang));
+        QApplication::installTranslator(&trOceanRoute);
         QApplication::installTranslator(&trSystem);
     }
     else if (lang == "pt") {
         QLocale::setDefault(QLocale("pt_PT"));
         trSystem.load( QString("qt_pt"), QLibraryInfo::location(QLibraryInfo::TranslationsPath));
-        trXygrib.load( Util::pathTr(lang));
-        QApplication::installTranslator(&trXygrib);
+        trOceanRoute.load( Util::pathTr(lang));
+        QApplication::installTranslator(&trOceanRoute);
         QApplication::installTranslator(&trSystem);
     }
     else if (lang == "es") {
         QLocale::setDefault(QLocale("es_ES"));
         trSystem.load( QString("qt_es"), QLibraryInfo::location(QLibraryInfo::TranslationsPath));
-        trXygrib.load( Util::pathTr(lang));
-        QApplication::installTranslator(&trXygrib);
+        trOceanRoute.load( Util::pathTr(lang));
+        QApplication::installTranslator(&trOceanRoute);
         QApplication::installTranslator(&trSystem);
     }
     else if (lang == "it") {
         QLocale::setDefault(QLocale("it_IT"));
         trSystem.load( QString("qt_it"), QLibraryInfo::location(QLibraryInfo::TranslationsPath));
-        trXygrib.load( Util::pathTr(lang));
-        QApplication::installTranslator(&trXygrib);
+        trOceanRoute.load( Util::pathTr(lang));
+        QApplication::installTranslator(&trOceanRoute);
         QApplication::installTranslator(&trSystem);
     }
     else if (lang == "nl") {
         QLocale::setDefault(QLocale("nl_NL"));
         trSystem.load( QString("qt_nl"), QLibraryInfo::location(QLibraryInfo::TranslationsPath));
-        trXygrib.load( Util::pathTr(lang));
-        QApplication::installTranslator(&trXygrib);
+        trOceanRoute.load( Util::pathTr(lang));
+        QApplication::installTranslator(&trOceanRoute);
         QApplication::installTranslator(&trSystem);
     }
     else if (lang == "cz") {
         QLocale::setDefault(QLocale("cz_CZ"));
         trSystem.load( QString("qt_cz"), QLibraryInfo::location(QLibraryInfo::TranslationsPath));
-        trXygrib.load( Util::pathTr(lang));
-        QApplication::installTranslator(&trXygrib);
+        trOceanRoute.load( Util::pathTr(lang));
+        QApplication::installTranslator(&trOceanRoute);
         QApplication::installTranslator(&trSystem);
     }
     // A. Degwerth [Cassidian] added Arabic language support
     else if (lang == "ar") {
         QLocale::setDefault(QLocale("ar_AR"));
         trSystem.load( QString("qt_ar"), QLibraryInfo::location(QLibraryInfo::TranslationsPath));
-        trXygrib.load( Util::pathTr(lang));
-        QApplication::installTranslator(&trXygrib);
+        trOceanRoute.load( Util::pathTr(lang));
+        QApplication::installTranslator(&trOceanRoute);
         QApplication::installTranslator(&trSystem);
     }
     else if (lang == "gr") {
         QLocale::setDefault(QLocale("gr_GR"));
         trSystem.load( QString("qt_gr"), QLibraryInfo::location(QLibraryInfo::TranslationsPath));
-        trXygrib.load( Util::pathTr(lang));
-        QApplication::installTranslator(&trXygrib);
+        trOceanRoute.load( Util::pathTr(lang));
+        QApplication::installTranslator(&trOceanRoute);
         QApplication::installTranslator(&trSystem);
     }
     else if (lang == "he") {
         QLocale::setDefault(QLocale("he_IL"));
         trSystem.load( QString("qt_he"), QLibraryInfo::location(QLibraryInfo::TranslationsPath));
-        trXygrib.load( Util::pathTr(lang));
-        QApplication::installTranslator(&trXygrib);
+        trOceanRoute.load( Util::pathTr(lang));
+        QApplication::installTranslator(&trOceanRoute);
         QApplication::installTranslator(&trSystem);
     }
     else if (lang == "cn") {
         QLocale::setDefault(QLocale("zh_CN"));
         trSystem.load( QString("qt_cn"), QLibraryInfo::location(QLibraryInfo::TranslationsPath));
-        trXygrib.load( Util::pathTr(lang));
-        QApplication::installTranslator(&trXygrib);
+        trOceanRoute.load( Util::pathTr(lang));
+        QApplication::installTranslator(&trOceanRoute);
         QApplication::installTranslator(&trSystem);
     }
     else { 	// e=English = default

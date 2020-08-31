@@ -1,7 +1,7 @@
 /**********************************************************************
-XyGrib: meteorological GRIB file viewer
+OceanRoute: meteorological GRIB file viewer
 
-Copyright (C) 2018 - opengrib - http://www.xygrib.org
+Copyright (C) 2018 - opengrib - http://www.oceanroute.org
 
 This program is free software: you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by

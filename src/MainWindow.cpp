@@ -1,5 +1,5 @@
 /**********************************************************************
-XyGrib: meteorological GRIB file viewer
+OceanRoute: meteorological GRIB file viewer
 Copyright (C) 2008-2012 - Jacques Zaninetti - http://www.zygrib.org
 
 This program is free software: you can redistribute it and/or modify
@@ -480,7 +480,7 @@ mb->acMap_SelectMETARs->setVisible (false);	// TODO
 MainWindow::MainWindow (int w, int h, QWidget *parent)
     : QMainWindow (parent)
 {
-    setWindowIcon (QIcon (Util::pathImg("xyGrib_32.xpm")));
+    setWindowIcon (QIcon (Util::pathImg("OceanRoute_32.xpm")));
 
     maintenanceToolLocation = findMaintenanceTool(); // needed before menubar creation as MaintenanceTool menu item is conditional
     menuBar = new MenuBar(this, (maintenanceToolLocation != ""));
@@ -1594,7 +1594,7 @@ void MainWindow::slotGroupLinesThetaE (QAction *ac)
 //-------------------------------------------------
 void MainWindow::slotHelp_Help() {
 
-    QString link = "https://github.com/opengribs/XyGrib/wiki/XyGrib-User-Manual";
+    QString link = "https://github.com/opengribs/OceanRoute/wiki/OceanRoute-User-Manual";
     QDesktopServices::openUrl(QUrl(link));
 
     return;
@@ -1602,7 +1602,7 @@ void MainWindow::slotHelp_Help() {
     QMessageBox::information (this,
             tr("Help"),
             tr("Help is available at")
-               +" https://github.com/opengribs/XyGrib/wiki/XyGrib-User-Manual"
+               +" https://github.com/opengribs/OceanRoute/wiki/OceanRoute-User-Manual"
                );
 
 }
@@ -1611,7 +1611,7 @@ void MainWindow::slotHelp_APropos()
 {
     QMessageBox::information (this,
             tr("About"),
-            tr("XyGrib : GRIB files visualization")
+            tr("OceanRoute : GRIB files visualization")
             +"\n"+
             tr("Version : ")+Version::getVersion()
                     +"      "+Version::getDate()
@@ -1908,7 +1908,7 @@ void MainWindow::slotChangeSkin(bool b)
         Util::setSetting("showDarkSkin", false);
     }
     QMessageBox::information(this,tr("Change Skin"),
-                             tr("For skin change to take effect XyGrib needs to be restarted"));
+                             tr("For skin change to take effect OceanRoute needs to be restarted"));
 
 }
 //-------------------------------------------------
@@ -2586,13 +2586,13 @@ void MainWindow::slotRunMaintenanceTool()
 
 //    DBGQS(maintenanceToolLocation);
 
-    QString question = tr("It is recommended to exit XyGrib while running the Maintenance Tool. Do you wish to exit XyGrib?");
-    res = QMessageBox::question(this,tr("Exit XyGrib?"),question, QMessageBox::Yes, QMessageBox::No);
+    QString question = tr("It is recommended to exit OceanRoute while running the Maintenance Tool. Do you wish to exit OceanRoute?");
+    res = QMessageBox::question(this,tr("Exit OceanRoute?"),question, QMessageBox::Yes, QMessageBox::No);
 
     if (res == QMessageBox::Yes){  // user wishes to exit
         result = process.startDetached(maintenanceToolLocation);
         if (!result){
-            QMessageBox::warning(this,tr("Failure"), tr("Unable to find the XyGrib Maintenance Tool. Please start it from the desktop facilities"));
+            QMessageBox::warning(this,tr("Failure"), tr("Unable to find the OceanRoute Maintenance Tool. Please start it from the desktop facilities"));
         } else {
             exit(0);
         }
@@ -2600,7 +2600,7 @@ void MainWindow::slotRunMaintenanceTool()
     } else { // user does not wish to exit
         result = process.startDetached(maintenanceToolLocation);
         if (!result){
-            QMessageBox::warning(this,tr("Failure"), tr("Unable to find the XyGrib Maintenance Tool. Please start it from the desktop facilities"));
+            QMessageBox::warning(this,tr("Failure"), tr("Unable to find the OceanRoute Maintenance Tool. Please start it from the desktop facilities"));
         }
     }
 
@@ -2612,7 +2612,7 @@ QString MainWindow::findMaintenanceTool()
 {
     QString filepath = "";
 #ifdef Q_OS_WIN
-    filepath = "\"" + QCoreApplication::applicationDirPath() + "/XyGribMaintenanceTool.exe\"";
+    filepath = "\"" + QCoreApplication::applicationDirPath() + "/OceanRouteMaintenanceTool.exe\"";
 #endif
 
 #ifdef Q_OS_MAC
@@ -2620,15 +2620,15 @@ QString MainWindow::findMaintenanceTool()
     path.cdUp();
     path.cdUp();
     path.cdUp();
-    filepath = path.absolutePath() + "/XyGribMaintenanceTool.app/Contents/MacOS/XyGribMaintenanceTool";
+    filepath = path.absolutePath() + "/OceanRouteMaintenanceTool.app/Contents/MacOS/OceanRouteMaintenanceTool";
 #endif
 
 #ifdef Q_OS_LINUX
     // there is an issue with AppImage builds as applicationDirPath returns a path inside the image container
     // ... so the install location on the outer file system needs to be searched
 
-    QStringList slist = {QCoreApplication::applicationDirPath(), "/opt/XyGrib/", "~/bin/XyGrib", "~/.local/XyGrib", "/usr/local/XyGrib",  "/usr/local/share/XyGrib", "/usr/share/XyGrib"};
-    filepath = QStandardPaths::findExecutable("XyGribMaintenanceTool", slist);
+    QStringList slist = {QCoreApplication::applicationDirPath(), "/opt/OceanRoute/", "~/bin/OceanRoute", "~/.local/OceanRoute", "/usr/local/OceanRoute",  "/usr/local/share/OceanRoute", "/usr/share/OceanRoute"};
+    filepath = QStandardPaths::findExecutable("OceanRouteMaintenanceTool", slist);
 
 #endif
 //    DBGQS("Expected file path is: "+filepath);
@@ -2661,7 +2661,7 @@ void MainWindow::slotFinished()
 //#ifdef Q_OS_WIN
         mbox.setText(tr("A new version")+": "+newVer+" "
                      +tr("is available for update.")+"<br>"
-                     +tr("Please use the XyGrib Maintenance Tool to upgrade. It can be activated from the Help Menu"));
+                     +tr("Please use the OceanRoute Maintenance Tool to upgrade. It can be activated from the Help Menu"));
 //#else
 //        mbox.setText(tr("A new version")+": "+newVer+" "
 //                     +tr("is available for update."));

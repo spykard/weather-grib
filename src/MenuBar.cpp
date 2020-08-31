@@ -1,5 +1,5 @@
 /**********************************************************************
-XyGrib: meteorological GRIB file viewer
+OceanRoute: meteorological GRIB file viewer
 Copyright (C) 2008-2012 - Jacques Zaninetti - http://www.zygrib.org
 
 This program is free software: you can redistribute it and/or modify
@@ -81,7 +81,7 @@ MenuBar::MenuBar (QWidget *parent, bool mbe)
                     tr("Close"), Util::pathImg("fileclose.png"));
         acFile_NewInstance = addAction (menuFile,
                     tr("New instance"), "Ctrl+Shift+N",
-                    tr("Open a new xyGrib instance"), "");
+                    tr("Open a new OceanRoute instance"), "");
         menuFile->addSeparator();
         acFile_Load_GRIB = addAction (menuFile,
                     tr("Download GRIB"), "Ctrl+D",
@@ -433,12 +433,12 @@ MenuBar::MenuBar (QWidget *parent, bool mbe)
         acHelp_Help = addAction (menuHelp,
                         tr("Help"), "Ctrl+H",
         				"",Util::pathImg("help.png"));
-        acHelp_APropos = addAction (menuHelp, tr("About XyGrib"),"","","");
+        acHelp_APropos = addAction (menuHelp, tr("About OceanRoute"),"","","");
         acCheckForUpdates = addAction (menuHelp, tr("Check for updates"),"","","");
 
         if (maintenanceToolExists)
-            acRunMaintenanceTool = addAction (menuHelp, tr("Run XyGrib Maintenance Tool"),"",
-                                          tr("To add, update or remove XyGrib components"),"");
+            acRunMaintenanceTool = addAction (menuHelp, tr("Run OceanRoute Maintenance Tool"),"",
+                                          tr("To add, update or remove OceanRoute components"),"");
 
         acHelp_AProposQT = addAction (menuHelp, tr("About Qt"),"","","");
 

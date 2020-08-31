@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Installer>
-    <Name>XyGrib</Name>
+    <Name>OceanRoute</Name>
     <Version>1.2.6</Version>
-    <Title>XyGrib</Title>
+    <Title>OceanRoute</Title>
     <Publisher>OpenGribs.org</Publisher>
-	<ProductUrl>https://opengribs.org/en/xygrib</ProductUrl>
-	<StartMenuDir>XyGrib</StartMenuDir>
-    <TargetDir>@ApplicationsDir@/XyGrib</TargetDir>
-	<RunProgram>@ApplicationsDirX86@/XyGrib/XyGrib.AppImage</RunProgram>
-	<MaintenanceToolName>XyGribMaintenanceTool</MaintenanceToolName>
+	<ProductUrl>https://opengribs.org/en/oceanroute</ProductUrl>
+	<StartMenuDir>OceanRoute</StartMenuDir>
+    <TargetDir>@ApplicationsDir@/OceanRoute</TargetDir>
+	<RunProgram>@ApplicationsDirX86@/OceanRoute/OceanRoute.AppImage</RunProgram>
+	<MaintenanceToolName>OceanRouteMaintenanceTool</MaintenanceToolName>
 	<WizardStyle>Modern</WizardStyle>
-	<Logo>xyGrib_32.png</Logo>
+	<Logo>OceanRoute_32.png</Logo>
 	<WizardDefaultWidth>620</WizardDefaultWidth>
 	<InstallActionColumnVisible>true</InstallActionColumnVisible>
-	<InstallerApplicationIcon>xyGrib_32</InstallerApplicationIcon>
-	<InstallerWindowIcon>xyGrib_32</InstallerWindowIcon>
+	<InstallerApplicationIcon>OceanRoute_32</InstallerApplicationIcon>
+	<InstallerWindowIcon>OceanRoute_32</InstallerWindowIcon>
 	<RemoteRepositories>
 	<Repository>
 		<Url>https://opengribs.org/repository/linux</Url>

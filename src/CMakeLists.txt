@@ -4,7 +4,7 @@ add_subdirectory(GUI)
 add_subdirectory(util)
 add_subdirectory(map)
 
-set(XYGRIB_HDRS
+set(OCEANROUTE_HDRS
 Astro.h
 BoardPanel.h
 ColorScale.h
@@ -56,7 +56,7 @@ Therm.h
 #Version.h
 )
 
-set(XYGRIB_SRCS
+set(OCEANROUTE_SRCS
 Astro.cpp
 BoardPanel.cpp
 ColorScale.cpp
@@ -103,12 +103,12 @@ Therm.cpp
 main.cpp
 )
 IF(WIN32)
-  SET(XYGRIB_SRCS ${XYGRIB_SRCS} ../data/img/resource.rc)
+  SET(OCEANROUTE_SRCS ${OCEANROUTE_SRCS} ../data/img/resource.rc)
 ENDIF()
 
-qt5_wrap_cpp(xygrib_mocs ${XYGRIB_SRCS} ${XYGRIB_HDRS})
+qt5_wrap_cpp(oceanroute_mocs ${OCEANROUTE_SRCS} ${OCEANROUTE_HDRS})
 
-add_executable(${CMAKE_PROJECT_NAME} WIN32 MACOSX_BUNDLE ${XYGRIB_SRCS} ${xygrib_mocs})
+add_executable(${CMAKE_PROJECT_NAME} WIN32 MACOSX_BUNDLE ${OCEANROUTE_SRCS} ${oceanroute_mocs})
 
 install(TARGETS
     ${CMAKE_PROJECT_NAME}

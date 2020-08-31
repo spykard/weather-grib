@@ -6,24 +6,24 @@ Creates installer from already built application and data
 
 Copy the 'mac-deploy-and-installer.sh' script to the mac_online_installer of the 'qtbuild' tree as shown in the following folder structure:
 -- qtbuild 
-		-- deploy 								('XyGrib.app' as copied from Qt release build folder)
+		-- deploy 								('OceanRoute.app' as copied from Qt release build folder)
 		-- mac_online_installer					(structure as copied from the repository clone)
 				-- config
 				-- packages
-						-- org.opengribs.xygrib.core.mac	
+						-- org.opengribs.oceanroute.core.mac	
 								-- data 		(should be empty)
 								-- meta
-						-- org.opengribs.xygrib.data	
-								-- data			(latest XyGrib 'data' structure should be copied here under 'data' 2x data !)
+						-- org.opengribs.oceanroute.data	
+								-- data			(latest OceanRoute 'data' structure should be copied here under 'data' 2x data !)
 								-- meta
-						-- org.opengribs.xygrib.maps
+						-- org.opengribs.oceanroute.maps
 								-- data			(hires map 'data' structure should be copied here under 'data' 2x data !)
 								-- meta
 				-- repository
 						-- mac					(should be empty)
 
-Also assumes that 'XyGrib.app' has been copied from the Qt release build folders to the 'deploy' folder
-That XyGrib 'data' structure and hires map 'data' structure are copied to respective 'data' folders ('data' appears in two levels in each case)
+Also assumes that 'OceanRoute.app' has been copied from the Qt release build folders to the 'deploy' folder
+That OceanRoute 'data' structure and hires map 'data' structure are copied to respective 'data' folders ('data' appears in two levels in each case)
 
 Before running the script edit the version number variable.
 After running the script the installer.apps should be in the mac_online_installer folder and the repository should be ready for upload

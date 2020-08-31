@@ -19,7 +19,7 @@
  set(ZLIB_INCLUDE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/include")  
  set(ZLIB_LIBRARIES "${CMAKE_CURRENT_SOURCE_DIR}/lib/libz.a")  
 4. Build and Compile, the few errors that occur can be easily fixed one by one.  
-5. Copy the "/XyGrib/data/" file to output folder that includes the "XyGrib.exe" executable.
+5. Copy the "/OceanRoute/data/" file to output folder that includes the "OceanRoute.exe" executable.
 
 ### Task: Change Icon
 

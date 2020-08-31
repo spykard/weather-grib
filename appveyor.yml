@@ -1,4 +1,4 @@
-clone_folder: c:\project\xygrib
+clone_folder: c:\project\oceanroute
 shallow_clone: true
 
 #branches:
@@ -22,7 +22,7 @@ matrix:
   fast_finish: false
 
 cache:
-  - Xygrib
+  - OceanRoute
 
 init:
   - set vcarch=%arch%
@@ -47,7 +47,7 @@ before_build:
   - mkdir thirdparty
   - cd thirdparty
   # - ps: Start-FileDownload http://195.154.231.142/IFREMER/thirdpartylib.zip
-  - ps: Start-FileDownload https://github.com/opengribs/Xygrib-lib/releases/download/1.0/thirdpartylib.zip
+  - ps: Start-FileDownload https://github.com/opengribs/OceanRoute-lib/releases/download/1.0/thirdpartylib.zip
   - mkdir c:\opt
   - cmd: 7z x -y thirdpartylib.zip -oc:\opt
   - cd ..

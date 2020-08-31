@@ -1,5 +1,5 @@
 /**********************************************************************
-XyGrib: meteorological GRIB file viewer
+OceanRoute: meteorological GRIB file viewer
 Copyright (C) 2008-2012 - Jacques Zaninetti - http://www.zygrib.org
 
 This program is free software: you can redistribute it and/or modify
@@ -100,7 +100,7 @@ MeteoTableDialog::MeteoTableDialog (
 {
 	setProperty ("objectType", "MeteoTableDialog");
 	setFocusPolicy(Qt::StrongFocus);
-    setWindowIcon (QIcon (Util::pathImg("xyGrib_32.xpm")));
+    setWindowIcon (QIcon (Util::pathImg("OceanRoute_32.xpm")));
 	this->plotter = plotter;
 	this->lon = lon;
 	this->lat = lat;
@@ -242,7 +242,7 @@ void MeteoTableDialog::slotBtExport ()
     {
 		if (! fileName.endsWith(".slk", Qt::CaseInsensitive))
 			fileName += ".slk";
-        SylkFile slk (fileName, "XyGrib");
+        SylkFile slk (fileName, "OceanRoute");
 		if (slk.isOk()) {
 			Util::setSetting("slkFilePath", slk.getFileInfo().absolutePath() );
 			saveFileSYLK (slk);
@@ -273,7 +273,7 @@ void MeteoTableDialog::saveFileSYLK (SylkFile &slk)
 	pinfo = *(lspinfos.begin());
 	slk.addCell (2, 1, Util::formatPosition (pinfo->x,pinfo->y));
 	slk.addCell (2, 2, locationName);
-    slk.addCell (1, 1, "XyGrib");
+    slk.addCell (1, 1, "OceanRoute");
 	//-----------------------------------------------------------------------
 	// Dates
 	dl = 2;
