@@ -1,3 +1,37 @@
+1. Install Qt and QtCreator, install MinGW compiler, CMake and Ninja during the Qt installation as well
+	- Tested on Qt 5.15.0 32-bit with MinGW 8.1.0 32-bit
+2. Use the "Open" command of QtCreator and select CMakeLists.txt
+3. Link the libraries, can be done by adding the following lines to CMakeLists.txt
+	set(BZIP2_INCLUDE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/include")
+	set(BZIP2_LIBRARIES "${CMAKE_CURRENT_SOURCE_DIR}/lib/libbz2.a")
+	set(LIBNOVA_INCLUDE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/include")
+	set(LIBNOVA_LIBRARY "${CMAKE_CURRENT_SOURCE_DIR}/lib/libnova.a")
+	set(OPENJPEG_INCLUDE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/include")
+	set(OPENJPEG_LIBRARIES "${CMAKE_CURRENT_SOURCE_DIR}/lib/libopenjp2.dll")
+	set(PNG_INCLUDE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/include")
+	set(PNG_LIBRARIES "${CMAKE_CURRENT_SOURCE_DIR}/lib/libpng.a")
+	set(PROJ4_INCLUDE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/include")
+	set(PROJ4_LIBRARIES "${CMAKE_CURRENT_SOURCE_DIR}/lib/libproj.a")
+	set(ZLIB_INCLUDE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/include")
+	set(ZLIB_LIBRARIES "${CMAKE_CURRENT_SOURCE_DIR}/lib/libz.a")
+4. Build and Compile, the few errors that appear can be easily fixed one by one
+5. Output is the "XyGrib.exe" file
+6. Copy the "XyGrib/data" file to the same directory the XyGrib.exe was compiled
+
+Task: (CHANGE ICON)
+1. Change icons at /win_online_installer/
+2. Change 3 of the icons at /data/img/
+
+Task: (CHANGE TITLE)
+1. In Version.h.in line 62
+
+Task: (MAKE INSTALLER)
+1. Add repogen.exe to PATH
+
+Task: (MAKE .exe STANDALONE instead of 0x0 ERROR)
+1. Add compiler/bin to PATH (C:\Qt\5.15.0\mingw81_32\bin)
+2. Add libopenjp2.dll
+
 # XyGrib - Weather Forecast Visualization
 Fork of zyGrib-8.0.1 under a new name and a new home https://opengribs.org
 
