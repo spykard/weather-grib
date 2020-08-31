@@ -1,6 +1,6 @@
 cmake_minimum_required (VERSION 3.1.0)
 project (OceanRoute)
-set(VERSION_MAJOR 1)
+set(VERSION_MAJOR 2)
 set(VERSION_MINOR 0)
 set(VERSION_PATCH 1)
 

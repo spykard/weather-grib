@@ -29,7 +29,7 @@
 #
 # UPDATE VERSION AND RELEASE DATES in xml files
 
-XVER="v1.0.1"
+XVER="v2.0.1"
 
 ## run the Qt windows deployment tool to create the executable package
 cd deploy
