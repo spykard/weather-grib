@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Installer>
+    <Name>XyGrib</Name>
+    <Version>1.2.6</Version>
+    <Title>XyGrib</Title>
+    <Publisher>OpenGribs.org</Publisher>
+	<ProductUrl>https://opengribs.org/en/xygrib</ProductUrl>
+	<StartMenuDir>XyGrib</StartMenuDir>
+    <TargetDir>/Applications/XyGrib</TargetDir>
+	<RunProgram>/Applications/XyGrib/XyGrib.app/Contents/MacOS/XyGrib</RunProgram>
+	<MaintenanceToolName>XyGribMaintenanceTool</MaintenanceToolName>
+	<WizardStyle>Modern</WizardStyle>
+	<Logo>xyGrib_32.png</Logo>
+	<WizardDefaultWidth>620</WizardDefaultWidth>
+	<InstallActionColumnVisible>true</InstallActionColumnVisible>
+	<InstallerApplicationIcon>xyGrib_32</InstallerApplicationIcon>
+	<InstallerWindowIcon>xyGrib_32</InstallerWindowIcon>
+	<RemoteRepositories>
+	<Repository>
+		<Url>https://opengribs.org/repository/mac</Url>
+	</Repository>
+    </RemoteRepositories>
+
+</Installer>
