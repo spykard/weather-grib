@@ -37,4 +37,4 @@
 ### Task: Make the .exe file runable in a standalone fashion instead of it only being able to run through Qt
 
 1. Add compiler/bin to PATH (C:\Qt\5.15.0\mingw81_32\bin).
-2. Add libopenjp2.dll to the folder.
+2. Add libopenjp2.dll to the folder.  
