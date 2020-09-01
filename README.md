@@ -19,7 +19,7 @@
  set(ZLIB_INCLUDE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/include")  
  set(ZLIB_LIBRARIES "${CMAKE_CURRENT_SOURCE_DIR}/lib/libz.a")  
 4. Build and Compile, the few errors that occur can be easily fixed one by one.  
-5. Copy the "/OceanRoute/data/" file to output folder that includes the "OceanRoute.exe" executable.
+5. Copy the "/Ocean-Route/data/" folder to the output folder that includes the "OceanRoute.exe" executable.
 
 ### Task: Change Icon
 
@@ -33,6 +33,8 @@
 ### Task: Create an Installer
 
 1. Add repogen.exe and binarycreator.exe to PATH (C:\Qt\Tools\QtInstallerFramework\3.2\bin).
+2. Copy the compiled .exe to "/Ocean-Route/win_online_installer/deploy"
+3. Run "win-deploy-and-installer.sh".
 
 ### Task: Make the .exe file runable in a standalone fashion instead of it only being able to run through Qt
 
