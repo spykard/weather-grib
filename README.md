@@ -26,7 +26,7 @@
 1. Change icons at "/win_online_installer/".
 2. Change three of the icons at "/data/img/".
 
-### Task: Change Title
+### Task: Change Application Window Title
 
 1. Change `Version.h.in:line 62`.
 
@@ -36,8 +36,9 @@
 
 ### Task: Make the .exe file runable in a standalone fashion instead of it only being able to run through Qt
 
-1. Add compiler/bin to PATH (C:\Qt\5.15.0\mingw81_32\bin).
-2. Add libopenjp2.dll to the folder.
+1. [Copy all the .dll files from "C:\Qt\5.15.0\mingw81_32\bin" to the folder](https://wiki.qt.io/Deploy_an_Application_on_Windows) (or add to PATH)
+2. [Copy all the folders from "C:\Qt\5.15.0\mingw81_32\plugins" to the folder](https://wiki.qt.io/Deploy_an_Application_on_Windows) (or add to PATH)
+3. Add libopenjp2.dll to the folder.
 
 <br/>
 
