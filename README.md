@@ -32,8 +32,7 @@
 
 ### Task: Create an Installer
 
-1. Add repogen.exe to PATH.
-2. Add binarycreator.exe to PATH.
+1. Add repogen.exe and binarycreator.exe to PATH (C:\Qt\Tools\QtInstallerFramework\3.2\bin).
 
 ### Task: Make the .exe file runable in a standalone fashion instead of it only being able to run through Qt
 
