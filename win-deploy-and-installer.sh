@@ -32,30 +32,32 @@
 XVER="v2.0.1"
 
 ## run the Qt windows deployment tool to create the executable package
-cd deploy
+cd win_online_installer/deploy
 if which windeployqt >/dev/null; then
   DEPLOY='windeployqt.exe'
 else
 	echo "Tool windeployqt is not in the path, can't continue"
-	exit 1
+	read junk
 fi
 
 $DEPLOY --no-translations --release --no-opengl-sw OceanRoute.exe
 
 ## now copy bundle to installer package for core.win
-cp -rf ./ ../win_online_installer/packages/org.opengribs.oceanroute.core.win/data
-cp /d/qtprojects/oceanroute/LICENSE ../win_online_installer/packages/org.opengribs.oceanroute.core.win/data
-cp /d/qtprojects/oceanroute/README.md ../win_online_installer/packages/org.opengribs.oceanroute.core.win/data
+cd ..
+cd ..
+cp -rf data win_online_installer/packages/org.opengribs.oceanroute.core.win/data
+cp LICENSE win_online_installer/packages/org.opengribs.oceanroute.core.win/data
+cp README.md win_online_installer/packages/org.opengribs.oceanroute.core.win/data
 
 ## go to the installer build folder
-cd ../win_online_installer
+cd win_online_installer
 
 ## build the repository which should be empty (new one each time)
 if which repogen.exe >/dev/null; then
   REPOGEN='repogen.exe'
 else
   echo "Tool repogen not found in path, can't continue"
-  exit 1
+  read junk
 fi
 
 $REPOGEN --update-new-components -v -p packages repository
@@ -65,7 +67,7 @@ if which binarycreator.exe >/dev/null; then
   BINARYCREATOR='binarycreator.exe'
 else
   echo "Tool binarycreator not found in path, can't continue"
-  exit 1
+  read junk
 fi
 
 $BINARYCREATOR --online-only -v -c config/config.xml -p packages OceanRoute_Win_Online_Installer_$XVER
@@ -73,3 +75,4 @@ $BINARYCREATOR -v -c config/config.xml -p packages -e org.opengribs.oceanroute.m
 $BINARYCREATOR -v --offline-only -c config/config.xml -p packages  OceanRoute_Win_Testing_Installer_$XVER
 
 echo "++++ All Done ++++"
+read junk
