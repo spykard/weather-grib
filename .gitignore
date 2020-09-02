@@ -1,8 +1,5 @@
 build*
 src/GUI/ui_*
-*.o
-*.a
-*.so
 data/config
 *.user
 *.pro
