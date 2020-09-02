@@ -38,6 +38,10 @@
 
 ### Task: Make the .exe file runable in a standalone fashion instead of it only being able to run through Qt
 
+1. Copy all the files inside "/Ocean-Route/standalone_requirements/" to the output folder that includes the "OceanRoute.exe" executable.  
+
+Alternatively follow the detailed steps
+
 1. [Copy all the .dll files from "C:\Qt\5.15.0\mingw81_32\bin" to the folder](https://wiki.qt.io/Deploy_an_Application_on_Windows) (or add to PATH).
 2. [Copy all the folders from "C:\Qt\5.15.0\mingw81_32\plugins" to the folder](https://wiki.qt.io/Deploy_an_Application_on_Windows) (or add to PATH).
 3. Add libopenjp2.dll to the folder.
