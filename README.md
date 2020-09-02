@@ -42,6 +42,10 @@
 2. [Copy all the folders from "C:\Qt\5.15.0\mingw81_32\plugins" to the folder](https://wiki.qt.io/Deploy_an_Application_on_Windows) (or add to PATH).
 3. Add libopenjp2.dll to the folder.
 
+### Task: Add even higher resolution maps if file size is not an issue
+
+1. [Download](https://github.com/opengribs/XyGrib/releases/download/v1.1.1/XyGrib___High_Resolution_Maps.tar.gz) and copy.
+
 <br/>
 
 ## General Build & Package Instructions
