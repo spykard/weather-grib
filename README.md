@@ -1,5 +1,7 @@
 # Ocean-Route - Weather Map & Forecast Visualization
 
+![alt text](Example.PNG "Example of Execution")
+
 ## Build Guide & Changelog
 
 1. Install Qt and QtCreator. Select MinGW compiler, CMake and Ninja during the installation process as well.  
