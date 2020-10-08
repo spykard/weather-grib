@@ -38,6 +38,8 @@
 2. Copy the compiled .exe to "/Ocean-Route/win_online_installer/deploy"
 3. Run "win-deploy-and-installer.sh".
 
+Alternatively: <http://installsimple.com/>
+
 ### Task: Make the .exe file runable in a standalone fashion instead of it only being able to run through Qt
 
 1. Copy all the files inside "/Ocean-Route/standalone_requirements/" to the output folder that includes the "OceanRoute.exe" executable.  
