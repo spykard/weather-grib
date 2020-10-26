@@ -187,14 +187,14 @@ void DialogGraphicsParams::slotBtCancel()
 //=============================================================================
 void DialogGraphicsParams::initInterface()
 {
-	inputBgColor->setColor(Util::getSetting("backgroundColor", QColor(0,0,45)).value<QColor>());
-	inputBgColor->setDefaultColor(QColor(0,0,45));
+	inputBgColor->setColor(Util::getSetting("backgroundColor", QColor(100,220,200)).value<QColor>());
+	inputBgColor->setDefaultColor(QColor(100,220,200));
 
-    inputSeaColor->setColor(Util::getSetting("seaColor", QColor(67,193,183)).value<QColor>());
-    inputSeaColor->setDefaultColor(QColor(67,193,183));
+    inputSeaColor->setColor(Util::getSetting("seaColor", QColor(255,255,255)).value<QColor>());
+    inputSeaColor->setDefaultColor(QColor(255,255,255));
 	
-	inputLandColor->setColor(Util::getSetting("landColor", QColor(200,200,120)).value<QColor>());
-	inputLandColor->setDefaultColor(QColor(200,200,120));
+	inputLandColor->setColor(Util::getSetting("landColor", QColor(217,217,217)).value<QColor>());
+	inputLandColor->setDefaultColor(QColor(217,217,217));
 	
 	inputSeaBordersLine->setValues (
 				Util::getSetting("seaBordersLineWidth", 1.8).toDouble(),
