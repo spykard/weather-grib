@@ -1968,7 +1968,7 @@
     <message>
         <location filename="../../src/DialogUnits.cpp" line="303"/>
         <source>Current hour seen by oceanroute with those parameters :</source>
-        <translation>השעה הנוכחית כפי ש OceanRoute חישב אותה עם ההגדרות :</translation>
+        <translation>השעה הנוכחית כפי ש Oceanroute חישב אותה עם ההגדרות :</translation>
     </message>
     <message>
         <location filename="../../src/DialogUnits.cpp" line="304"/>
@@ -2452,8 +2452,8 @@
     </message>
     <message>
         <location filename="../../src/MainWindow.cpp" line="1556"/>
-        <source>OceanRoute : GRIB files visualization</source>
-        <translation>OceanRoute : הדמייה של קבצי גריב</translation>
+        <source>Oceanroute : GRIB files visualization</source>
+        <translation>Oceanroute : הדמייה של קבצי גריב</translation>
     </message>
     <message>
         <location filename="../../src/MainWindow.cpp" line="1558"/>
@@ -2576,8 +2576,8 @@
     <message>
         <location filename="../../src/MainWindow.cpp" line="2532"/>
         <location filename="../../src/MainWindow.cpp" line="2540"/>
-        <source>Unable to find the OceanRoute Maintenance Tool. Please start it from the desktop facilities</source>
-        <translation>אננו מוצא את תוכנה השרות של OceanRoute. נא להפעיל אותו ישירות מממשק המשתמש</translation>
+        <source>Unable to find the Oceanroute Maintenance Tool. Please start it from the desktop facilities</source>
+        <translation>אננו מוצא את תוכנה השרות של Oceanroute. נא להפעיל אותו ישירות מממשק המשתמש</translation>
     </message>
     <message>
         <location filename="../../src/MainWindow.cpp" line="1743"/>
@@ -2611,8 +2611,8 @@
     </message>
     <message>
         <location filename="../../src/MainWindow.cpp" line="1853"/>
-        <source>For skin change to take effect OceanRoute needs to be restarted</source>
-        <translation>כדי ששינוי סגנון הנראות יופעל יש להפעיל מחדש את OceanRoute</translation>
+        <source>For skin change to take effect Oceanroute needs to be restarted</source>
+        <translation>כדי ששינוי סגנון הנראות יופעל יש להפעיל מחדש את Oceanroute</translation>
     </message>
     <message>
         <location filename="../../src/MainWindow.cpp" line="1863"/>
@@ -2637,13 +2637,13 @@
     </message>
     <message>
         <location filename="../../src/MainWindow.cpp" line="2526"/>
-        <source>It is recommended to exit OceanRoute while running the Maintenance Tool. Do you wish to exit OceanRoute?</source>
-        <translation>מומלץ לצאת מתוכת OceanRoute בעת ביצוע עדכוני תוכנה. האם לצאת?</translation>
+        <source>It is recommended to exit Oceanroute while running the Maintenance Tool. Do you wish to exit Oceanroute?</source>
+        <translation>מומלץ לצאת מתוכת Oceanroute בעת ביצוע עדכוני תוכנה. האם לצאת?</translation>
     </message>
     <message>
         <location filename="../../src/MainWindow.cpp" line="2527"/>
-        <source>Exit OceanRoute?</source>
-        <translation>לצאת מOceanRoute?</translation>
+        <source>Exit Oceanroute?</source>
+        <translation>לצאת מOceanroute?</translation>
     </message>
     <message>
         <location filename="../../src/MainWindow.cpp" line="2595"/>
@@ -2662,8 +2662,8 @@
     </message>
     <message>
         <location filename="../../src/MainWindow.cpp" line="2601"/>
-        <source>Please use the OceanRoute Maintenance Tool to upgrade. It can be activated from the Help Menu</source>
-        <translation>נא להשתמש בתוכנת העדכון OceanRouteMaintenanceTool לביצוע העדכון. ניתן להפעיל אותו מתפריט העזרה</translation>
+        <source>Please use the Oceanroute Maintenance Tool to upgrade. It can be activated from the Help Menu</source>
+        <translation>נא להשתמש בתוכנת העדכון OceanrouteMaintenanceTool לביצוע העדכון. ניתן להפעיל אותו מתפריט העזרה</translation>
     </message>
     <message>
         <location filename="../../src/MainWindow.cpp" line="2613"/>
@@ -2775,7 +2775,7 @@
     </message>
     <message>
         <location filename="../../src/MapDrawer.cpp" line="798"/>
-        <source>OceanRoute</source>
+        <source>Oceanroute</source>
         <translation></translation>
     </message>
 </context>
@@ -2809,8 +2809,8 @@
     </message>
     <message>
         <location filename="../../src/MenuBar.cpp" line="84"/>
-        <source>Open a new OceanRoute instance</source>
-        <translation>פתיחת יישום OceanRoute נוסף</translation>
+        <source>Open a new Oceanroute instance</source>
+        <translation>פתיחת יישום Oceanroute נוסף</translation>
     </message>
     <message>
         <location filename="../../src/MenuBar.cpp" line="87"/>
@@ -3412,7 +3412,7 @@
     <message>
         <location filename="../../src/MenuBar.cpp" line="298"/>
         <source>ZyGrib</source>
-        <translation>OceanRoute</translation>
+        <translation>Oceanroute</translation>
     </message>
     <message>
         <location filename="../../src/MenuBar.cpp" line="299"/>
@@ -3776,8 +3776,8 @@
     </message>
     <message>
         <location filename="../../src/MenuBar.cpp" line="432"/>
-        <source>About OceanRoute</source>
-        <translation>אודות OceanRoute</translation>
+        <source>About Oceanroute</source>
+        <translation>אודות Oceanroute</translation>
     </message>
     <message>
         <location filename="../../src/MenuBar.cpp" line="433"/>
@@ -3786,13 +3786,13 @@
     </message>
     <message>
         <location filename="../../src/MenuBar.cpp" line="436"/>
-        <source>Run OceanRoute Maintenance Tool</source>
-        <translation>הפעלת תוננת OceanRouteMaintenanceTool</translation>
+        <source>Run Oceanroute Maintenance Tool</source>
+        <translation>הפעלת תוננת OceanrouteMaintenanceTool</translation>
     </message>
     <message>
         <location filename="../../src/MenuBar.cpp" line="437"/>
-        <source>To add, update or remove OceanRoute components</source>
-        <translation>משמש להורדת תוספות ועדכונים של תוכנת OceanRoute</translation>
+        <source>To add, update or remove Oceanroute components</source>
+        <translation>משמש להורדת תוספות ועדכונים של תוכנת Oceanroute</translation>
     </message>
     <message>
         <source>About QT</source>

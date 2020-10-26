@@ -4,17 +4,17 @@
 # Assumes this script being copied to the root of 'qtbuild' in the following folder structure:
 
 # -- qtbuild 
-#		-- deploy 								('OceanRoute.exe' as copied from Qt release build folder. ADD libopenjp2.dll)
+#		-- deploy 								('Oceanroute.exe' as copied from Qt release build folder. ADD libopenjp2.dll)
 #		-- win_online_installer					(structure as copied from the repository clone)
 #				-- config
 #				-- packages
 #						-- org.opengribs.oceanroute.core.win	
 #								-- data 		(should be empty except for icons folder)
 #										-- icons
-#												OceanRoute.ico			(check that it exists)
+#												Oceanroute.ico			(check that it exists)
 #								-- meta
 #						-- org.opengribs.oceanroute.data	
-#								-- data			(latest OceanRoute 'data' structure should be copied here under 'data' 2x data !)
+#								-- data			(latest Oceanroute 'data' structure should be copied here under 'data' 2x data !)
 #								-- meta
 #						-- org.opengribs.oceanroute.maps
 #								-- data			(hires map 'data' structure should be copied here under 'data' 2x data !)
@@ -22,8 +22,8 @@
 #				-- repository					(should be empty)
 #
 #
-# Also assumes that 'OceanRoute.exe' has been copied from the Qt release build folders to the 'deploy' folder
-# That OceanRoute 'data' structure and hires map 'data' structure are copied to respective 'data' folders ('data' appears in two levels in each case)
+# Also assumes that 'Oceanroute.exe' has been copied from the Qt release build folders to the 'deploy' folder
+# That Oceanroute 'data' structure and hires map 'data' structure are copied to respective 'data' folders ('data' appears in two levels in each case)
 #
 # After running the script the installers should be in the win_online_installer folder and the repository should be ready for upload
 #
@@ -40,7 +40,7 @@ else
 	read junk
 fi
 
-$DEPLOY --no-translations --release --no-opengl-sw OceanRoute.exe
+$DEPLOY --no-translations --release --no-opengl-sw Oceanroute.exe
 
 ## now copy bundle to installer package for core.win
 cd ..
@@ -70,9 +70,9 @@ else
   read junk
 fi
 
-$BINARYCREATOR --online-only -v -c config/config.xml -p packages OceanRoute_Win_Online_Installer_$XVER
-$BINARYCREATOR -v -c config/config.xml -p packages -e org.opengribs.oceanroute.maps OceanRoute_Win_Offline_Installer_$XVER
-$BINARYCREATOR -v --offline-only -c config/config.xml -p packages  OceanRoute_Win_Testing_Installer_$XVER
+$BINARYCREATOR --online-only -v -c config/config.xml -p packages Oceanroute_Win_Online_Installer_$XVER
+$BINARYCREATOR -v -c config/config.xml -p packages -e org.opengribs.oceanroute.maps Oceanroute_Win_Offline_Installer_$XVER
+$BINARYCREATOR -v --offline-only -c config/config.xml -p packages  Oceanroute_Win_Testing_Installer_$XVER
 
 echo "++++ All Done ++++"
 read junk

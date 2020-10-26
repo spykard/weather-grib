@@ -8,41 +8,41 @@ First create the AppImage binary package
 Create a sandpit with the following directory and file structure
 -----------------------------------
 usr-
-   | bin - create and copy OceanRoute executable
+   | bin - create and copy Oceanroute executable
    | lib - empty - deploytool will copy stuff needed from the release build
    | plugins - empty - deploytool will copy stuff needed from the release build
    | share     - create
         | doc  - empty - deploy tool will copy stuff needed from the release build
 		| applications
-			OceanRoute.desktop (* see contents below)
+			Oceanroute.desktop (* see contents below)
 		| icons
 			| hicolor
-				OceanRoute_32.png
+				Oceanroute_32.png
 			
 
 
 
 -----------------------------------------------
 run:
-linuxdeployqt_april.AppImage usr/share/applications/OceanRoute.desktop -qmake=/home/david/Qt/5.11.1/gcc_64/bin/qmake -no-translations -bundle-non-qt-libs -appimage -verbose=2
-output is OceanRoute-x86_64.AppImage
-RENAME THIS TO: OceanRoute.Linux.AppImage (The hyphen doesn't go down well with creating .desktop files)
+linuxdeployqt_april.AppImage usr/share/applications/Oceanroute.desktop -qmake=/home/david/Qt/5.11.1/gcc_64/bin/qmake -no-translations -bundle-non-qt-libs -appimage -verbose=2
+output is Oceanroute-x86_64.AppImage
+RENAME THIS TO: Oceanroute.Linux.AppImage (The hyphen doesn't go down well with creating .desktop files)
 
 *
 [Desktop Entry] 
 Type=Application
-Name=OceanRoute
+Name=Oceanroute
 Comment=Grib reader and weather visualization software
-Exec=OceanRoute
-Icon=OceanRoute_32
+Exec=Oceanroute
+Icon=Oceanroute_32
 Categories=Education;Science;Geoscience;
 ***************************************
 Now prepare the repository updates
 ---------------------------------
 Prepare org.opengribs.oceanroute.core.linux
-	copy the resulting renamed OceanRoute.Linux.AppImage to repository package for core.linux
+	copy the resulting renamed Oceanroute.Linux.AppImage to repository package for core.linux
 	Also include 'LICENCE' and 'README.md' in the primary package data folder
-	Create an icons folder and add the OceanRoute_32.ico and OceanRoute_32.png to this folder
+	Create an icons folder and add the Oceanroute_32.ico and Oceanroute_32.png to this folder
 ----------------------------------------------------------------------------------
 Prepare org.opengribs.oceanroute.data
 	Copy the "data" structure to the second package data folder in the installer structure
@@ -62,4 +62,4 @@ upload the new repository files to the web server repository
 Build the installer
 -------------------
 Finaly from the root of the install framework, build the installer itself: 
-	binarycreator --online-only -c config/config.xml -p packages OceanRoute_Linux_v<x.x.x.x>_Installer
+	binarycreator --online-only -c config/config.xml -p packages Oceanroute_Linux_v<x.x.x.x>_Installer

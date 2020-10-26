@@ -960,7 +960,7 @@ void  SkewT::draw_comments (QPainter &pnt)
 	QString dat = tr("Date: ")+curdate;
 	pnt.drawText (W/2, 2*fh, dat);
 	//-------------------------------------------------------
-    pnt.drawText (W-fmet.width("OceanRoute")-5, H-5, "OceanRoute");
+    pnt.drawText (W-fmet.width("Oceanroute")-5, H-5, "Oceanroute");
 	//-------------------------------------------------------
 	QFont font = pnt.font();
 	font.setFamily ("times");
@@ -977,7 +977,7 @@ void  SkewT::draw_comments (QPainter &pnt)
 	pnt.rotate (-30);
 	pnt.translate (-W/2, -H/2);
 	QPainterPath pat;
-    pat.addText (W/6, 3*H/5, font, "OceanRoute");
+    pat.addText (W/6, 3*H/5, font, "Oceanroute");
 	pnt.drawPath (pat);
 	
 	pnt.restore ();

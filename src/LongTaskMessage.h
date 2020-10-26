@@ -1,5 +1,5 @@
 /**********************************************************************
-OceanRoute: meteorological GRIB file viewer
+Oceanroute: meteorological GRIB file viewer
 
 Copyright (C) 2018 - opengrib - http://www.oceanroute.org
 

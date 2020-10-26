@@ -1,5 +1,5 @@
 cmake_minimum_required (VERSION 3.1.0)
-project (OceanRoute)
+project (Oceanroute)
 set(VERSION_MAJOR 2)
 set(VERSION_MINOR 0)
 set(VERSION_PATCH 1)
@@ -11,7 +11,7 @@ set(CMAKE_VERBOSE_MAKEFILE ON)
 
 # Find includes in corresponding build directories
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
-# Unfotunately cmake <3.9 is not able to handle the coding style of OceanRoute and AUTOMOC misses many classes. Once the code is fixed or we can expect newer cmake everywhere, we can enable this and get rid of the QT5_WRAP_CPP() macros
+# Unfotunately cmake <3.9 is not able to handle the coding style of Oceanroute and AUTOMOC misses many classes. Once the code is fixed or we can expect newer cmake everywhere, we can enable this and get rid of the QT5_WRAP_CPP() macros
 ## Instruct CMake to run moc automatically when needed
 #set(CMAKE_AUTOMOC ON)
 #set(CMAKE_AUTOMOC_RELAXED_MODE TRUE)
@@ -235,7 +235,7 @@ set(PREFIX_BIN ".")
 set(PREFIX_PKGDATA ".")
 endif()
 if(UNIX AND NOT APPLE)
-# This is not exactly a good idea on linux - the code should be changed so that the executable would go to /usr/local/bin and the data to /usr/local/share/OceanRoute
+# This is not exactly a good idea on linux - the code should be changed so that the executable would go to /usr/local/bin and the data to /usr/local/share/Oceanroute
 set(PREFIX_BIN ${PROJECT_NAME})
 set(PREFIX_PKGDATA ${PROJECT_NAME})
 endif()
@@ -247,7 +247,7 @@ add_subdirectory(data/tr)
 # macOS bundle parameters
 set_target_properties(${PROJECT_NAME} PROPERTIES MACOSX_BUNDLE_INFO_PLIST "${CMAKE_CURRENT_SOURCE_DIR}/cmake/MacOSXBundleInfo.plist.in")
 set_target_properties(${PROJECT_NAME} PROPERTIES MACOSX_BUNDLE_INFO_STRING "${PROJECT_NAME}")
-set_target_properties(${PROJECT_NAME} PROPERTIES MACOSX_BUNDLE_ICON_FILE "OceanRoute.icns")
+set_target_properties(${PROJECT_NAME} PROPERTIES MACOSX_BUNDLE_ICON_FILE "Oceanroute.icns")
 set_target_properties(${PROJECT_NAME} PROPERTIES MACOSX_BUNDLE_GUI_IDENTIFIER "${PROJECT_NAME}")
 set_target_properties(${PROJECT_NAME} PROPERTIES MACOSX_BUNDLE_LONG_VERSION_STRING "${OCEANROUTE_VERSION}")
 set_target_properties(${PROJECT_NAME} PROPERTIES MACOSX_BUNDLE_BUNDLE_NAME "${PROJECT_NAME}")

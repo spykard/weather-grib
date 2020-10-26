@@ -1,7 +1,7 @@
-data/colors /usr/share/openGribs/OceanRoute/data/
-data/img /usr/share/openGribs/OceanRoute/data/
-data/tr /usr/share/openGribs/OceanRoute/data/
-data/fonts /usr/share/openGribs/OceanRoute/data/
-debian/tmp/usr/OceanRoute/OceanRoute /usr/bin
+data/colors /usr/share/openGribs/Oceanroute/data/
+data/img /usr/share/openGribs/Oceanroute/data/
+data/tr /usr/share/openGribs/Oceanroute/data/
+data/fonts /usr/share/openGribs/Oceanroute/data/
+debian/tmp/usr/Oceanroute/Oceanroute /usr/bin
 debian/oceanroute.desktop /usr/share/applications
 debian/oceanroute.png /usr/share/pixmaps

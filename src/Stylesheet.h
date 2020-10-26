@@ -1,5 +1,5 @@
 /**********************************************************************
-OceanRoute: meteorological GRIB file viewer
+Oceanroute: meteorological GRIB file viewer
 Created by David Gal
 
 This program is free software: you can redistribute it and/or modify

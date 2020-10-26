@@ -1,5 +1,5 @@
 /**********************************************************************
-OceanRoute: meteorological GRIB file viewer
+Oceanroute: meteorological GRIB file viewer
 Copyright (C) 2008-2012 - Jacques Zaninetti - http://www.zygrib.org
 
 This program is free software: you can redistribute it and/or modify
@@ -25,11 +25,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define OCEANROUTE_VERSION_DATE  "${OCEANROUTE_VERSION_DATE}"
 
 #if defined(Q_OS_WIN32)
-    #define OCEANROUTE_APP_NAME   "OceanRoute_win"
+    #define OCEANROUTE_APP_NAME   "Oceanroute_win"
 #elif defined(Q_OS_MAC)
-    #define OCEANROUTE_APP_NAME   "OceanRoute_mac"
+    #define OCEANROUTE_APP_NAME   "Oceanroute_mac"
 #else
-    #define OCEANROUTE_APP_NAME   "OceanRoute_unx"
+    #define OCEANROUTE_APP_NAME   "Oceanroute_unx"
 #endif
 
 // kept for backward compatibility with zGrib
@@ -59,7 +59,7 @@ class Version {
             return QString(OCEANROUTE_VERSION_DATE);
         }
         static QString getShortName() {
-            return QString( "OceanRoute - "+getVersion() );
+            return QString( "Oceanroute - "+getVersion() );
         }
         static QString getCompleteName() {
             return QString( getAppName()+"-"+getVersion() );

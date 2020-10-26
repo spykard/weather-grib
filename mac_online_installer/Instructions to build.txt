@@ -6,7 +6,7 @@ Creates installer from already built application and data
 
 Copy the 'mac-deploy-and-installer.sh' script to the mac_online_installer of the 'qtbuild' tree as shown in the following folder structure:
 -- qtbuild 
-		-- deploy 								('OceanRoute.app' as copied from Qt release build folder)
+		-- deploy 								('Oceanroute.app' as copied from Qt release build folder)
 		-- mac_online_installer					(structure as copied from the repository clone)
 				-- config
 				-- packages
@@ -14,7 +14,7 @@ Copy the 'mac-deploy-and-installer.sh' script to the mac_online_installer of the
 								-- data 		(should be empty)
 								-- meta
 						-- org.opengribs.oceanroute.data	
-								-- data			(latest OceanRoute 'data' structure should be copied here under 'data' 2x data !)
+								-- data			(latest Oceanroute 'data' structure should be copied here under 'data' 2x data !)
 								-- meta
 						-- org.opengribs.oceanroute.maps
 								-- data			(hires map 'data' structure should be copied here under 'data' 2x data !)
@@ -22,8 +22,8 @@ Copy the 'mac-deploy-and-installer.sh' script to the mac_online_installer of the
 				-- repository
 						-- mac					(should be empty)
 
-Also assumes that 'OceanRoute.app' has been copied from the Qt release build folders to the 'deploy' folder
-That OceanRoute 'data' structure and hires map 'data' structure are copied to respective 'data' folders ('data' appears in two levels in each case)
+Also assumes that 'Oceanroute.app' has been copied from the Qt release build folders to the 'deploy' folder
+That Oceanroute 'data' structure and hires map 'data' structure are copied to respective 'data' folders ('data' appears in two levels in each case)
 
 Before running the script edit the version number variable.
 After running the script the installer.apps should be in the mac_online_installer folder and the repository should be ready for upload

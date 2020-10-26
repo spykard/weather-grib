@@ -5,8 +5,8 @@ Instructions For Windows Online Installer
 First create the binary deployment package
 *******************************************
 Before final built update version and release date in CMakeLists.txt
-Copy the release version of the OceanRoute.exe file to the deployment folder
-Run   windeployqt --no-translations --release --no-opengl-sw .\OceanRoute.exe  in the deployment folder. 
+Copy the release version of the Oceanroute.exe file to the deployment folder
+Run   windeployqt --no-translations --release --no-opengl-sw .\Oceanroute.exe  in the deployment folder. 
 Add libopenjp2.dll (as this is missed for some reason)
 
 ***************************************
@@ -20,7 +20,7 @@ Now prepare the repository updates
 Prepare org.opengribs.oceanroute.core.win
 	Copy the release folder contents to the primary package data folder in the win_intaller structure 
 	Also include 'LICENCE' and 'README.md' in the primary package data folder
-	Create an icons folder and add the OceanRoute_32.ico to this folder if missing
+	Create an icons folder and add the Oceanroute_32.ico to this folder if missing
 	Edit the meta\package.xml file and set version number and release date
 ----------------------------------------------------------------------------------
 Prepare org.opengribs.oceanroute.data
@@ -41,7 +41,7 @@ upload the new repository files to the web server repository
 Build the installer
 -------------------
 Build the online installer: 
-binarycreator.exe --online-only -c config\config.xml -p packages OceanRoute_Win_Online_Installer_v1.2.0.exe
+binarycreator.exe --online-only -c config\config.xml -p packages Oceanroute_Win_Online_Installer_v1.2.0.exe
 
 Build the offline installer:
-binarycreator.exe --offline-only -c config\config.xml -e org.opengribs.oceanroute.maps -p packages OceanRoute_Win_Offline_Installer_v1.2.0.exe
+binarycreator.exe --offline-only -c config\config.xml -e org.opengribs.oceanroute.maps -p packages Oceanroute_Win_Offline_Installer_v1.2.0.exe

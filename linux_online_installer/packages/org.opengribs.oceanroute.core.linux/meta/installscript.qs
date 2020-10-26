@@ -38,11 +38,11 @@ Component.prototype.createOperations = function()
 
 	 component.addOperation("CreateDesktopEntry", 
 							"oceanroute.desktop",
-							"Type=Application\nTerminal=false\nExec=@TargetDir@/OceanRoute.AppImage\nName=OceanRoute\nIcon=@TargetDir@/icons/OceanRoute_32.ico\nCategories=Education;");
+							"Type=Application\nTerminal=false\nExec=@TargetDir@/Oceanroute.AppImage\nName=Oceanroute\nIcon=@TargetDir@/icons/Oceanroute_32.ico\nCategories=Education;");
 							
 	 component.addOperation("CreateDesktopEntry", 
 							"oceanroutemaintenancetool.desktop",
-							"Type=Application\nTerminal=false\nExec=@TargetDir@/OceanRouteMaintenanceTool\nName=OceanRouteMaintenanceTool\nIcon=@TargetDir@/icons/OceanRoute_32.ico");
+							"Type=Application\nTerminal=false\nExec=@TargetDir@/OceanrouteMaintenanceTool\nName=OceanrouteMaintenanceTool\nIcon=@TargetDir@/icons/Oceanroute_32.ico");
 							
 		 
 }

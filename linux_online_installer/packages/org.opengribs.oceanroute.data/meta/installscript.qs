@@ -36,7 +36,7 @@ Component.prototype.createOperationsForArchive = function(archive)
     // component.createOperationsForArchive(archive);
 
     // add an extract operation with a modified path
-	var linuxfolder = "@HomeDir@/.local/share/openGribs/OceanRoute";
+	var linuxfolder = "@HomeDir@/.local/share/openGribs/Oceanroute";
     component.addOperation("Extract", archive, linuxfolder);
 	
 	// get user name and chown the static data section

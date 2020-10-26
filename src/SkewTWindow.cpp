@@ -28,7 +28,7 @@ SkewTWindow::SkewTWindow (SkewT *skewt)
 	
 	skewt->setFocus (Qt::PopupFocusReason);
 	setWindowTitle ("SkewT - "+skewt->getLocation());
-    setWindowIcon (QIcon (Util::pathImg("OceanRoute_32.xpm")));
+    setWindowIcon (QIcon (Util::pathImg("Oceanroute_32.xpm")));
 
 }
 //------------------------------------------------------
@@ -253,7 +253,7 @@ void SkewTWindow::actionsCommonSlot ()
 		{
 			if (! fileName.endsWith(".slk", Qt::CaseInsensitive))
 				fileName += ".slk";
-            SylkFile slk (fileName, "OceanRoute");
+            SylkFile slk (fileName, "Oceanroute");
 			if (slk.isOk()) {
 				Util::setSetting("slkFilePath", slk.getFileInfo().absolutePath() );
 				saveFileSYLK (slk);
@@ -272,7 +272,7 @@ void SkewTWindow::saveFileSYLK (SylkFile &slk)
 {
 	int lig, col;
 	lig = 1;
-    slk.addCell (lig++, 1, "OceanRoute - SkewT data");
+    slk.addCell (lig++, 1, "Oceanroute - SkewT data");
 	if (! skewt) {
 		slk.addCell (lig++, 1, "No data");
 		return;

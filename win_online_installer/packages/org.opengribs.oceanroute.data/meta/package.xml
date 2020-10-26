@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Package>
-    <DisplayName>OceanRoute Static Data</DisplayName>
-    <Description>Data needed by OceanRoute such as maps, gis info, color schemes and translations</Description>
+    <DisplayName>Oceanroute Static Data</DisplayName>
+    <Description>Data needed by Oceanroute such as maps, gis info, color schemes and translations</Description>
     <Version>2.0.1</Version>
     <ReleaseDate>2020-09-02</ReleaseDate>
     <Default>true</Default>

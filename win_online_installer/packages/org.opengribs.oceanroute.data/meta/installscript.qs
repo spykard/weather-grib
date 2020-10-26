@@ -36,6 +36,6 @@ Component.prototype.createOperationsForArchive = function(archive)
     // component.createOperationsForArchive(archive);
 
     // add an extract operation with a modified path
-	var winfolder = installer.environmentVariable("APPDATA") + "/openGribs/OceanRoute"
+	var winfolder = installer.environmentVariable("APPDATA") + "/openGribs/Oceanroute"
     component.addOperation("Extract", archive, winfolder);
 }

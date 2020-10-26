@@ -1,9 +1,9 @@
 [Desktop Entry]
 Encoding=UTF-8
-Name=OceanRoute GRIB file viewer
+Name=Oceanroute GRIB file viewer
 GenericName=GRIB file viewer
 Comment=Meterological file viewer
-Exec=OceanRoute
+Exec=Oceanroute
 Icon=oceanroute.png
 Terminal=false
 Type=Application

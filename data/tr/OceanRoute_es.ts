@@ -2476,19 +2476,19 @@
     </message>
     <message>
         <location filename="../../src/MainWindow.cpp" line="2526"/>
-        <source>It is recommended to exit OceanRoute while running the Maintenance Tool. Do you wish to exit OceanRoute?</source>
-        <translation>Se recomienda salir de OceanRoute mientra se ejecuta la Herramienta de Mantenimiento. ¿Quieres salir de OceanRoute?</translation>
+        <source>It is recommended to exit Oceanroute while running the Maintenance Tool. Do you wish to exit Oceanroute?</source>
+        <translation>Se recomienda salir de Oceanroute mientra se ejecuta la Herramienta de Mantenimiento. ¿Quieres salir de Oceanroute?</translation>
     </message>
     <message>
         <location filename="../../src/MainWindow.cpp" line="2527"/>
-        <source>Exit OceanRoute?</source>
-        <translation>¿Salir de OceanRoute?</translation>
+        <source>Exit Oceanroute?</source>
+        <translation>¿Salir de Oceanroute?</translation>
     </message>
     <message>
         <location filename="../../src/MainWindow.cpp" line="2532"/>
         <location filename="../../src/MainWindow.cpp" line="2540"/>
-        <source>Unable to find the OceanRoute Maintenance Tool. Please start it from the desktop facilities</source>
-        <translation>No encuentro la Herramienta de Mantenimiento de OceanRoute. Iníciala desde el menú de aplicaciones del ordenador</translation>
+        <source>Unable to find the Oceanroute Maintenance Tool. Please start it from the desktop facilities</source>
+        <translation>No encuentro la Herramienta de Mantenimiento de Oceanroute. Iníciala desde el menú de aplicaciones del ordenador</translation>
     </message>
     <message>
         <location filename="../../src/MainWindow.cpp" line="2595"/>
@@ -2507,8 +2507,8 @@
     </message>
     <message>
         <location filename="../../src/MainWindow.cpp" line="2601"/>
-        <source>Please use the OceanRoute Maintenance Tool to upgrade. It can be activated from the Help Menu</source>
-        <translation>Por favor, utiliza la Herramienta de Mantenimiento de OceanRoute para actualizar. Puedes activarla desde el Menú de Ayuda</translation>
+        <source>Please use the Oceanroute Maintenance Tool to upgrade. It can be activated from the Help Menu</source>
+        <translation>Por favor, utiliza la Herramienta de Mantenimiento de Oceanroute para actualizar. Puedes activarla desde el Menú de Ayuda</translation>
     </message>
     <message>
         <location filename="../../src/MainWindow.cpp" line="2613"/>
@@ -2609,8 +2609,8 @@
     </message>
     <message>
         <location filename="../../src/MainWindow.cpp" line="1556"/>
-        <source>OceanRoute : GRIB files visualization</source>
-        <translation>OceanRoute : visualización de archivos GRIB</translation>
+        <source>Oceanroute : GRIB files visualization</source>
+        <translation>Oceanroute : visualización de archivos GRIB</translation>
     </message>
     <message>
         <location filename="../../src/MainWindow.cpp" line="1561"/>
@@ -2629,8 +2629,8 @@
     </message>
     <message>
         <location filename="../../src/MainWindow.cpp" line="1853"/>
-        <source>For skin change to take effect OceanRoute needs to be restarted</source>
-        <translation>Para que el cambio de interfaz tengo efecto has de reiniciar OceanRoute</translation>
+        <source>For skin change to take effect Oceanroute needs to be restarted</source>
+        <translation>Para que el cambio de interfaz tengo efecto has de reiniciar Oceanroute</translation>
     </message>
     <message>
         <location filename="../../src/MainWindow.cpp" line="1863"/>
@@ -2772,8 +2772,8 @@
     </message>
     <message>
         <location filename="../../src/MapDrawer.cpp" line="798"/>
-        <source>OceanRoute</source>
-        <translation>OceanRoute</translation>
+        <source>Oceanroute</source>
+        <translation>Oceanroute</translation>
     </message>
 </context>
 <context>
@@ -2856,8 +2856,8 @@
     </message>
     <message>
         <location filename="../../src/MenuBar.cpp" line="84"/>
-        <source>Open a new OceanRoute instance</source>
-        <translation>Abrir nueva ventana OceanRoute</translation>
+        <source>Open a new Oceanroute instance</source>
+        <translation>Abrir nueva ventana Oceanroute</translation>
     </message>
     <message>
         <location filename="../../src/MenuBar.cpp" line="130"/>
@@ -3670,8 +3670,8 @@
     </message>
     <message>
         <location filename="../../src/MenuBar.cpp" line="432"/>
-        <source>About OceanRoute</source>
-        <translation>Sobre OceanRoute</translation>
+        <source>About Oceanroute</source>
+        <translation>Sobre Oceanroute</translation>
     </message>
     <message>
         <location filename="../../src/MenuBar.cpp" line="433"/>
@@ -3680,13 +3680,13 @@
     </message>
     <message>
         <location filename="../../src/MenuBar.cpp" line="436"/>
-        <source>Run OceanRoute Maintenance Tool</source>
-        <translation>Ejecutar la Herramienta de Mantenimiento de OceanRoute</translation>
+        <source>Run Oceanroute Maintenance Tool</source>
+        <translation>Ejecutar la Herramienta de Mantenimiento de Oceanroute</translation>
     </message>
     <message>
         <location filename="../../src/MenuBar.cpp" line="437"/>
-        <source>To add, update or remove OceanRoute components</source>
-        <translation>Para añadir, actualizar o eliminar componentes de OceanRoute</translation>
+        <source>To add, update or remove Oceanroute components</source>
+        <translation>Para añadir, actualizar o eliminar componentes de Oceanroute</translation>
     </message>
     <message>
         <location filename="../../src/MenuBar.cpp" line="439"/>

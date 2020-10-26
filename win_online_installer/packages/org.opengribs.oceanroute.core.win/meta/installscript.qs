@@ -37,39 +37,39 @@ Component.prototype.createOperations = function()
     component.createOperations();
 
     if (systemInfo.productType === "windows") {
-        component.addOperation("CreateShortcut", "@TargetDir@/OceanRoute.exe", "@StartMenuDir@/OceanRoute.lnk",
-            "workingDirectory=@TargetDir@", "iconPath=@TargetDir@/OceanRoute.exe", "IconID=1",
-             "description=Run OceanRoute Weather Visualization");
+        component.addOperation("CreateShortcut", "@TargetDir@/Oceanroute.exe", "@StartMenuDir@/Oceanroute.lnk",
+            "workingDirectory=@TargetDir@", "iconPath=@TargetDir@/Oceanroute.exe", "IconID=1",
+             "description=Run Oceanroute Weather Visualization");
  
-		component.addOperation("CreateShortcut", "@TargetDir@/OceanRouteMaintenanceTool.exe", "@StartMenuDir@/OceanRouteMaintenanceTool.lnk",
-            "workingDirectory=@TargetDir@", "iconPath=@TargetDir@/OceanRoute.exe", "IconID=1",
-             "description=Run OceanRoute Weather Visualization");
+		component.addOperation("CreateShortcut", "@TargetDir@/OceanrouteMaintenanceTool.exe", "@StartMenuDir@/OceanrouteMaintenanceTool.lnk",
+            "workingDirectory=@TargetDir@", "iconPath=@TargetDir@/Oceanroute.exe", "IconID=1",
+             "description=Run Oceanroute Weather Visualization");
 			 
 		if (installer.isInstaller()) {
 			 
 			component.addOperation("RegisterFileType",
 						   "grb2",
-						   "@TargetDir@\\OceanRoute.exe \"%1\"",
-						   "OceanRoute Files",
+						   "@TargetDir@\\Oceanroute.exe \"%1\"",
+						   "Oceanroute Files",
 						   "application/x-binary",
-						   "@TargetDir@\\OceanRoute.exe",
-						   "ProgId=OceanRoute.grb2");  
+						   "@TargetDir@\\Oceanroute.exe",
+						   "ProgId=Oceanroute.grb2");  
 						   
 			component.addOperation("RegisterFileType",
 						   "grib2",
-						   "@TargetDir@\\OceanRoute.exe \"%1\"",
-						   "OceanRoute Files",
+						   "@TargetDir@\\Oceanroute.exe \"%1\"",
+						   "Oceanroute Files",
 						   "application/x-binary",
-						   "@TargetDir@\\OceanRoute.exe",
-						   "ProgId=OceanRoute.grib2");  
+						   "@TargetDir@\\Oceanroute.exe",
+						   "ProgId=Oceanroute.grib2");  
 						   
 			component.addOperation("RegisterFileType",
 						   "grb",
-						   "@TargetDir@\\OceanRoute.exe \"%1\"",
-						   "OceanRoute Files",
+						   "@TargetDir@\\Oceanroute.exe \"%1\"",
+						   "Oceanroute Files",
 						   "application/x-binary",
-						   "@TargetDir@\\OceanRoute.exe",
-						   "ProgId=OceanRoute.grb");
+						   "@TargetDir@\\Oceanroute.exe",
+						   "ProgId=Oceanroute.grb");
 		}
 					   					   
     }

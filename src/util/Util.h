@@ -1,5 +1,5 @@
 /**********************************************************************
-OceanRoute: meteorological GRIB file viewer
+Oceanroute: meteorological GRIB file viewer
 Copyright (C) 2008-2012 - Jacques Zaninetti - http://www.zygrib.org
 
 This program is free software: you can redistribute it and/or modify
@@ -87,7 +87,7 @@ class Util : public QObject
 	static QString pathStuff ()  {return pathData()+"data/stuff/";}
 	
 	static QString pathImg (const char *fname) {return pathData()+"data/img/"+fname;}
-    static QString pathTr  (QString lang)   {return pathData()+"data/tr/OceanRoute_"+lang;}
+    static QString pathTr  (QString lang)   {return pathData()+"data/tr/Oceanroute_"+lang;}
 	static QString getServerName ();
 
     static void     setSettings (const QHash <QString, QVariant> &h);

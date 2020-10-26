@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Installer>
-    <Name>OceanRoute</Name>
+    <Name>Oceanroute</Name>
     <Version>2.0.1</Version>
-    <Title>OceanRoute</Title>
+    <Title>Oceanroute</Title>
     <Publisher>OpenGribs.org</Publisher>
 	<ProductUrl>https://opengribs.org/en/oceanroute</ProductUrl>
-	<StartMenuDir>OceanRoute</StartMenuDir>
-    <TargetDir>/Applications/OceanRoute</TargetDir>
-	<RunProgram>/Applications/OceanRoute/OceanRoute.app/Contents/MacOS/OceanRoute</RunProgram>
-	<MaintenanceToolName>OceanRouteMaintenanceTool</MaintenanceToolName>
+	<StartMenuDir>Oceanroute</StartMenuDir>
+    <TargetDir>/Applications/Oceanroute</TargetDir>
+	<RunProgram>/Applications/Oceanroute/Oceanroute.app/Contents/MacOS/Oceanroute</RunProgram>
+	<MaintenanceToolName>OceanrouteMaintenanceTool</MaintenanceToolName>
 	<WizardStyle>Modern</WizardStyle>
-	<Logo>OceanRoute_32.png</Logo>
+	<Logo>Oceanroute_32.png</Logo>
 	<WizardDefaultWidth>620</WizardDefaultWidth>
 	<InstallActionColumnVisible>true</InstallActionColumnVisible>
-	<InstallerApplicationIcon>OceanRoute_32</InstallerApplicationIcon>
-	<InstallerWindowIcon>OceanRoute_32</InstallerWindowIcon>
+	<InstallerApplicationIcon>Oceanroute_32</InstallerApplicationIcon>
+	<InstallerWindowIcon>Oceanroute_32</InstallerWindowIcon>
 	<RemoteRepositories>
 	<Repository>
 		<Url>https://opengribs.org/repository/mac</Url>

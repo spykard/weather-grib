@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Installer>
-    <Name>OceanRoute</Name>
+    <Name>Oceanroute</Name>
     <Version>2.0.1</Version>
-    <Title>OceanRoute</Title>
+    <Title>Oceanroute</Title>
     <Publisher>OpenGribs.org</Publisher>
 	<ProductUrl>https://opengribs.org/en/oceanroute</ProductUrl>
-	<StartMenuDir>OceanRoute</StartMenuDir>
-    <TargetDir>@ApplicationsDirX86@/OceanRoute</TargetDir>
-	<RunProgram>@ApplicationsDirX86@/OceanRoute/OceanRoute.exe</RunProgram>
+	<StartMenuDir>Oceanroute</StartMenuDir>
+    <TargetDir>@ApplicationsDirX86@/Oceanroute</TargetDir>
+	<RunProgram>@ApplicationsDirX86@/Oceanroute/Oceanroute.exe</RunProgram>
 		<AllowSpaceInPath>true</AllowSpaceInPath>
     <RemoteRepositories>
         <Repository>
             <Url>https://opengribs.org/repository</Url>
         </Repository>
     </RemoteRepositories>
-	<MaintenanceToolName>OceanRouteMaintenanceTool</MaintenanceToolName>
+	<MaintenanceToolName>OceanrouteMaintenanceTool</MaintenanceToolName>
 	<WizardStyle>Modern</WizardStyle>
 	<WizardDefaultWidth>620</WizardDefaultWidth>
 	<InstallActionColumnVisible>true</InstallActionColumnVisible>
-	<InstallerApplicationIcon>OceanRoute_32</InstallerApplicationIcon>
-	<InstallerWindowIcon>OceanRoute_32</InstallerWindowIcon>
+	<InstallerApplicationIcon>Oceanroute_32</InstallerApplicationIcon>
+	<InstallerWindowIcon>Oceanroute_32</InstallerWindowIcon>
 </Installer>

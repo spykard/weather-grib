@@ -1,5 +1,5 @@
 /**********************************************************************
-OceanRoute: meteorological GRIB file viewer
+Oceanroute: meteorological GRIB file viewer
 Copyright (C) 2008-2012 - Jacques Zaninetti - http://www.zygrib.org
 
 This program is free software: you can redistribute it and/or modify
@@ -114,7 +114,7 @@ void Settings::initializeSettingsDir ()
         GLOB_IniSettings     = nullptr;
         GLOB_IniSettings_POI = nullptr;
 	}
-    GLOB_NatSettings = new QSettings ("OceanRoute");
+    GLOB_NatSettings = new QSettings ("Oceanroute");
 			
 }
 
@@ -320,7 +320,7 @@ QList<uint> Settings::getSettingAllCodesPOIs()
 	}
 	else
 	{	// try to load from native settings
-        QSettings settings("OceanRoute");
+        QSettings settings("Oceanroute");
 		settings.beginGroup("poi");
 		QString poicode;
 		QStringList slist = settings.childGroups();
@@ -338,7 +338,7 @@ QList<uint> Settings::getSettingAllCodesPOIs()
 //---------------------------------------------------------------------
 void Settings::deleteSettingsPOI(uint code)
 {
-    QSettings natSettings("OceanRoute");
+    QSettings natSettings("Oceanroute");
 	natSettings.beginGroup("poi");
 	QStringList allgroups = natSettings.childGroups(); // pois are in groups
 	QStringListIterator it(allgroups);
@@ -370,7 +370,7 @@ void Settings::deleteSettingsPOI(uint code)
 //---------------------------------------------------------------------
 uint Settings::getNewCodePOI()
 {
-    QSettings settings("OceanRoute");
+    QSettings settings("Oceanroute");
 	settings.beginGroup("poi");
 	uint v, max = 0;
 	QStringList slist = settings.childGroups();
@@ -455,14 +455,14 @@ void Settings::initializeGribFilesDir ()
 // A. Degwerth [Cassidian]
 //void Settings::checkAndCopyDefaultIni(const QString& strIniUser, const QString& strIniDefault)
 //{
-//    // check if we have a default OceanRoute.ini file
+//    // check if we have a default Oceanroute.ini file
 //    if (QFile::exists(strIniDefault))
 //    {
 //        // yes the file exists
 
 //        bool fCopyDefaultIni = false;
 
-//        // check if there exists a OceanRoute.ini in the user profile
+//        // check if there exists a Oceanroute.ini in the user profile
 //        if (!QFile::exists(strIniUser))
 //        {
 //            fCopyDefaultIni = true;
