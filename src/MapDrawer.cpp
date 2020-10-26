@@ -129,9 +129,9 @@ void MapDrawer::initGraphicsParameters()
 //-------------------------------------------
 void MapDrawer::updateGraphicsParameters()
 {
-    backgroundColor  = Util::getSetting("backgroundColor", QColor(0,0,45)).value<QColor>();
-    seaColor  = Util::getSetting("seaColor", QColor(67,193,183)).value<QColor>();
-    landColor = Util::getSetting("landColor", QColor(200,200,120)).value<QColor>();
+    backgroundColor  = Util::getSetting("backgroundColor", QColor(100,220,200)).value<QColor>();
+    seaColor  = Util::getSetting("seaColor", QColor(255,255,255)).value<QColor>();
+    landColor = Util::getSetting("landColor", QColor(217,217,217)).value<QColor>();
 
     seaBordersPen.setColor(Util::getSetting("seaBordersLineColor", QColor(40,45,30)).value<QColor>());
     seaBordersPen.setWidthF(Util::getSetting("seaBordersLineWidth", 1.8).toDouble());
