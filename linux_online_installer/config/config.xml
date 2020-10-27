@@ -3,7 +3,7 @@
     <Name>Oceanroute</Name>
     <Version>2.0.1</Version>
     <Title>Oceanroute</Title>
-    <Publisher>OpenGribs.org</Publisher>
+    <Publisher>S+S</Publisher>
 	<ProductUrl>https://opengribs.org/en/oceanroute</ProductUrl>
 	<StartMenuDir>Oceanroute</StartMenuDir>
     <TargetDir>@ApplicationsDir@/Oceanroute</TargetDir>

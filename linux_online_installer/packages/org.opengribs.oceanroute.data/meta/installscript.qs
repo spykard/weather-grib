@@ -36,7 +36,7 @@ Component.prototype.createOperationsForArchive = function(archive)
     // component.createOperationsForArchive(archive);
 
     // add an extract operation with a modified path
-	var linuxfolder = "@HomeDir@/.local/share/openGribs/Oceanroute";
+	var linuxfolder = "@HomeDir@/.local/share/Oceanroute";
     component.addOperation("Extract", archive, linuxfolder);
 	
 	// get user name and chown the static data section
@@ -45,6 +45,6 @@ Component.prototype.createOperationsForArchive = function(archive)
 	if (systemInfo.productType === "opensuse") {
 		own = uname + ":users";
 	}
-	component.addElevatedOperation("Execute", "chown", "-R",  own, "@HomeDir@/.local/share/openGribs");
+	component.addElevatedOperation("Execute", "chown", "-R",  own, "@HomeDir@/.local/share");
 
 }

@@ -40,8 +40,8 @@ int main (int argc, char *argv[])
 
     bool foundAppData;
 
-    QCoreApplication::setOrganizationName("openGribs");
-    QCoreApplication::setOrganizationDomain("opengribs.org");
+    QCoreApplication::setOrganizationName("Oceanroute");
+    QCoreApplication::setOrganizationDomain("Oceanroute.com");
     QCoreApplication::setApplicationName("Oceanroute");
 
     Util::setSetting("AppVersion", Version::getCompleteName());

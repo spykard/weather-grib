@@ -1594,7 +1594,7 @@ void MainWindow::slotGroupLinesThetaE (QAction *ac)
 //-------------------------------------------------
 void MainWindow::slotHelp_Help() {
 
-    QString link = "https://github.com/opengribs/Oceanroute/wiki/Oceanroute-User-Manual";
+    QString link = "https://www.oceanroute.com/apphelp";
     QDesktopServices::openUrl(QUrl(link));
 
     return;
@@ -1602,7 +1602,7 @@ void MainWindow::slotHelp_Help() {
     QMessageBox::information (this,
             tr("Help"),
             tr("Help is available at")
-               +" https://github.com/opengribs/Oceanroute/wiki/Oceanroute-User-Manual"
+               +" https://www.oceanroute.com/apphelp"
                );
 
 }
@@ -1611,12 +1611,11 @@ void MainWindow::slotHelp_APropos()
 {
     QMessageBox::information (this,
             tr("About"),
-            tr("Oceanroute : GRIB files visualization")
+            tr("Oceanroute : Map visualization")
             +"\n"+
             tr("Version : ")+Version::getVersion()
                     +"      "+Version::getDate()
-            +"\n"+ tr("Licence : GNU GPL v3")
-            +"\n"+ tr("https://OpenGribs.org")
+            +"\n"+ tr("https://www.oceanroute.com/")
         );
 }
 //-------------------------------------------------
