@@ -142,7 +142,7 @@ if(NOT WIN32)
     if(NOT PROJ4_FOUND)
       message(FATAL_ERROR "PROJ.4 library not found!")
     endif()
-    include_directories(${PROJ4_INCLUDE_DIRS})
+    include_directories(${PROJ4_INCLUDE_DIR})
 endif()
 if(WIN32)
     find_library(PROJ4_LIBRARIES
@@ -152,7 +152,7 @@ if(WIN32)
          /opt/lib
         REQUIRED
     )
-    find_path(PROJ4_INCLUDE_DIRS
+    find_path(PROJ4_INCLUDE_DIR
          NAMES "proj_api.h"
          PATHS
          $ENV{EXTERNLIBS}/include
