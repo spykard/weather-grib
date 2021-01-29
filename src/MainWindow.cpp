@@ -590,9 +590,9 @@ void MainWindow::createToolBar ()
 	assert (toolBar);
 	toolBar->setObjectName ("mainToolBar");
     toolBar->setFloatable(false);
-    toolBar->setMovable(false);
-    toolBar->addAction(menuBar->acFile_Quit);
-    toolBar->addSeparator();
+    toolBar->setMovable(true);
+    // toolBar->addAction(menuBar->acFile_Quit);
+    // toolBar->addSeparator();
     toolBar->addAction(menuBar->acFile_Open);
     toolBar->addSeparator();
     toolBar->addWidget(menuBar->cbDatesGrib);
