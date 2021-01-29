@@ -3,7 +3,7 @@
     <DisplayName>Oceanroute Static Data</DisplayName>
     <Description>Data needed by Oceanroute such as maps, gis info, color schemes and translations</Description>
     <Version>2.3.0</Version>
-    <ReleaseDate>2020-09-02</ReleaseDate>
+    <ReleaseDate>2021-01-28</ReleaseDate>
     <Default>true</Default>
 	<SortingPriority>002</SortingPriority>
     <Script>installscript.qs</Script>
