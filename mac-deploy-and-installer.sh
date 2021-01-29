@@ -27,7 +27,7 @@
 #
 # UPDATE VERSION AND RELEASE DATES in xml files
 
-XVER="v2.0.1"
+XVER="v2.3.0"
 
 ## run the Qt mac deployment tool to create the executable package
 cd deploy

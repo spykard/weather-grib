@@ -2,7 +2,7 @@
 <Package>
     <DisplayName>Oceanroute Static Data</DisplayName>
     <Description>Data needed by Oceanroute such as maps, gis info, color schemes and translations</Description>
-    <Version>2.0.1</Version>
+    <Version>2.3.0</Version>
     <ReleaseDate>2020-09-02</ReleaseDate>
     <Default>true</Default>
 	<SortingPriority>002</SortingPriority>

@@ -2,7 +2,7 @@
 <Package>
     <DisplayName>Oceanroute Mac Core Application Files</DisplayName>
     <Description>Executable and libraries needed to run the application.</Description>
-    <Version>2.0.1</Version>
+    <Version>2.3.0</Version>
     <ReleaseDate>2020-09-02</ReleaseDate>
     <Licenses>
         <License name="GNU General Public License Version 3" file="license.txt" />
