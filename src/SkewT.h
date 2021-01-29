@@ -189,9 +189,9 @@ class SkewTWindow : public QMainWindow
 		QCheckBox *chkShowConv;
 
         QString stStyleSheet =
-                "QMainWindow, QFrame, QDialog, QScrollBar {color: #ffffff; background: #666666}"
+                "QMainWindow, QFrame, QDialog, QScrollBar {color: #ffffff; background: #013a55}"
                 "QCheckBox{color: #ffffff;}"
-                "QToolBar {background-color: #666666;}"
+                "QToolBar {background-color: #013a55;}"
                 "QToolBar::separator{width: 1px; background: #aaaaaa;}"
                 ;
 

@@ -3638,9 +3638,9 @@
     </message>
     <message>
         <location filename="../../src/MenuBar.cpp" line="298"/>
-        <source>ZyGrib</source>
+        <source>Oceanroute</source>
         <translatorcomment>No Translation</translatorcomment>
-        <translation>ZyGrib</translation>
+        <translation>Oceanroute</translation>
     </message>
     <message>
         <location filename="../../src/MenuBar.cpp" line="299"/>

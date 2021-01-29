@@ -19,26 +19,26 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define STYLESHEET_H
 
 QString styleSheetDef =
-        "QStatusBar,QScrollBar,QDialog,QMainWindow, QFrame {color: #ffffff; background: #666666}"
-        "QPushButton {background-color: #666666; border-style: outset; border-width: 2px;"
+        "QStatusBar,QScrollBar,QDialog,QMainWindow, QFrame {color: #ffffff; background: #013a55}"
+        "QPushButton {background-color: #013a55; border-style: outset; border-width: 2px;"
                     "border-color: #777777; padding: 6px;min-width: 6em; color: #ffffff;}"
         "QPushButton:pressed {border-width: 2px; border-style: inset;}"
         "QPushButton:disabled {color: #aaaaaa;}"
         "QProgressBar{border: 2px solid grey; border-radius: 5px; text-align: center;}"
         "QProgressBar::chunk{background-color: #ff6600; width: 10px; margin: 0.5px;}"
-        "QCheckBox, QRadioButton{color: #ffffff; background-color: #666666}"
+        "QCheckBox, QRadioButton{color: #ffffff; background-color: #013a55}"
         "QCheckBox:disabled{color: #aaaaaa;}"
-        "QToolBar {background: #666666;}"
+        "QToolBar {background: #013a55;}"
         "QToolBar::separator{width: 2px; background: #aaaaaa;}"
-        "QTabBar::tab {background: #666666; color: #ffffff;}"
-        "QTabBar::tab:selected {background: #ffffff; color: #666666; }"
-        "QTabBar::tab:hover {background: #aaaaaa; color: #666666; }"
+        "QTabBar::tab {background: #013a55; color: #ffffff;}"
+        "QTabBar::tab:selected {background: #ffffff; color: #013a55; }"
+        "QTabBar::tab:hover {background: #aaaaaa; color: #013a55; }"
         "QDockWidget {color: #ffffff;}"
         ;
 
 QString menuStyleSheetDef =
-        "QMenu,QMenuBar {color: #ffffff; background: #666666;}"
-        "QMenuBar::item:selected, QMenu::item::selected {color: #666666; background-color: #dddddd;}"
+        "QMenu,QMenuBar {color: #ffffff; background: #013a55;}"
+        "QMenuBar::item:selected, QMenu::item::selected {color: #013a55; background-color: #dddddd;}"
         "QMenu::item:disabled {color: #aaaaaa;}"
         ;
 

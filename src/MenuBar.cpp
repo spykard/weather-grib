@@ -297,7 +297,7 @@ MenuBar::MenuBar (QWidget *parent, bool mbe)
 
 		QMenu *menuProjection = new QMenu(tr("Projection"));
         acMap_GroupProjection = new QActionGroup(menuProjection);
-            acMap_PROJ_ZYGRIB = addGroup (acMap_GroupProjection, menuProjection, tr("ZyGrib"), "", "");
+            acMap_PROJ_ZYGRIB = addGroup (acMap_GroupProjection, menuProjection, tr("Oceanroute"), "", "");
             acMap_PROJ_MERCATOR = addGroup (acMap_GroupProjection, menuProjection, tr("Mercator"), "", "");
             acMap_PROJ_MILLER = addGroup (acMap_GroupProjection, menuProjection, tr("Miller"), "", "");
             acMap_PROJ_CENTRAL_CYL = addGroup (acMap_GroupProjection, menuProjection, tr("Central Cylindric"), "", "");

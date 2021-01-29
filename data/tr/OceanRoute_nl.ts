@@ -2517,8 +2517,8 @@
         <translation>Maak een animatie van de gribdata</translation>
     </message>
     <message>
-        <source>ZyGrib</source>
-        <translation>ZyGrib</translation>
+        <source>Oceanroute</source>
+        <translation>Oceanroute</translation>
     </message>
     <message>
         <source>Cloud cover</source>
