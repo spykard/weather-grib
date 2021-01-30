@@ -37,6 +37,8 @@
   <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
     <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1"/>
     <ROW Directory="DesktopFolder" Directory_Parent="TARGETDIR" DefaultDir="DESKTO~1|DesktopFolder" IsPseudoRoot="1"/>
+    <ROW Directory="LocalAppDataFolder" Directory_Parent="TARGETDIR" DefaultDir="LOCALA~1|LocalAppDataFolder" IsPseudoRoot="1"/>
+    <ROW Directory="NewFolder_1_Dir" Directory_Parent="LocalAppDataFolder" DefaultDir="OCEANR~1|Oceanroute"/>
     <ROW Directory="SHORTCUTDIR" Directory_Parent="TARGETDIR" DefaultDir="SHORTC~1|SHORTCUTDIR" IsPseudoRoot="1"/>
     <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
     <ROW Directory="bearer_Dir" Directory_Parent="APPDIR" DefaultDir="bearer"/>
@@ -287,6 +289,9 @@
     <ROW File="Qt5Widgets.dll" Component_="Qt5Widgets.dll" FileName="QT5WID~1.DLL|Qt5Widgets.dll" Attributes="0" SourcePath="C:\Users\S\Desktop\Νέος φάκελος\OceanRoute\Qt5Widgets.dll" SelfReg="false"/>
     <ROW File="qwindowsvistastyle.dll" Component_="qwindowsvistastyle.dll" FileName="QWINDO~1.DLL|qwindowsvistastyle.dll" Attributes="0" SourcePath="C:\Users\S\Desktop\Νέος φάκελος\OceanRoute\styles\qwindowsvistastyle.dll" SelfReg="false"/>
   </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.AiRemoveFileComponent">
+    <ROW RemoveFile="_" Condition="(AI_CLEAN_RESOURCES_UNINSTALL = &quot;1&quot;) AND (NOT UPGRADINGPRODUCTCODE)" Options="3"/>
+  </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.AiRemoveRegComponent">
     <ROW RemoveReg="_" InstallMode="2" Condition="(AI_CLEAN_RESOURCES_UNINSTALL = &quot;1&quot;) AND (NOT UPGRADINGPRODUCTCODE)"/>
   </COMPONENT>
@@ -317,6 +322,11 @@
     <ROW Fragment="VerifyRepairDlg.aip" Path="&lt;AI_THEMES&gt;surface\fragments\VerifyRepairDlg.aip"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiActionTextComponent">
+    <ROW Action="AI_AiRemoveFilesCommit" Description="Executing file removal operations" DescriptionLocId="ActionText.Description.AI_AiRemoveFilesCommit" Template="Executing file removal: [1]" TemplateLocId="ActionText.Template.AI_AiRemoveFilesCommit"/>
+    <ROW Action="AI_AiRemoveFilesDeferred_Permanent" Description="Preparing files for removal" DescriptionLocId="ActionText.Description.AI_AiRemoveFilesDeferred_Permanent" Template="Preparing file: [1]" TemplateLocId="ActionText.Template.AI_AiRemoveFilesDeferred_Permanent"/>
+    <ROW Action="AI_AiRemoveFilesDeferred_Undoable" Description="Preparing files for removal" DescriptionLocId="ActionText.Description.AI_AiRemoveFilesDeferred_Undoable" Template="Preparing file: [1]" TemplateLocId="ActionText.Template.AI_AiRemoveFilesDeferred_Undoable"/>
+    <ROW Action="AI_AiRemoveFilesImmediate" Description="Preparing files for removal" DescriptionLocId="ActionText.Description.AI_AiRemoveFilesImmediate" Template="Preparing file: [1]" TemplateLocId="ActionText.Template.AI_AiRemoveFilesImmediate"/>
+    <ROW Action="AI_AiRemoveFilesRollback" Description="Restoring removed files" DescriptionLocId="ActionText.Description.AI_AiRemoveFilesRollback" Template="Restoring file: [1]" TemplateLocId="ActionText.Template.AI_AiRemoveFilesRollback"/>
     <ROW Action="AI_AiRemoveRegsCommit" Description="Executing registry removal operations." DescriptionLocId="ActionText.Description.AI_AiRemoveRegsCommit" Template="Removing registry entry: [1]" TemplateLocId="ActionText.Template.AI_AiRemoveRegsCommit"/>
     <ROW Action="AI_AiRemoveRegsCommitUser" Description="Executing registry removal operations." DescriptionLocId="ActionText.Description.AI_AiRemoveRegsCommit" Template="Removing registry entry: [1]" TemplateLocId="ActionText.Template.AI_AiRemoveRegsCommit"/>
     <ROW Action="AI_AiRemoveRegsDeferred" Description="Executing registry removal operations." DescriptionLocId="ActionText.Description.AI_AiRemoveRegsDeferred" Template="Removing registry entry: [1]" TemplateLocId="ActionText.Template.AI_AiRemoveRegsDeferred"/>
@@ -477,6 +487,11 @@
     <ROW Directory_="SHORTCUTDIR" Component_="SHORTCUTDIR" ManualDelete="false"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_AiRemoveFilesCommit" Type="11777" Source="ResourceCleaner.dll" Target="OnAiRemoveFilesCommit" WithoutSeq="true"/>
+    <ROW Action="AI_AiRemoveFilesDeferred_Permanent" Type="11265" Source="ResourceCleaner.dll" Target="OnAiRemoveFilesPermanent" WithoutSeq="true"/>
+    <ROW Action="AI_AiRemoveFilesDeferred_Undoable" Type="11265" Source="ResourceCleaner.dll" Target="OnAiRemoveFilesUndoable" WithoutSeq="true"/>
+    <ROW Action="AI_AiRemoveFilesImmediate" Type="1" Source="ResourceCleaner.dll" Target="OnAiRemoveFilesImmediate"/>
+    <ROW Action="AI_AiRemoveFilesRollback" Type="11521" Source="ResourceCleaner.dll" Target="OnAiUndoRemoveFiles"/>
     <ROW Action="AI_AiRemoveRegsCommit" Type="11777" Source="ResourceCleaner.dll" Target="OnAiRemoveRegs" WithoutSeq="true"/>
     <ROW Action="AI_AiRemoveRegsCommitUser" Type="9729" Source="ResourceCleaner.dll" Target="OnAiRemoveRegs" WithoutSeq="true"/>
     <ROW Action="AI_AiRemoveRegsDeferred" Type="11265" Source="ResourceCleaner.dll" Target="OnAiRemoveRegs" WithoutSeq="true"/>
@@ -585,6 +600,8 @@
     <ROW Action="AI_DATA_SETTER" Sequence="1398"/>
     <ROW Action="AI_AiRemoveRegsImmediate" Sequence="2599"/>
     <ROW Action="AI_PromptUserBasicUI" Condition="((REMOVE = &quot;ALL&quot;) AND (NOT UPGRADINGPRODUCTCODE))" Sequence="2501"/>
+    <ROW Action="AI_AiRemoveFilesImmediate" Sequence="3499"/>
+    <ROW Action="AI_AiRemoveFilesRollback" Sequence="3099"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
     <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
@@ -632,12 +649,15 @@
     <ROW Registry="VersionMajor" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="VersionMajor" Value="#1" Component_="AI_CustomARPName" VirtualValue="#"/>
     <ROW Registry="VersionMinor" Root="-1" Key="Software\Microsoft\Windows\CurrentVersion\Uninstall\[ProductName] [ProductVersion]" Name="VersionMinor" Value="#0" Component_="AI_CustomARPName" VirtualValue="#"/>
   </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRemoveFileComponent">
+    <ROW FileKey="_" Component_="gshhs_2.rim" DirProperty="NewFolder_1_Dir" InstallMode="2"/>
+  </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiRemoveRegComponent">
     <ROW RemoveRegistry="_" Root="1" Key="Software\[ProductName]" Name="-" Component_="Oceanroute.exe"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiShortsComponent">
     <ROW Shortcut="Oceanroute.exe" Directory_="SHORTCUTDIR" Name="OCEANR~1.EXE|Oceanroute.exe" Component_="Oceanroute.exe" Target="[#Oceanroute.exe]" Description="Oceanroute.exe" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
-    <ROW Shortcut="Oceanroute.exe_1" Directory_="DesktopFolder" Name="OCEANR~1.EXE|Oceanroute.exe" Component_="Oceanroute.exe" Target="[#Oceanroute.exe]" Description="Oceanroute.exe" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
+    <ROW Shortcut="Oceanroute.exe_1" Directory_="DesktopFolder" Name="OCEANR~1|Oceanroute" Component_="Oceanroute.exe" Target="[#Oceanroute.exe]" Description="Oceanroute.exe" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
     <ATTRIBUTE name="UsedTheme" value="surface"/>
