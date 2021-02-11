@@ -251,9 +251,9 @@ void MainWindow::connectSignals()
     connect(mb->acFile_Open, SIGNAL(triggered()), this, SLOT(slotFile_Open()));
     connect(mb->acFile_Close, SIGNAL(triggered()), this, SLOT(slotFile_Close()));
     connect(mb->acFile_NewInstance, SIGNAL(triggered()), this, SLOT(slotGenericAction()));
-    connect(mb->acFile_Load_GRIB, SIGNAL(triggered()), this, SLOT(slotFile_Load_GRIB()));
+    //connect(mb->acFile_Load_GRIB, SIGNAL(triggered()), this, SLOT(slotFile_Load_GRIB()));
 
-    connect(mb->acFile_GribServerStatus, SIGNAL(triggered()), this, SLOT(slotFile_GribServerStatus()));
+    //connect(mb->acFile_GribServerStatus, SIGNAL(triggered()), this, SLOT(slotFile_GribServerStatus()));
     connect(mb->acFile_Info_GRIB, SIGNAL(triggered()), this, SLOT(slotFile_Info_GRIB()));
 
 	connect(mb->acFile_Quit, SIGNAL(triggered()), this, SLOT(slotFile_Quit()));
@@ -399,7 +399,7 @@ mb->acMap_SelectMETARs->setVisible (false);	// TODO
             this,  SLOT(slotShowDateChooser(bool)));
     //-------------------------------------------------------
     connect(mb->acOptions_Units, SIGNAL(triggered()), dialogUnits, SLOT(exec()));
-    connect(mb->acOptions_Fonts, SIGNAL(triggered()), dialogFonts, SLOT(exec()));
+    //connect(mb->acOptions_Fonts, SIGNAL(triggered()), dialogFonts, SLOT(exec()));
     connect(dialogUnits, SIGNAL(accepted()), terre, SLOT(slotMustRedraw()));
     connect(dialogUnits, SIGNAL(accepted()), colorScaleWidget, SLOT(update()));
     connect(dialogUnits, SIGNAL(signalTimeZoneChanged()), this, SLOT(slotTimeZoneChanged()));
@@ -409,7 +409,7 @@ mb->acMap_SelectMETARs->setVisible (false);	// TODO
     connect(dialogGraphicsParams, SIGNAL(accepted()), terre, SLOT(updateGraphicsParameters()));
     connect(dialogGraphicsParams, SIGNAL(accepted()), this, SLOT(updateGraphicsParameters()));
 
-    connect(mb->acOptions_Proxy, SIGNAL(triggered()), dialogProxy, SLOT(exec()));
+    //connect(mb->acOptions_Proxy, SIGNAL(triggered()), dialogProxy, SLOT(exec()));
     connect(mb->acOptions_AngleConverter, SIGNAL(triggered()), this, SLOT(slotOpenAngleConverter()));
 
     connect(mb->acOptions_Language, SIGNAL(triggered()),
@@ -610,8 +610,8 @@ void MainWindow::createToolBar ()
     toolBar->addAction(menuBar->acMap_Go_Down);
     toolBar->addSeparator();
     toolBar->addWidget(menuBar->cbModelRect);
-    toolBar->addAction(menuBar->acFile_Load_GRIB);
-    toolBar->addAction(menuBar->acFile_GribServerStatus);
+    // toolBar->addAction(menuBar->acFile_Load_GRIB);
+    // toolBar->addAction(menuBar->acFile_GribServerStatus);
     toolBar->addAction(menuBar->acFile_Info_GRIB);
     toolBar->addSeparator();
     toolBar->addAction(menuBar->ac_CreateAnimation);

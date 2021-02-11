@@ -82,13 +82,13 @@ MenuBar::MenuBar (QWidget *parent, bool mbe)
         acFile_NewInstance = addAction (menuFile,
                     tr("New instance"), "Ctrl+Shift+N",
                     tr("Open a new Oceanroute instance"), "");
-        menuFile->addSeparator();
-        acFile_Load_GRIB = addAction (menuFile,
-                    tr("Download GRIB"), "Ctrl+D",
-                    tr("Download"), Util::pathImg("network.png"));
-        acFile_GribServerStatus = addAction (menuFile,
-                    tr("GRIB server status"), "Ctrl+R",
-                    tr("GRIB file server status"), Util::pathImg("connect_no.png"));
+        // menuFile->addSeparator();
+        // acFile_Load_GRIB = addAction (menuFile,
+        //             tr("Download GRIB"), "Ctrl+D",
+        //             tr("Download"), Util::pathImg("network.png"));
+        // acFile_GribServerStatus = addAction (menuFile,
+        //             tr("GRIB server status"), "Ctrl+R",
+        //             tr("GRIB file server status"), Util::pathImg("connect_no.png"));
 
         menuFile->addSeparator();
         acFile_Info_GRIB = addAction (menuFile,
@@ -403,7 +403,7 @@ MenuBar::MenuBar (QWidget *parent, bool mbe)
     //======================================================================
     menuOptions = new QMenu(tr("Options"));
     //======================================================================
-        acOptions_Proxy = addAction (menuOptions, tr("Internet parameters"),"","","");
+        //acOptions_Proxy = addAction (menuOptions, tr("Internet parameters"),"","","");
         acView_ShowBoardPanel = addActionCheck (menuOptions, tr("Show values panel"),
                     "Ctrl+V", tr("Show values panel"));
         acOptions_AngleConverter = addAction (menuOptions,
@@ -412,8 +412,8 @@ MenuBar::MenuBar (QWidget *parent, bool mbe)
 						tr("Date selector"), "", "");
         acOptions_Units = addAction (menuOptions,
                         tr("Units"), "Ctrl+U", "","");
-        acOptions_Fonts = addAction (menuOptions,
-                        tr("Fonts"), "Ctrl+E", "","");
+        //acOptions_Fonts = addAction (menuOptions,
+        //                tr("Fonts"), "Ctrl+E", "","");
         // for dark skin selection
         acOptions_DarkSkin = addActionCheck (menuOptions,
                         tr("Dark Skin"), "", "","");

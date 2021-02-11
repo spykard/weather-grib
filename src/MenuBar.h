@@ -88,9 +88,9 @@ public:
     QAction *acFile_Open;
     QAction *acFile_Close;
 	QAction *acFile_NewInstance;
-    QAction *acFile_Load_GRIB;
+    //QAction *acFile_Load_GRIB;
     
-    QAction *acFile_GribServerStatus;
+    //QAction *acFile_GribServerStatus;
     QAction *acFile_Info_GRIB;
     QAction *acFile_Quit;
 
@@ -300,11 +300,11 @@ public:
     QAction *acMap_Go_Up;
     QAction *acMap_Go_Down;
 
-    QAction *acOptions_Proxy;
+    //QAction *acOptions_Proxy;
     QAction *acOptions_AngleConverter;
     QAction *acOptions_Units;
     QAction *acOptions_DateChooser;
-    QAction *acOptions_Fonts;
+    //QAction *acOptions_Fonts;
     // for dark skin
     QAction *acOptions_DarkSkin;
 
