@@ -313,11 +313,11 @@ public:
 
     QAction *acHelp_Help;
     QAction *acHelp_APropos;
-    QAction *acCheckForUpdates;
+    //QAction *acCheckForUpdates;
 //#ifdef Q_OS_WIN
-    QAction *acRunMaintenanceTool;
+    //QAction *acRunMaintenanceTool;
 //#endif
-    QAction *acHelp_AProposQT;
+    //QAction *acHelp_AProposQT;
 
     //-------------------------------------
     // Autres objets de l'interface

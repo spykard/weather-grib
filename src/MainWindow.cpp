@@ -420,12 +420,12 @@ mb->acMap_SelectMETARs->setVisible (false);	// TODO
     //-------------------------------------------------------
     connect(mb->acHelp_Help, SIGNAL(triggered()), this, SLOT(slotHelp_Help()));
     connect(mb->acHelp_APropos, SIGNAL(triggered()), this, SLOT(slotHelp_APropos()));
-    connect(mb->acCheckForUpdates, SIGNAL(triggered()), this, SLOT(slotCheckForUpdates()));
+    //connect(mb->acCheckForUpdates, SIGNAL(triggered()), this, SLOT(slotCheckForUpdates()));
 
-    if (maintenanceToolLocation != "")
-        connect(mb->acRunMaintenanceTool, SIGNAL(triggered()), this, SLOT(slotRunMaintenanceTool()));
+    //if (maintenanceToolLocation != "")
+    //    connect(mb->acRunMaintenanceTool, SIGNAL(triggered()), this, SLOT(slotRunMaintenanceTool()));
 
-    connect(mb->acHelp_AProposQT, SIGNAL(triggered()), this, SLOT(slotHelp_AProposQT()));
+    //connect(mb->acHelp_AProposQT, SIGNAL(triggered()), this, SLOT(slotHelp_AProposQT()));
 
     //-------------------------------------
     // Autres objets de l'interface

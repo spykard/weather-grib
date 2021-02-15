@@ -434,13 +434,13 @@ MenuBar::MenuBar (QWidget *parent, bool mbe)
                         tr("Help"), "Ctrl+H",
         				"",Util::pathImg("help.png"));
         acHelp_APropos = addAction (menuHelp, tr("About Oceanroute"),"","","");
-        acCheckForUpdates = addAction (menuHelp, tr("Check for updates"),"","","");
+        //acCheckForUpdates = addAction (menuHelp, tr("Check for updates"),"","","");
 
-        if (maintenanceToolExists)
-            acRunMaintenanceTool = addAction (menuHelp, tr("Run Oceanroute Maintenance Tool"),"",
-                                          tr("To add, update or remove Oceanroute components"),"");
+        //if (maintenanceToolExists)
+        //    acRunMaintenanceTool = addAction (menuHelp, tr("Run Oceanroute Maintenance Tool"),"",
+        //                                  tr("To add, update or remove Oceanroute components"),"");
 
-        acHelp_AProposQT = addAction (menuHelp, tr("About Qt"),"","","");
+        //acHelp_AProposQT = addAction (menuHelp, tr("About Qt"),"","","");
 
     //======================================================================
     addMenu (menuFile);
