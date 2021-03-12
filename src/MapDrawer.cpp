@@ -129,7 +129,7 @@ void MapDrawer::initGraphicsParameters()
 //-------------------------------------------
 void MapDrawer::updateGraphicsParameters()
 {
-    backgroundColor  = Util::getSetting("backgroundColor", QColor(100,220,200)).value<QColor>();
+    backgroundColor  = Util::getSetting("backgroundColor", QColor(1,58,85)).value<QColor>();
     seaColor  = Util::getSetting("seaColor", QColor(255,255,255)).value<QColor>();
     landColor = Util::getSetting("landColor", QColor(217,217,217)).value<QColor>();
 
