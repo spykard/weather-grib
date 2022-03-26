@@ -1,5 +1,5 @@
 /**********************************************************************
-Oceanroute: meteorological GRIB file viewer
+Weathergrib: meteorological GRIB file viewer
 Copyright (C) 2008-2012 - Jacques Zaninetti - http://www.zygrib.org
 
 This program is free software: you can redistribute it and/or modify
@@ -480,7 +480,7 @@ mb->acMap_SelectMETARs->setVisible (false);	// TODO
 MainWindow::MainWindow (int w, int h, QWidget *parent)
     : QMainWindow (parent)
 {
-    setWindowIcon (QIcon (Util::pathImg("Oceanroute_32.xpm")));
+    setWindowIcon (QIcon (Util::pathImg("Weathergrib_32.xpm")));
 
     maintenanceToolLocation = findMaintenanceTool(); // needed before menubar creation as MaintenanceTool menu item is conditional
     menuBar = new MenuBar(this, (maintenanceToolLocation != ""));
@@ -1594,7 +1594,7 @@ void MainWindow::slotGroupLinesThetaE (QAction *ac)
 //-------------------------------------------------
 void MainWindow::slotHelp_Help() {
 
-    QString link = "https://www.oceanroute.com/apphelp";
+    QString link = "https://www.weathergrib.com/apphelp";
     QDesktopServices::openUrl(QUrl(link));
 
     return;
@@ -1602,7 +1602,7 @@ void MainWindow::slotHelp_Help() {
     QMessageBox::information (this,
             tr("Help"),
             tr("Help is available at")
-               +" https://www.oceanroute.com/apphelp"
+               +" https://www.weathergrib.com/apphelp"
                );
 
 }
@@ -1611,11 +1611,11 @@ void MainWindow::slotHelp_APropos()
 {
     QMessageBox::information (this,
             tr("About"),
-            tr("Oceanroute : Map visualization")
+            tr("Weathergrib : Map visualization")
             +"\n"+
             tr("Version : ")+Version::getVersion()
                     +"      "+Version::getDate()
-            +"\n"+ tr("https://www.oceanroute.com/")
+            +"\n"+ tr("https://www.weathergrib.com/")
         );
 }
 //-------------------------------------------------
@@ -1907,7 +1907,7 @@ void MainWindow::slotChangeSkin(bool b)
         Util::setSetting("showDarkSkin", false);
     }
     QMessageBox::information(this,tr("Change Skin"),
-                             tr("For skin change to take effect Oceanroute needs to be restarted"));
+                             tr("For skin change to take effect Weathergrib needs to be restarted"));
 
 }
 //-------------------------------------------------
@@ -2585,13 +2585,13 @@ void MainWindow::slotRunMaintenanceTool()
 
 //    DBGQS(maintenanceToolLocation);
 
-    QString question = tr("It is recommended to exit Oceanroute while running the Maintenance Tool. Do you wish to exit Oceanroute?");
-    res = QMessageBox::question(this,tr("Exit Oceanroute?"),question, QMessageBox::Yes, QMessageBox::No);
+    QString question = tr("It is recommended to exit Weathergrib while running the Maintenance Tool. Do you wish to exit Weathergrib?");
+    res = QMessageBox::question(this,tr("Exit Weathergrib?"),question, QMessageBox::Yes, QMessageBox::No);
 
     if (res == QMessageBox::Yes){  // user wishes to exit
         result = process.startDetached(maintenanceToolLocation);
         if (!result){
-            QMessageBox::warning(this,tr("Failure"), tr("Unable to find the Oceanroute Maintenance Tool. Please start it from the desktop facilities"));
+            QMessageBox::warning(this,tr("Failure"), tr("Unable to find the Weathergrib Maintenance Tool. Please start it from the desktop facilities"));
         } else {
             exit(0);
         }
@@ -2599,7 +2599,7 @@ void MainWindow::slotRunMaintenanceTool()
     } else { // user does not wish to exit
         result = process.startDetached(maintenanceToolLocation);
         if (!result){
-            QMessageBox::warning(this,tr("Failure"), tr("Unable to find the Oceanroute Maintenance Tool. Please start it from the desktop facilities"));
+            QMessageBox::warning(this,tr("Failure"), tr("Unable to find the Weathergrib Maintenance Tool. Please start it from the desktop facilities"));
         }
     }
 
@@ -2611,7 +2611,7 @@ QString MainWindow::findMaintenanceTool()
 {
     QString filepath = "";
 #ifdef Q_OS_WIN
-    filepath = "\"" + QCoreApplication::applicationDirPath() + "/OceanrouteMaintenanceTool.exe\"";
+    filepath = "\"" + QCoreApplication::applicationDirPath() + "/WeathergribMaintenanceTool.exe\"";
 #endif
 
 #ifdef Q_OS_MAC
@@ -2619,15 +2619,15 @@ QString MainWindow::findMaintenanceTool()
     path.cdUp();
     path.cdUp();
     path.cdUp();
-    filepath = path.absolutePath() + "/OceanrouteMaintenanceTool.app/Contents/MacOS/OceanrouteMaintenanceTool";
+    filepath = path.absolutePath() + "/WeathergribMaintenanceTool.app/Contents/MacOS/WeathergribMaintenanceTool";
 #endif
 
 #ifdef Q_OS_LINUX
     // there is an issue with AppImage builds as applicationDirPath returns a path inside the image container
     // ... so the install location on the outer file system needs to be searched
 
-    QStringList slist = {QCoreApplication::applicationDirPath(), "/opt/Oceanroute/", "~/bin/Oceanroute", "~/.local/Oceanroute", "/usr/local/Oceanroute",  "/usr/local/share/Oceanroute", "/usr/share/Oceanroute"};
-    filepath = QStandardPaths::findExecutable("OceanrouteMaintenanceTool", slist);
+    QStringList slist = {QCoreApplication::applicationDirPath(), "/opt/Weathergrib/", "~/bin/Weathergrib", "~/.local/Weathergrib", "/usr/local/Weathergrib",  "/usr/local/share/Weathergrib", "/usr/share/Weathergrib"};
+    filepath = QStandardPaths::findExecutable("WeathergribMaintenanceTool", slist);
 
 #endif
 //    DBGQS("Expected file path is: "+filepath);
@@ -2660,7 +2660,7 @@ void MainWindow::slotFinished()
 //#ifdef Q_OS_WIN
         mbox.setText(tr("A new version")+": "+newVer+" "
                      +tr("is available for update.")+"<br>"
-                     +tr("Please use the Oceanroute Maintenance Tool to upgrade. It can be activated from the Help Menu"));
+                     +tr("Please use the Weathergrib Maintenance Tool to upgrade. It can be activated from the Help Menu"));
 //#else
 //        mbox.setText(tr("A new version")+": "+newVer+" "
 //                     +tr("is available for update."));

@@ -1966,8 +1966,8 @@
     </message>
     <message>
         <location filename="../../src/DialogUnits.cpp" line="303"/>
-        <source>Current hour seen by oceanroute with those parameters :</source>
-        <translation>Текущее время было получено oceanroute с текущими значениями:</translation>
+        <source>Current hour seen by weathergrib with those parameters :</source>
+        <translation>Текущее время было получено weathergrib с текущими значениями:</translation>
     </message>
     <message>
         <location filename="../../src/DialogUnits.cpp" line="304"/>
@@ -2539,7 +2539,7 @@
     <message>
         <location filename="../../src/MainWindow.cpp" line="2532"/>
         <location filename="../../src/MainWindow.cpp" line="2540"/>
-        <source>Unable to find the Oceanroute Maintenance Tool. Please start it from the desktop facilities</source>
+        <source>Unable to find the Weathergrib Maintenance Tool. Please start it from the desktop facilities</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2569,7 +2569,7 @@
     </message>
     <message>
         <location filename="../../src/MainWindow.cpp" line="1556"/>
-        <source>Oceanroute : GRIB files visualization</source>
+        <source>Weathergrib : GRIB files visualization</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2610,7 +2610,7 @@
     </message>
     <message>
         <location filename="../../src/MainWindow.cpp" line="1853"/>
-        <source>For skin change to take effect Oceanroute needs to be restarted</source>
+        <source>For skin change to take effect Weathergrib needs to be restarted</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2636,12 +2636,12 @@
     </message>
     <message>
         <location filename="../../src/MainWindow.cpp" line="2526"/>
-        <source>It is recommended to exit Oceanroute while running the Maintenance Tool. Do you wish to exit Oceanroute?</source>
+        <source>It is recommended to exit Weathergrib while running the Maintenance Tool. Do you wish to exit Weathergrib?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../src/MainWindow.cpp" line="2527"/>
-        <source>Exit Oceanroute?</source>
+        <source>Exit Weathergrib?</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2661,7 +2661,7 @@
     </message>
     <message>
         <location filename="../../src/MainWindow.cpp" line="2601"/>
-        <source>Please use the Oceanroute Maintenance Tool to upgrade. It can be activated from the Help Menu</source>
+        <source>Please use the Weathergrib Maintenance Tool to upgrade. It can be activated from the Help Menu</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -2774,7 +2774,7 @@
     </message>
     <message>
         <location filename="../../src/MapDrawer.cpp" line="798"/>
-        <source>Oceanroute</source>
+        <source>Weathergrib</source>
         <translation type="unfinished"></translation>
     </message>
 </context>
@@ -2811,8 +2811,8 @@
     </message>
     <message>
         <location filename="../../src/MenuBar.cpp" line="84"/>
-        <source>Open a new Oceanroute instance</source>
-        <translation>Открыть ещё один экземпляр Oceanroute</translation>
+        <source>Open a new Weathergrib instance</source>
+        <translation>Открыть ещё один экземпляр Weathergrib</translation>
     </message>
     <message>
         <location filename="../../src/MenuBar.cpp" line="87"/>
@@ -3505,8 +3505,8 @@
     </message>
     <message>
         <location filename="../../src/MenuBar.cpp" line="298"/>
-        <source>Oceanroute</source>
-        <translation>Oceanroute</translation>
+        <source>Weathergrib</source>
+        <translation>Weathergrib</translation>
     </message>
     <message>
         <location filename="../../src/MenuBar.cpp" line="299"/>
@@ -3792,7 +3792,7 @@
     </message>
     <message>
         <location filename="../../src/MenuBar.cpp" line="432"/>
-        <source>About Oceanroute</source>
+        <source>About Weathergrib</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3802,12 +3802,12 @@
     </message>
     <message>
         <location filename="../../src/MenuBar.cpp" line="436"/>
-        <source>Run Oceanroute Maintenance Tool</source>
+        <source>Run Weathergrib Maintenance Tool</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../../src/MenuBar.cpp" line="437"/>
-        <source>To add, update or remove Oceanroute components</source>
+        <source>To add, update or remove Weathergrib components</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

@@ -1,5 +1,5 @@
 /**********************************************************************
-Oceanroute: meteorological GRIB file viewer
+Weathergrib: meteorological GRIB file viewer
 Copyright (C) 2008-2012 - Jacques Zaninetti - http://www.zygrib.org
 
 This program is free software: you can redistribute it and/or modify
@@ -380,7 +380,7 @@ GribAnimator::GribAnimator (Terrain *terre)
 	setModal(false);
 	setAttribute(Qt::WA_DeleteOnClose);
     setWindowTitle(tr("Animation"));
-    setWindowIcon (QIcon (Util::pathImg("Oceanroute_32.xpm")));
+    setWindowIcon (QIcon (Util::pathImg("Weathergrib_32.xpm")));
     if (Util::getSetting("showDarkSkin", true).toBool())
         this->setStyleSheet(animStyleSheet);
 

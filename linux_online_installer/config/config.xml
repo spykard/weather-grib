@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Installer>
-    <Name>Oceanroute</Name>
+    <Name>Weathergrib</Name>
     <Version>2.3.0</Version>
-    <Title>Oceanroute</Title>
+    <Title>Weathergrib</Title>
     <Publisher>S+S</Publisher>
-	<ProductUrl>https://opengribs.org/en/oceanroute</ProductUrl>
-	<StartMenuDir>Oceanroute</StartMenuDir>
-    <TargetDir>@ApplicationsDir@/Oceanroute</TargetDir>
-	<RunProgram>@ApplicationsDirX86@/Oceanroute/Oceanroute.AppImage</RunProgram>
-	<MaintenanceToolName>OceanrouteMaintenanceTool</MaintenanceToolName>
+	<ProductUrl>https://opengribs.org/en/weathergrib</ProductUrl>
+	<StartMenuDir>Weathergrib</StartMenuDir>
+    <TargetDir>@ApplicationsDir@/Weathergrib</TargetDir>
+	<RunProgram>@ApplicationsDirX86@/Weathergrib/Weathergrib.AppImage</RunProgram>
+	<MaintenanceToolName>WeathergribMaintenanceTool</MaintenanceToolName>
 	<WizardStyle>Modern</WizardStyle>
-	<Logo>Oceanroute_32.png</Logo>
+	<Logo>Weathergrib_32.png</Logo>
 	<WizardDefaultWidth>620</WizardDefaultWidth>
 	<InstallActionColumnVisible>true</InstallActionColumnVisible>
-	<InstallerApplicationIcon>Oceanroute_32</InstallerApplicationIcon>
-	<InstallerWindowIcon>Oceanroute_32</InstallerWindowIcon>
+	<InstallerApplicationIcon>Weathergrib_32</InstallerApplicationIcon>
+	<InstallerWindowIcon>Weathergrib_32</InstallerWindowIcon>
 	<RemoteRepositories>
 	<Repository>
 		<Url>https://opengribs.org/repository/linux</Url>

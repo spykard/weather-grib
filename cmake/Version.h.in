@@ -1,5 +1,5 @@
 /**********************************************************************
-Oceanroute: meteorological GRIB file viewer
+Weathergrib: meteorological GRIB file viewer
 Copyright (C) 2008-2012 - Jacques Zaninetti - http://www.zygrib.org
 
 This program is free software: you can redistribute it and/or modify
@@ -21,15 +21,15 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 // TODO - need to clean up this file
 
-#define OCEANROUTE_VERSION_NUM   "${OCEANROUTE_VERSION}"
-#define OCEANROUTE_VERSION_DATE  "${OCEANROUTE_VERSION_DATE}"
+#define WEATHERGRIB_VERSION_NUM   "${WEATHERGRIB_VERSION}"
+#define WEATHERGRIB_VERSION_DATE  "${WEATHERGRIB_VERSION_DATE}"
 
 #if defined(Q_OS_WIN32)
-    #define OCEANROUTE_APP_NAME   "Oceanroute_win"
+    #define WEATHERGRIB_APP_NAME   "Weathergrib_win"
 #elif defined(Q_OS_MAC)
-    #define OCEANROUTE_APP_NAME   "Oceanroute_mac"
+    #define WEATHERGRIB_APP_NAME   "Weathergrib_mac"
 #else
-    #define OCEANROUTE_APP_NAME   "Oceanroute_unx"
+    #define WEATHERGRIB_APP_NAME   "Weathergrib_unx"
 #endif
 
 // kept for backward compatibility with zGrib
@@ -50,16 +50,16 @@ class Version {
 
     public:
         static QString getVersion() {
-            return QString(OCEANROUTE_VERSION_NUM);
+            return QString(WEATHERGRIB_VERSION_NUM);
         }
         static QString getAppName() {
-            return QString(OCEANROUTE_APP_NAME);
+            return QString(WEATHERGRIB_APP_NAME);
         }
         static QString getDate() {
-            return QString(OCEANROUTE_VERSION_DATE);
+            return QString(WEATHERGRIB_VERSION_DATE);
         }
         static QString getShortName() {
-            return QString( "Oceanroute - "+getVersion() );
+            return QString( "Weathergrib - "+getVersion() );
         }
         static QString getCompleteName() {
             return QString( getAppName()+"-"+getVersion() );

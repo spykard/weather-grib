@@ -8,16 +8,16 @@
 #		-- linux_online_installer					(structure as copied from the repository clone)
 #				-- config
 #				-- packages
-#						-- org.opengribs.oceanroute.core.linux	
-#								-- data 		(copy the Oceanroute.AppImage, LICENSE & README.md to here)
+#						-- org.opengribs.weathergrib.core.linux	
+#								-- data 		(copy the Weathergrib.AppImage, LICENSE & README.md to here)
 #										--icons
-#												Oceanroute.ico
-#												Oceanroute.png				
+#												Weathergrib.ico
+#												Weathergrib.png				
 #								-- meta
-#						-- org.opengribs.oceanroute.data	
-#								-- data			(latest Oceanroute 'data' structure should be copied here under 'data' 2x data !)
+#						-- org.opengribs.weathergrib.data	
+#								-- data			(latest Weathergrib 'data' structure should be copied here under 'data' 2x data !)
 #								-- meta
-#						-- org.opengribs.oceanroute.maps
+#						-- org.opengribs.weathergrib.maps
 #								-- data			(hires map 'data' structure should be copied here under 'data' 2x data !)
 #								-- meta
 #				-- repository
@@ -33,12 +33,12 @@ XVER="2.3.0"
 cd linux_online_installer
 
 ## check that the AppImage exits and executable bit is set
-if [ ! -f "packages/org.opengribs.oceanroute.core.linux/data/Oceanroute.AppImage" ]; then
-	echo "Oceanroute.AppImage is not in the core data folder, can't continue"
+if [ ! -f "packages/org.opengribs.weathergrib.core.linux/data/Weathergrib.AppImage" ]; then
+	echo "Weathergrib.AppImage is not in the core data folder, can't continue"
 	exit 1
 fi
 
-chmod a+x packages/org.opengribs.oceanroute.core.linux/data/Oceanroute.AppImage
+chmod a+x packages/org.opengribs.weathergrib.core.linux/data/Weathergrib.AppImage
 
 ## build the repository which should be empty (new one each time)
 if which repogen >/dev/null; then
@@ -68,11 +68,11 @@ if [ -z "$BINARYCREATOR" ]; then
   echo "Tool binarycreator not found, can't continue"
   exit 1
 fi
-$BINARYCREATOR --online-only -v -c config/config.xml -p packages Oceanroute_Linux_Online_Installer_v$XVER
-$BINARYCREATOR -v -c config/config.xml -p packages -e org.opengribs.oceanroute.maps Oceanroute_Linux_Offline_Installer_v$XVER
-$BINARYCREATOR -v --offline-only -c config/config.xml -p packages  Oceanroute_Linux_Testing_Installer_v$XVER
-tar -cvzf Oceanroute_Linux_Online_Installer_v$XVER.tgz Oceanroute_Linux_Online_Installer_v$XVER
-tar -cvzf Oceanroute_Linux_Offline_Installer_v$XVER.tgz Oceanroute_Linux_Offline_Installer_v$XVER
-tar -cvzf Oceanroute_Linux_Testing_Installer_v$XVER.tgz Oceanroute_Linux_Testing_Installer_v$XVER
+$BINARYCREATOR --online-only -v -c config/config.xml -p packages Weathergrib_Linux_Online_Installer_v$XVER
+$BINARYCREATOR -v -c config/config.xml -p packages -e org.opengribs.weathergrib.maps Weathergrib_Linux_Offline_Installer_v$XVER
+$BINARYCREATOR -v --offline-only -c config/config.xml -p packages  Weathergrib_Linux_Testing_Installer_v$XVER
+tar -cvzf Weathergrib_Linux_Online_Installer_v$XVER.tgz Weathergrib_Linux_Online_Installer_v$XVER
+tar -cvzf Weathergrib_Linux_Offline_Installer_v$XVER.tgz Weathergrib_Linux_Offline_Installer_v$XVER
+tar -cvzf Weathergrib_Linux_Testing_Installer_v$XVER.tgz Weathergrib_Linux_Testing_Installer_v$XVER
 
 echo "++++ All Done ++++"

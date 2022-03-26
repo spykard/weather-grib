@@ -1510,8 +1510,8 @@
         <translation></translation>
     </message>
     <message>
-        <source>Current hour seen by oceanroute with those parameters :</source>
-        <translation>Tijd die Oceanroute gebruikt:</translation>
+        <source>Current hour seen by weathergrib with those parameters :</source>
+        <translation>Tijd die Weathergrib gebruikt:</translation>
     </message>
 </context>
 <context>
@@ -2003,16 +2003,16 @@
         <translation>Hulp is beschikbaar op</translation>
     </message>
     <message>
-        <source>Oceanroute : GRIB files visualization</source>
-        <translation>Oceanroute: Gribfile Viewer</translation>
+        <source>Weathergrib : GRIB files visualization</source>
+        <translation>Weathergrib: Gribfile Viewer</translation>
     </message>
     <message>
         <source>Change Skin</source>
         <translation>Verander het uiterlijk</translation>
     </message>
     <message>
-        <source>For skin change to take effect Oceanroute needs to be restarted</source>
-        <translation>Start Oceanroute opnieuw op om het uiterlijk van het programma aan te passen...</translation>
+        <source>For skin change to take effect Weathergrib needs to be restarted</source>
+        <translation>Start Weathergrib opnieuw op om het uiterlijk van het programma aan te passen...</translation>
     </message>
     <message>
         <source>An updated version is available</source>
@@ -2047,27 +2047,27 @@
         <translation>Mislukt</translation>
     </message>
     <message>
-        <source>It is recommended to exit Oceanroute while running the Maintenance Tool. Do you wish to exit Oceanroute?</source>
-        <translation>Het is aan te raden om Oceanroute af te sluiten voor je onderhoud pleegt. Wil je Oceanroute afsluiten?</translation>
+        <source>It is recommended to exit Weathergrib while running the Maintenance Tool. Do you wish to exit Weathergrib?</source>
+        <translation>Het is aan te raden om Weathergrib af te sluiten voor je onderhoud pleegt. Wil je Weathergrib afsluiten?</translation>
     </message>
     <message>
-        <source>Exit Oceanroute?</source>
-        <translation>Oceanroute afsluiten?</translation>
+        <source>Exit Weathergrib?</source>
+        <translation>Weathergrib afsluiten?</translation>
     </message>
     <message>
         <source>is available for update.</source>
         <translation>is beschikbaar voor een update</translation>
     </message>
     <message>
-        <source>Please use the Oceanroute Maintenance Tool to upgrade. It can be activated from the Help Menu</source>
-        <translation>Gebruik het Oceanroute onderhoudsprogramma om te upgraden. Je vindt het in het Help menu</translation>
+        <source>Please use the Weathergrib Maintenance Tool to upgrade. It can be activated from the Help Menu</source>
+        <translation>Gebruik het Weathergrib onderhoudsprogramma om te upgraden. Je vindt het in het Help menu</translation>
     </message>
     <message>
         <source>Available data :</source>
         <translation>Beschikbare data :</translation>
     </message>
     <message>
-        <source>Unable to find the Oceanroute Maintenance Tool. Please start it from the desktop facilities</source>
+        <source>Unable to find the Weathergrib Maintenance Tool. Please start it from the desktop facilities</source>
         <translation>Het onderhoudsprogramma is niet gevonden. Voer de update handmatig uit. </translation>
     </message>
 </context>
@@ -2114,7 +2114,7 @@
         <translation>Theta-e</translation>
     </message>
     <message>
-        <source>Oceanroute</source>
+        <source>Weathergrib</source>
         <translation></translation>
     </message>
     <message>
@@ -2517,8 +2517,8 @@
         <translation>Maak een animatie van de gribdata</translation>
     </message>
     <message>
-        <source>Oceanroute</source>
-        <translation>Oceanroute</translation>
+        <source>Weathergrib</source>
+        <translation>Weathergrib</translation>
     </message>
     <message>
         <source>Cloud cover</source>
@@ -2949,8 +2949,8 @@
         <translation>Jet Stream kleuren</translation>
     </message>
     <message>
-        <source>Open a new Oceanroute instance</source>
-        <translation>Open een nieuwe Oceanroute sessie</translation>
+        <source>Open a new Weathergrib instance</source>
+        <translation>Open een nieuwe Weathergrib sessie</translation>
     </message>
     <message>
         <source>Reflectivity</source>
@@ -2958,11 +2958,11 @@
     </message>
     <message>
         <source>Dark Skin</source>
-        <translation>Donker interface Oceanroute</translation>
+        <translation>Donker interface Weathergrib</translation>
     </message>
     <message>
-        <source>About Oceanroute</source>
-        <translation>Over Oceanroute</translation>
+        <source>About Weathergrib</source>
+        <translation>Over Weathergrib</translation>
     </message>
     <message>
         <source>Check for updates</source>
@@ -2981,12 +2981,12 @@
         <translation>Klik om te selecteren</translation>
     </message>
     <message>
-        <source>Run Oceanroute Maintenance Tool</source>
-        <translation>Gebruik het Oceanroute onderhoudsprogramma</translation>
+        <source>Run Weathergrib Maintenance Tool</source>
+        <translation>Gebruik het Weathergrib onderhoudsprogramma</translation>
     </message>
     <message>
-        <source>To add, update or remove Oceanroute components</source>
-        <translation>Toevoegen, updaten of verwijderen van Oceanroute componenten</translation>
+        <source>To add, update or remove Weathergrib components</source>
+        <translation>Toevoegen, updaten of verwijderen van Weathergrib componenten</translation>
     </message>
     <message>
         <source>Weather Options</source>

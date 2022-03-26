@@ -36,7 +36,7 @@ Component.prototype.createOperationsForArchive = function(archive)
     // component.createOperationsForArchive(archive);
 
 	// add an extract operation with a modified path
-	var macfolder = "@HomeDir@/Library/Application Support/Oceanroute";
+	var macfolder = "@HomeDir@/Library/Application Support/Weathergrib";
     component.addOperation("Extract", archive, macfolder);
 
 }

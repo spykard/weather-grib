@@ -4,7 +4,7 @@ add_subdirectory(GUI)
 add_subdirectory(util)
 add_subdirectory(map)
 
-set(OCEANROUTE_HDRS
+set(WEATHERGRIB_HDRS
 Astro.h
 BoardPanel.h
 ColorScale.h
@@ -56,7 +56,7 @@ Therm.h
 #Version.h
 )
 
-set(OCEANROUTE_SRCS
+set(WEATHERGRIB_SRCS
 Astro.cpp
 BoardPanel.cpp
 ColorScale.cpp
@@ -103,12 +103,12 @@ Therm.cpp
 main.cpp
 )
 IF(WIN32)
-  SET(OCEANROUTE_SRCS ${OCEANROUTE_SRCS} ../data/img/resource.rc)
+  SET(WEATHERGRIB_SRCS ${WEATHERGRIB_SRCS} ../data/img/resource.rc)
 ENDIF()
 
-qt5_wrap_cpp(oceanroute_mocs ${OCEANROUTE_SRCS} ${OCEANROUTE_HDRS})
+qt5_wrap_cpp(weathergrib_mocs ${WEATHERGRIB_SRCS} ${WEATHERGRIB_HDRS})
 
-add_executable(${CMAKE_PROJECT_NAME} WIN32 MACOSX_BUNDLE ${OCEANROUTE_SRCS} ${oceanroute_mocs})
+add_executable(${CMAKE_PROJECT_NAME} WIN32 MACOSX_BUNDLE ${WEATHERGRIB_SRCS} ${weathergrib_mocs})
 
 install(TARGETS
     ${CMAKE_PROJECT_NAME}

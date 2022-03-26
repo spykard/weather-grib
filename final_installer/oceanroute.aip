@@ -8,20 +8,20 @@
     <ROW Property="AI_CLEAN_RESOURCES_USER_PROMPT_FULL_UI" Value="1"/>
     <ROW Property="AI_EXTERNALUIUNINSTALLERNAME" MultiBuildValue="DefaultBuild:aiui"/>
     <ROW Property="AI_FINDEXE_TITLE" Value="Select the installation package for [|ProductName]" ValueLocId="AI.Property.FindExeTitle"/>
-    <ROW Property="AI_PRODUCTNAME_ARP" Value="Oceanroute"/>
+    <ROW Property="AI_PRODUCTNAME_ARP" Value="Weathergrib"/>
     <ROW Property="AI_SERVAL_TYPE" Value="0"/>
     <ROW Property="AI_UNINSTALLER" Value="msiexec.exe"/>
     <ROW Property="ALLUSERS" Value="1"/>
     <ROW Property="ARPCOMMENTS" Value="This installer database contains the logic and data required to install [|ProductName]." ValueLocId="*"/>
     <ROW Property="ARPNOREPAIR" Value="1" MultiBuildValue="DefaultBuild:1"/>
-    <ROW Property="ARPPRODUCTICON" Value="Oceanroute_32_1.exe" Type="8"/>
+    <ROW Property="ARPPRODUCTICON" Value="Weathergrib_32_1.exe" Type="8"/>
     <ROW Property="ARPSYSTEMCOMPONENT" Value="1"/>
     <ROW Property="CTRLS" Value="2"/>
-    <ROW Property="Manufacturer" Value="Oceanroute"/>
+    <ROW Property="Manufacturer" Value="Weathergrib"/>
     <ROW Property="PIDTemplate" Value="&lt;####-####-####-####&gt;"/>
     <ROW Property="ProductCode" Value="1032:{F23DA66C-02F8-4441-BE96-C28BE71DAAB2} 1033:{F23DA66C-02F8-4441-BE96-C28BE71DAAB2} " Type="16"/>
     <ROW Property="ProductLanguage" Value="1033"/>
-    <ROW Property="ProductName" Value="Oceanroute"/>
+    <ROW Property="ProductName" Value="Weathergrib"/>
     <ROW Property="ProductVersion" Value="2.3.2" Type="32"/>
     <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND;AI_SETUPEXEPATH;SETUPEXEDIR"/>
     <ROW Property="UpgradeCode" Value="{E7C8D1A4-AC59-413F-A3DD-AEBA99A7997F}"/>
@@ -38,7 +38,7 @@
     <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1"/>
     <ROW Directory="DesktopFolder" Directory_Parent="TARGETDIR" DefaultDir="DESKTO~1|DesktopFolder" IsPseudoRoot="1"/>
     <ROW Directory="LocalAppDataFolder" Directory_Parent="TARGETDIR" DefaultDir="LOCALA~1|LocalAppDataFolder" IsPseudoRoot="1"/>
-    <ROW Directory="NewFolder_1_Dir" Directory_Parent="LocalAppDataFolder" DefaultDir="OCEANR~1|Oceanroute"/>
+    <ROW Directory="NewFolder_1_Dir" Directory_Parent="LocalAppDataFolder" DefaultDir="OCEANR~1|Weathergrib"/>
     <ROW Directory="SHORTCUTDIR" Directory_Parent="TARGETDIR" DefaultDir="SHORTC~1|SHORTCUTDIR" IsPseudoRoot="1"/>
     <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
     <ROW Directory="bearer_Dir" Directory_Parent="APPDIR" DefaultDir="bearer"/>
@@ -63,7 +63,7 @@
     <ROW Component="APPDIR" ComponentId="{54F66978-AF6A-4F57-A438-689E3B222C81}" Directory_="APPDIR" Attributes="0"/>
     <ROW Component="AUTHORS" ComponentId="{1DD0F468-8685-4D6C-BA08-FEF50E386A16}" Directory_="liberationfonts_Dir" Attributes="0" KeyPath="AUTHORS" Type="0"/>
     <ROW Component="CMakeLists.txt" ComponentId="{0BA7FD3C-6C57-41A0-932B-6F2200C79886}" Directory_="tr_Dir" Attributes="0" KeyPath="CMakeLists.txt" Type="0"/>
-    <ROW Component="Oceanroute.exe" ComponentId="{505572BD-A0C0-4BA4-84D4-1829EBE8FBC1}" Directory_="APPDIR" Attributes="0" KeyPath="Oceanroute.exe"/>
+    <ROW Component="Weathergrib.exe" ComponentId="{505572BD-A0C0-4BA4-84D4-1829EBE8FBC1}" Directory_="APPDIR" Attributes="0" KeyPath="Weathergrib.exe"/>
     <ROW Component="ProductInformation" ComponentId="{B1D277FF-DC60-4E88-8111-E71670B56F8A}" Directory_="APPDIR" Attributes="4" KeyPath="Version"/>
     <ROW Component="Qt5Core.dll" ComponentId="{2FB96194-571E-4FC4-9A5C-E57A08CCF6B6}" Directory_="APPDIR" Attributes="0" KeyPath="Qt5Core.dll"/>
     <ROW Component="Qt5Gui.dll" ComponentId="{3347F7D5-FFEF-4C47-88D4-9C1948520375}" Directory_="APPDIR" Attributes="0" KeyPath="Qt5Gui.dll"/>
@@ -107,7 +107,7 @@
     <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
-    <ROW File="Oceanroute.exe" Component_="Oceanroute.exe" FileName="OCEANR~1.EXE|Oceanroute.exe" Attributes="0" SourcePath="C:\Users\S\Desktop\finalclient\Oceanroute.exe" SelfReg="false" DigSign="true"/>
+    <ROW File="Weathergrib.exe" Component_="Weathergrib.exe" FileName="OCEANR~1.EXE|Weathergrib.exe" Attributes="0" SourcePath="C:\Users\S\Desktop\finalclient\Weathergrib.exe" SelfReg="false" DigSign="true"/>
     <ROW File="d3dcompiler_47.dll" Component_="d3dcompiler_47.dll" FileName="D3DCOM~1.DLL|d3dcompiler_47.dll" Attributes="0" SourcePath="C:\Users\S\Desktop\finalclient\d3dcompiler_47.dll" SelfReg="false"/>
     <ROW File="libEGL.dll" Component_="libEGL.dll" FileName="libEGL.dll" Attributes="0" SourcePath="C:\Users\S\Desktop\finalclient\libEGL.dll" SelfReg="false"/>
     <ROW File="libgcc_s_dw21.dll" Component_="libgcc_s_dw21.dll" FileName="LIBGCC~1.DLL|libgcc_s_dw2-1.dll" Attributes="0" SourcePath="C:\Users\S\Desktop\finalclient\libgcc_s_dw2-1.dll" SelfReg="false"/>
@@ -203,10 +203,10 @@
     <ROW File="mediafloppy.png" Component_="leftarrow.png" FileName="MEDIA-~1.PNG|media-floppy.png" Attributes="0" SourcePath="C:\Users\S\Desktop\finalclient\data\img\media-floppy.png" SelfReg="false"/>
     <ROW File="meteoblue.png" Component_="leftarrow.png" FileName="METEOB~1.PNG|meteoblue.png" Attributes="0" SourcePath="C:\Users\S\Desktop\finalclient\data\img\meteoblue.png" SelfReg="false"/>
     <ROW File="network.png" Component_="leftarrow.png" FileName="network.png" Attributes="0" SourcePath="C:\Users\S\Desktop\finalclient\data\img\network.png" SelfReg="false"/>
-    <ROW File="OceanRoute.bak.icns" Component_="leftarrow.png" FileName="OCEANR~1.ICN|OceanRoute.bak.icns" Attributes="0" SourcePath="C:\Users\S\Desktop\finalclient\data\img\OceanRoute.bak.icns" SelfReg="false"/>
-    <ROW File="OceanRoute.icns" Component_="leftarrow.png" FileName="OCEANR~2.ICN|OceanRoute.icns" Attributes="0" SourcePath="C:\Users\S\Desktop\finalclient\data\img\OceanRoute.icns" SelfReg="false"/>
-    <ROW File="OceanRoute_32.ico" Component_="leftarrow.png" FileName="OCEANR~1.ICO|OceanRoute_32.ico" Attributes="0" SourcePath="C:\Users\S\Desktop\finalclient\data\img\OceanRoute_32.ico" SelfReg="false"/>
-    <ROW File="OceanRoute_32.xpm" Component_="leftarrow.png" FileName="OCEANR~1.XPM|OceanRoute_32.xpm" Attributes="0" SourcePath="C:\Users\S\Desktop\finalclient\data\img\OceanRoute_32.xpm" SelfReg="false"/>
+    <ROW File="WeatherGrib.bak.icns" Component_="leftarrow.png" FileName="OCEANR~1.ICN|WeatherGrib.bak.icns" Attributes="0" SourcePath="C:\Users\S\Desktop\finalclient\data\img\WeatherGrib.bak.icns" SelfReg="false"/>
+    <ROW File="WeatherGrib.icns" Component_="leftarrow.png" FileName="OCEANR~2.ICN|WeatherGrib.icns" Attributes="0" SourcePath="C:\Users\S\Desktop\finalclient\data\img\WeatherGrib.icns" SelfReg="false"/>
+    <ROW File="WeatherGrib_32.ico" Component_="leftarrow.png" FileName="OCEANR~1.ICO|WeatherGrib_32.ico" Attributes="0" SourcePath="C:\Users\S\Desktop\finalclient\data\img\WeatherGrib_32.ico" SelfReg="false"/>
+    <ROW File="WeatherGrib_32.xpm" Component_="leftarrow.png" FileName="OCEANR~1.XPM|WeatherGrib_32.xpm" Attributes="0" SourcePath="C:\Users\S\Desktop\finalclient\data\img\WeatherGrib_32.xpm" SelfReg="false"/>
     <ROW File="player_eject.png" Component_="leftarrow.png" FileName="PLAYER~1.PNG|player_eject.png" Attributes="0" SourcePath="C:\Users\S\Desktop\finalclient\data\img\player_eject.png" SelfReg="false"/>
     <ROW File="player_end.png" Component_="leftarrow.png" FileName="PLAYER~2.PNG|player_end.png" Attributes="0" SourcePath="C:\Users\S\Desktop\finalclient\data\img\player_end.png" SelfReg="false"/>
     <ROW File="player_fwd.png" Component_="leftarrow.png" FileName="PLAYER~3.PNG|player_fwd.png" Attributes="0" SourcePath="C:\Users\S\Desktop\finalclient\data\img\player_fwd.png" SelfReg="false"/>
@@ -245,30 +245,30 @@
     <ROW File="wdb_rivers_i.b" Component_="gshhs_2.rim" FileName="WDB_RI~2.B|wdb_rivers_i.b" Attributes="0" SourcePath="C:\Users\S\Desktop\finalclient\data\maps\gshhs\wdb_rivers_i.b" SelfReg="false"/>
     <ROW File="wdb_rivers_l.b" Component_="gshhs_2.rim" FileName="WDB_RI~3.B|wdb_rivers_l.b" Attributes="0" SourcePath="C:\Users\S\Desktop\finalclient\data\maps\gshhs\wdb_rivers_l.b" SelfReg="false"/>
     <ROW File="CMakeLists.txt" Component_="CMakeLists.txt" FileName="CMAKEL~1.TXT|CMakeLists.txt" Attributes="0" SourcePath="C:\Users\S\Desktop\finalclient\data\tr\CMakeLists.txt" SelfReg="false"/>
-    <ROW File="OceanRoute_ar.qm" Component_="CMakeLists.txt" FileName="OCEANR~1.QM|OceanRoute_ar.qm" Attributes="0" SourcePath="C:\Users\S\Desktop\finalclient\data\tr\OceanRoute_ar.qm" SelfReg="false"/>
-    <ROW File="OceanRoute_ar.ts" Component_="CMakeLists.txt" FileName="OCEANR~1.TS|OceanRoute_ar.ts" Attributes="0" SourcePath="C:\Users\S\Desktop\finalclient\data\tr\OceanRoute_ar.ts" SelfReg="false"/>
-    <ROW File="OceanRoute_cz.qm" Component_="CMakeLists.txt" FileName="OCEANR~2.QM|OceanRoute_cz.qm" Attributes="0" SourcePath="C:\Users\S\Desktop\finalclient\data\tr\OceanRoute_cz.qm" SelfReg="false"/>
-    <ROW File="OceanRoute_cz.ts" Component_="CMakeLists.txt" FileName="OCEANR~2.TS|OceanRoute_cz.ts" Attributes="0" SourcePath="C:\Users\S\Desktop\finalclient\data\tr\OceanRoute_cz.ts" SelfReg="false"/>
-    <ROW File="OceanRoute_de.qm" Component_="CMakeLists.txt" FileName="OCEANR~3.QM|OceanRoute_de.qm" Attributes="0" SourcePath="C:\Users\S\Desktop\finalclient\data\tr\OceanRoute_de.qm" SelfReg="false"/>
-    <ROW File="OceanRoute_de.ts" Component_="CMakeLists.txt" FileName="OCEANR~3.TS|OceanRoute_de.ts" Attributes="0" SourcePath="C:\Users\S\Desktop\finalclient\data\tr\OceanRoute_de.ts" SelfReg="false"/>
-    <ROW File="OceanRoute_es.qm" Component_="CMakeLists.txt" FileName="OCEANR~4.QM|OceanRoute_es.qm" Attributes="0" SourcePath="C:\Users\S\Desktop\finalclient\data\tr\OceanRoute_es.qm" SelfReg="false"/>
-    <ROW File="OceanRoute_es.ts" Component_="CMakeLists.txt" FileName="OCEANR~4.TS|OceanRoute_es.ts" Attributes="0" SourcePath="C:\Users\S\Desktop\finalclient\data\tr\OceanRoute_es.ts" SelfReg="false"/>
-    <ROW File="OceanRoute_fi.qm" Component_="CMakeLists.txt" FileName="OCEANR~5.QM|OceanRoute_fi.qm" Attributes="0" SourcePath="C:\Users\S\Desktop\finalclient\data\tr\OceanRoute_fi.qm" SelfReg="false"/>
-    <ROW File="OceanRoute_fi.ts" Component_="CMakeLists.txt" FileName="OCEANR~5.TS|OceanRoute_fi.ts" Attributes="0" SourcePath="C:\Users\S\Desktop\finalclient\data\tr\OceanRoute_fi.ts" SelfReg="false"/>
-    <ROW File="OceanRoute_fr.qm" Component_="CMakeLists.txt" FileName="OCEANR~6.QM|OceanRoute_fr.qm" Attributes="0" SourcePath="C:\Users\S\Desktop\finalclient\data\tr\OceanRoute_fr.qm" SelfReg="false"/>
-    <ROW File="OceanRoute_fr.ts" Component_="CMakeLists.txt" FileName="OCEANR~6.TS|OceanRoute_fr.ts" Attributes="0" SourcePath="C:\Users\S\Desktop\finalclient\data\tr\OceanRoute_fr.ts" SelfReg="false"/>
-    <ROW File="OceanRoute_gr.qm" Component_="CMakeLists.txt" FileName="OCEANR~7.QM|OceanRoute_gr.qm" Attributes="0" SourcePath="C:\Users\S\Desktop\finalclient\data\tr\OceanRoute_gr.qm" SelfReg="false"/>
-    <ROW File="OceanRoute_gr.ts" Component_="CMakeLists.txt" FileName="OCEANR~7.TS|OceanRoute_gr.ts" Attributes="0" SourcePath="C:\Users\S\Desktop\finalclient\data\tr\OceanRoute_gr.ts" SelfReg="false"/>
-    <ROW File="OceanRoute_he.qm" Component_="CMakeLists.txt" FileName="OCEANR~8.QM|OceanRoute_he.qm" Attributes="0" SourcePath="C:\Users\S\Desktop\finalclient\data\tr\OceanRoute_he.qm" SelfReg="false"/>
-    <ROW File="OceanRoute_he.ts" Component_="CMakeLists.txt" FileName="OCEANR~8.TS|OceanRoute_he.ts" Attributes="0" SourcePath="C:\Users\S\Desktop\finalclient\data\tr\OceanRoute_he.ts" SelfReg="false"/>
-    <ROW File="OceanRoute_it.qm" Component_="CMakeLists.txt" FileName="OCEANR~9.QM|OceanRoute_it.qm" Attributes="0" SourcePath="C:\Users\S\Desktop\finalclient\data\tr\OceanRoute_it.qm" SelfReg="false"/>
-    <ROW File="OceanRoute_it.ts" Component_="CMakeLists.txt" FileName="OCEANR~9.TS|OceanRoute_it.ts" Attributes="0" SourcePath="C:\Users\S\Desktop\finalclient\data\tr\OceanRoute_it.ts" SelfReg="false"/>
-    <ROW File="OceanRoute_nl.qm" Component_="CMakeLists.txt" FileName="OCEAN~10.QM|OceanRoute_nl.qm" Attributes="0" SourcePath="C:\Users\S\Desktop\finalclient\data\tr\OceanRoute_nl.qm" SelfReg="false"/>
-    <ROW File="OceanRoute_nl.ts" Component_="CMakeLists.txt" FileName="OCEAN~10.TS|OceanRoute_nl.ts" Attributes="0" SourcePath="C:\Users\S\Desktop\finalclient\data\tr\OceanRoute_nl.ts" SelfReg="false"/>
-    <ROW File="OceanRoute_pt.qm" Component_="CMakeLists.txt" FileName="OCEAN~11.QM|OceanRoute_pt.qm" Attributes="0" SourcePath="C:\Users\S\Desktop\finalclient\data\tr\OceanRoute_pt.qm" SelfReg="false"/>
-    <ROW File="OceanRoute_pt.ts" Component_="CMakeLists.txt" FileName="OCEAN~11.TS|OceanRoute_pt.ts" Attributes="0" SourcePath="C:\Users\S\Desktop\finalclient\data\tr\OceanRoute_pt.ts" SelfReg="false"/>
-    <ROW File="OceanRoute_ru.qm" Component_="CMakeLists.txt" FileName="OCEAN~12.QM|OceanRoute_ru.qm" Attributes="0" SourcePath="C:\Users\S\Desktop\finalclient\data\tr\OceanRoute_ru.qm" SelfReg="false"/>
-    <ROW File="OceanRoute_ru.ts" Component_="CMakeLists.txt" FileName="OCEAN~12.TS|OceanRoute_ru.ts" Attributes="0" SourcePath="C:\Users\S\Desktop\finalclient\data\tr\OceanRoute_ru.ts" SelfReg="false"/>
+    <ROW File="WeatherGrib_ar.qm" Component_="CMakeLists.txt" FileName="OCEANR~1.QM|WeatherGrib_ar.qm" Attributes="0" SourcePath="C:\Users\S\Desktop\finalclient\data\tr\WeatherGrib_ar.qm" SelfReg="false"/>
+    <ROW File="WeatherGrib_ar.ts" Component_="CMakeLists.txt" FileName="OCEANR~1.TS|WeatherGrib_ar.ts" Attributes="0" SourcePath="C:\Users\S\Desktop\finalclient\data\tr\WeatherGrib_ar.ts" SelfReg="false"/>
+    <ROW File="WeatherGrib_cz.qm" Component_="CMakeLists.txt" FileName="OCEANR~2.QM|WeatherGrib_cz.qm" Attributes="0" SourcePath="C:\Users\S\Desktop\finalclient\data\tr\WeatherGrib_cz.qm" SelfReg="false"/>
+    <ROW File="WeatherGrib_cz.ts" Component_="CMakeLists.txt" FileName="OCEANR~2.TS|WeatherGrib_cz.ts" Attributes="0" SourcePath="C:\Users\S\Desktop\finalclient\data\tr\WeatherGrib_cz.ts" SelfReg="false"/>
+    <ROW File="WeatherGrib_de.qm" Component_="CMakeLists.txt" FileName="OCEANR~3.QM|WeatherGrib_de.qm" Attributes="0" SourcePath="C:\Users\S\Desktop\finalclient\data\tr\WeatherGrib_de.qm" SelfReg="false"/>
+    <ROW File="WeatherGrib_de.ts" Component_="CMakeLists.txt" FileName="OCEANR~3.TS|WeatherGrib_de.ts" Attributes="0" SourcePath="C:\Users\S\Desktop\finalclient\data\tr\WeatherGrib_de.ts" SelfReg="false"/>
+    <ROW File="WeatherGrib_es.qm" Component_="CMakeLists.txt" FileName="OCEANR~4.QM|WeatherGrib_es.qm" Attributes="0" SourcePath="C:\Users\S\Desktop\finalclient\data\tr\WeatherGrib_es.qm" SelfReg="false"/>
+    <ROW File="WeatherGrib_es.ts" Component_="CMakeLists.txt" FileName="OCEANR~4.TS|WeatherGrib_es.ts" Attributes="0" SourcePath="C:\Users\S\Desktop\finalclient\data\tr\WeatherGrib_es.ts" SelfReg="false"/>
+    <ROW File="WeatherGrib_fi.qm" Component_="CMakeLists.txt" FileName="OCEANR~5.QM|WeatherGrib_fi.qm" Attributes="0" SourcePath="C:\Users\S\Desktop\finalclient\data\tr\WeatherGrib_fi.qm" SelfReg="false"/>
+    <ROW File="WeatherGrib_fi.ts" Component_="CMakeLists.txt" FileName="OCEANR~5.TS|WeatherGrib_fi.ts" Attributes="0" SourcePath="C:\Users\S\Desktop\finalclient\data\tr\WeatherGrib_fi.ts" SelfReg="false"/>
+    <ROW File="WeatherGrib_fr.qm" Component_="CMakeLists.txt" FileName="OCEANR~6.QM|WeatherGrib_fr.qm" Attributes="0" SourcePath="C:\Users\S\Desktop\finalclient\data\tr\WeatherGrib_fr.qm" SelfReg="false"/>
+    <ROW File="WeatherGrib_fr.ts" Component_="CMakeLists.txt" FileName="OCEANR~6.TS|WeatherGrib_fr.ts" Attributes="0" SourcePath="C:\Users\S\Desktop\finalclient\data\tr\WeatherGrib_fr.ts" SelfReg="false"/>
+    <ROW File="WeatherGrib_gr.qm" Component_="CMakeLists.txt" FileName="OCEANR~7.QM|WeatherGrib_gr.qm" Attributes="0" SourcePath="C:\Users\S\Desktop\finalclient\data\tr\WeatherGrib_gr.qm" SelfReg="false"/>
+    <ROW File="WeatherGrib_gr.ts" Component_="CMakeLists.txt" FileName="OCEANR~7.TS|WeatherGrib_gr.ts" Attributes="0" SourcePath="C:\Users\S\Desktop\finalclient\data\tr\WeatherGrib_gr.ts" SelfReg="false"/>
+    <ROW File="WeatherGrib_he.qm" Component_="CMakeLists.txt" FileName="OCEANR~8.QM|WeatherGrib_he.qm" Attributes="0" SourcePath="C:\Users\S\Desktop\finalclient\data\tr\WeatherGrib_he.qm" SelfReg="false"/>
+    <ROW File="WeatherGrib_he.ts" Component_="CMakeLists.txt" FileName="OCEANR~8.TS|WeatherGrib_he.ts" Attributes="0" SourcePath="C:\Users\S\Desktop\finalclient\data\tr\WeatherGrib_he.ts" SelfReg="false"/>
+    <ROW File="WeatherGrib_it.qm" Component_="CMakeLists.txt" FileName="OCEANR~9.QM|WeatherGrib_it.qm" Attributes="0" SourcePath="C:\Users\S\Desktop\finalclient\data\tr\WeatherGrib_it.qm" SelfReg="false"/>
+    <ROW File="WeatherGrib_it.ts" Component_="CMakeLists.txt" FileName="OCEANR~9.TS|WeatherGrib_it.ts" Attributes="0" SourcePath="C:\Users\S\Desktop\finalclient\data\tr\WeatherGrib_it.ts" SelfReg="false"/>
+    <ROW File="WeatherGrib_nl.qm" Component_="CMakeLists.txt" FileName="OCEAN~10.QM|WeatherGrib_nl.qm" Attributes="0" SourcePath="C:\Users\S\Desktop\finalclient\data\tr\WeatherGrib_nl.qm" SelfReg="false"/>
+    <ROW File="WeatherGrib_nl.ts" Component_="CMakeLists.txt" FileName="OCEAN~10.TS|WeatherGrib_nl.ts" Attributes="0" SourcePath="C:\Users\S\Desktop\finalclient\data\tr\WeatherGrib_nl.ts" SelfReg="false"/>
+    <ROW File="WeatherGrib_pt.qm" Component_="CMakeLists.txt" FileName="OCEAN~11.QM|WeatherGrib_pt.qm" Attributes="0" SourcePath="C:\Users\S\Desktop\finalclient\data\tr\WeatherGrib_pt.qm" SelfReg="false"/>
+    <ROW File="WeatherGrib_pt.ts" Component_="CMakeLists.txt" FileName="OCEAN~11.TS|WeatherGrib_pt.ts" Attributes="0" SourcePath="C:\Users\S\Desktop\finalclient\data\tr\WeatherGrib_pt.ts" SelfReg="false"/>
+    <ROW File="WeatherGrib_ru.qm" Component_="CMakeLists.txt" FileName="OCEAN~12.QM|WeatherGrib_ru.qm" Attributes="0" SourcePath="C:\Users\S\Desktop\finalclient\data\tr\WeatherGrib_ru.qm" SelfReg="false"/>
+    <ROW File="WeatherGrib_ru.ts" Component_="CMakeLists.txt" FileName="OCEAN~12.TS|WeatherGrib_ru.ts" Attributes="0" SourcePath="C:\Users\S\Desktop\finalclient\data\tr\WeatherGrib_ru.ts" SelfReg="false"/>
     <ROW File="qsvgicon.dll" Component_="qsvgicon.dll" FileName="qsvgicon.dll" Attributes="0" SourcePath="C:\Users\S\Desktop\finalclient\iconengines\qsvgicon.dll" SelfReg="false"/>
     <ROW File="qgif.dll" Component_="qgif.dll" FileName="qgif.dll" Attributes="0" SourcePath="C:\Users\S\Desktop\finalclient\imageformats\qgif.dll" SelfReg="false"/>
     <ROW File="qicns.dll" Component_="qicns.dll" FileName="qicns.dll" Attributes="0" SourcePath="C:\Users\S\Desktop\finalclient\imageformats\qicns.dll" SelfReg="false"/>
@@ -298,7 +298,7 @@
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
     <ROW BuildKey="BuildAppV5" BuildName="BuildAppV5" BuildOrder="2" BuildType="5" PackageFolder="BuildAppV5SetupFiles" Languages="en;el" AppV50Options="68"/>
-    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="1" PackageFolder="Setup Files" Languages="en" InstallationType="4" CabsLocation="1" PackageType="1" FilesInsideExe="true" ExtractionFolder="[AppDataFolder][|Manufacturer]\[|ProductName] [|ProductVersion]\install" ExtUI="true" UseLargeSchema="true" ExeName="Oceanroute"/>
+    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="1" PackageFolder="Setup Files" Languages="en" InstallationType="4" CabsLocation="1" PackageType="1" FilesInsideExe="true" ExtractionFolder="[AppDataFolder][|Manufacturer]\[|ProductName] [|ProductVersion]\install" ExtUI="true" UseLargeSchema="true" ExeName="Weathergrib"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
     <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
@@ -512,7 +512,7 @@
     <ROW Action="AI_FindExeLzma" Type="1" Source="lzmaextractor.dll" Target="FindEXE"/>
     <ROW Action="AI_GetArpIconPath" Type="1" Source="aicustact.dll" Target="GetArpIconPath"/>
     <ROW Action="AI_InstallModeCheck" Type="1" Source="aicustact.dll" Target="UpdateInstallMode" WithoutSeq="true"/>
-    <ROW Action="AI_LaunchApp" Type="1" Source="aicustact.dll" Target="[#Oceanroute.exe]"/>
+    <ROW Action="AI_LaunchApp" Type="1" Source="aicustact.dll" Target="[#Weathergrib.exe]"/>
     <ROW Action="AI_PREPARE_UPGRADE" Type="65" Source="aicustact.dll" Target="PrepareUpgrade"/>
     <ROW Action="AI_PromptUserBasicUI" Type="1" Source="ResourceCleaner.dll" Target="OnPromptUserBasicUI"/>
     <ROW Action="AI_RESTORE_AI_SETUPEXEPATH" Type="51" Source="AI_SETUPEXEPATH" Target="[AI_SETUPEXEPATH_ORIGINAL]"/>
@@ -530,7 +530,7 @@
   <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatCompsComponent">
     <ROW Feature_="MainFeature" Component_="APPDIR"/>
     <ROW Feature_="MainFeature" Component_="ProductInformation"/>
-    <ROW Feature_="MainFeature" Component_="Oceanroute.exe"/>
+    <ROW Feature_="MainFeature" Component_="Weathergrib.exe"/>
     <ROW Feature_="MainFeature" Component_="qgenericbearer.dll"/>
     <ROW Feature_="MainFeature" Component_="colors_binary.txt"/>
     <ROW Feature_="MainFeature" Component_="AUTHORS"/>
@@ -573,7 +573,7 @@
     <ROW Feature_="MainFeature" Component_="qwindowsvistastyle.dll"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
-    <ROW Name="Oceanroute_32_1.exe" SourcePath="..\data\img\Oceanroute_32.ico" Index="0"/>
+    <ROW Name="Weathergrib_32_1.exe" SourcePath="..\data\img\Weathergrib_32.ico" Index="0"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
     <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
@@ -651,11 +651,11 @@
     <ROW FileKey="_" Component_="AI_ExePath" DirProperty="NewFolder_1_Dir" InstallMode="2"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiRemoveRegComponent">
-    <ROW RemoveRegistry="_" Root="1" Key="Software\[ProductName]" Name="-" Component_="Oceanroute.exe"/>
+    <ROW RemoveRegistry="_" Root="1" Key="Software\[ProductName]" Name="-" Component_="Weathergrib.exe"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiShortsComponent">
-    <ROW Shortcut="Oceanroute.exe" Directory_="SHORTCUTDIR" Name="OCEANR~1.EXE|Oceanroute.exe" Component_="Oceanroute.exe" Target="[#Oceanroute.exe]" Description="Oceanroute.exe" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
-    <ROW Shortcut="Oceanroute.exe_1" Directory_="DesktopFolder" Name="OCEANR~1|Oceanroute" Component_="Oceanroute.exe" Target="[#Oceanroute.exe]" Description="Oceanroute.exe" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
+    <ROW Shortcut="Weathergrib.exe" Directory_="SHORTCUTDIR" Name="OCEANR~1.EXE|Weathergrib.exe" Component_="Weathergrib.exe" Target="[#Weathergrib.exe]" Description="Weathergrib.exe" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
+    <ROW Shortcut="Weathergrib.exe_1" Directory_="DesktopFolder" Name="OCEANR~1|Weathergrib" Component_="Weathergrib.exe" Target="[#Weathergrib.exe]" Description="Weathergrib.exe" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
   </COMPONENT>
   <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
     <ATTRIBUTE name="UsedTheme" value="surface"/>

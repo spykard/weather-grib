@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Installer>
-    <Name>Oceanroute</Name>
+    <Name>Weathergrib</Name>
     <Version>2.3.0</Version>
-    <Title>Oceanroute</Title>
+    <Title>Weathergrib</Title>
     <Publisher>OpenGribs.org</Publisher>
-	<ProductUrl>https://opengribs.org/en/oceanroute</ProductUrl>
-	<StartMenuDir>Oceanroute</StartMenuDir>
-    <TargetDir>@ApplicationsDirX86@/Oceanroute</TargetDir>
-	<RunProgram>@ApplicationsDirX86@/Oceanroute/Oceanroute.exe</RunProgram>
+	<ProductUrl>https://opengribs.org/en/weathergrib</ProductUrl>
+	<StartMenuDir>Weathergrib</StartMenuDir>
+    <TargetDir>@ApplicationsDirX86@/Weathergrib</TargetDir>
+	<RunProgram>@ApplicationsDirX86@/Weathergrib/Weathergrib.exe</RunProgram>
 		<AllowSpaceInPath>true</AllowSpaceInPath>
     <RemoteRepositories>
         <Repository>
             <Url>https://opengribs.org/repository</Url>
         </Repository>
     </RemoteRepositories>
-	<MaintenanceToolName>OceanrouteMaintenanceTool</MaintenanceToolName>
+	<MaintenanceToolName>WeathergribMaintenanceTool</MaintenanceToolName>
 	<WizardStyle>Modern</WizardStyle>
 	<WizardDefaultWidth>620</WizardDefaultWidth>
 	<InstallActionColumnVisible>true</InstallActionColumnVisible>
-	<InstallerApplicationIcon>Oceanroute_32</InstallerApplicationIcon>
-	<InstallerWindowIcon>Oceanroute_32</InstallerWindowIcon>
+	<InstallerApplicationIcon>Weathergrib_32</InstallerApplicationIcon>
+	<InstallerWindowIcon>Weathergrib_32</InstallerWindowIcon>
 </Installer>

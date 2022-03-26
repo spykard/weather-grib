@@ -1966,8 +1966,8 @@
     </message>
     <message>
         <location filename="../../src/DialogUnits.cpp" line="303"/>
-        <source>Current hour seen by oceanroute with those parameters :</source>
-        <translation>Hora actual para oceanroute con esos parámetros:</translation>
+        <source>Current hour seen by weathergrib with those parameters :</source>
+        <translation>Hora actual para weathergrib con esos parámetros:</translation>
     </message>
     <message>
         <location filename="../../src/DialogUnits.cpp" line="304"/>
@@ -2476,19 +2476,19 @@
     </message>
     <message>
         <location filename="../../src/MainWindow.cpp" line="2526"/>
-        <source>It is recommended to exit Oceanroute while running the Maintenance Tool. Do you wish to exit Oceanroute?</source>
-        <translation>Se recomienda salir de Oceanroute mientra se ejecuta la Herramienta de Mantenimiento. ¿Quieres salir de Oceanroute?</translation>
+        <source>It is recommended to exit Weathergrib while running the Maintenance Tool. Do you wish to exit Weathergrib?</source>
+        <translation>Se recomienda salir de Weathergrib mientra se ejecuta la Herramienta de Mantenimiento. ¿Quieres salir de Weathergrib?</translation>
     </message>
     <message>
         <location filename="../../src/MainWindow.cpp" line="2527"/>
-        <source>Exit Oceanroute?</source>
-        <translation>¿Salir de Oceanroute?</translation>
+        <source>Exit Weathergrib?</source>
+        <translation>¿Salir de Weathergrib?</translation>
     </message>
     <message>
         <location filename="../../src/MainWindow.cpp" line="2532"/>
         <location filename="../../src/MainWindow.cpp" line="2540"/>
-        <source>Unable to find the Oceanroute Maintenance Tool. Please start it from the desktop facilities</source>
-        <translation>No encuentro la Herramienta de Mantenimiento de Oceanroute. Iníciala desde el menú de aplicaciones del ordenador</translation>
+        <source>Unable to find the Weathergrib Maintenance Tool. Please start it from the desktop facilities</source>
+        <translation>No encuentro la Herramienta de Mantenimiento de Weathergrib. Iníciala desde el menú de aplicaciones del ordenador</translation>
     </message>
     <message>
         <location filename="../../src/MainWindow.cpp" line="2595"/>
@@ -2507,8 +2507,8 @@
     </message>
     <message>
         <location filename="../../src/MainWindow.cpp" line="2601"/>
-        <source>Please use the Oceanroute Maintenance Tool to upgrade. It can be activated from the Help Menu</source>
-        <translation>Por favor, utiliza la Herramienta de Mantenimiento de Oceanroute para actualizar. Puedes activarla desde el Menú de Ayuda</translation>
+        <source>Please use the Weathergrib Maintenance Tool to upgrade. It can be activated from the Help Menu</source>
+        <translation>Por favor, utiliza la Herramienta de Mantenimiento de Weathergrib para actualizar. Puedes activarla desde el Menú de Ayuda</translation>
     </message>
     <message>
         <location filename="../../src/MainWindow.cpp" line="2613"/>
@@ -2609,8 +2609,8 @@
     </message>
     <message>
         <location filename="../../src/MainWindow.cpp" line="1556"/>
-        <source>Oceanroute : GRIB files visualization</source>
-        <translation>Oceanroute : visualización de archivos GRIB</translation>
+        <source>Weathergrib : GRIB files visualization</source>
+        <translation>Weathergrib : visualización de archivos GRIB</translation>
     </message>
     <message>
         <location filename="../../src/MainWindow.cpp" line="1561"/>
@@ -2629,8 +2629,8 @@
     </message>
     <message>
         <location filename="../../src/MainWindow.cpp" line="1853"/>
-        <source>For skin change to take effect Oceanroute needs to be restarted</source>
-        <translation>Para que el cambio de interfaz tengo efecto has de reiniciar Oceanroute</translation>
+        <source>For skin change to take effect Weathergrib needs to be restarted</source>
+        <translation>Para que el cambio de interfaz tengo efecto has de reiniciar Weathergrib</translation>
     </message>
     <message>
         <location filename="../../src/MainWindow.cpp" line="1863"/>
@@ -2772,8 +2772,8 @@
     </message>
     <message>
         <location filename="../../src/MapDrawer.cpp" line="798"/>
-        <source>Oceanroute</source>
-        <translation>Oceanroute</translation>
+        <source>Weathergrib</source>
+        <translation>Weathergrib</translation>
     </message>
 </context>
 <context>
@@ -2856,8 +2856,8 @@
     </message>
     <message>
         <location filename="../../src/MenuBar.cpp" line="84"/>
-        <source>Open a new Oceanroute instance</source>
-        <translation>Abrir nueva ventana Oceanroute</translation>
+        <source>Open a new Weathergrib instance</source>
+        <translation>Abrir nueva ventana Weathergrib</translation>
     </message>
     <message>
         <location filename="../../src/MenuBar.cpp" line="130"/>
@@ -3670,8 +3670,8 @@
     </message>
     <message>
         <location filename="../../src/MenuBar.cpp" line="432"/>
-        <source>About Oceanroute</source>
-        <translation>Sobre Oceanroute</translation>
+        <source>About Weathergrib</source>
+        <translation>Sobre Weathergrib</translation>
     </message>
     <message>
         <location filename="../../src/MenuBar.cpp" line="433"/>
@@ -3680,13 +3680,13 @@
     </message>
     <message>
         <location filename="../../src/MenuBar.cpp" line="436"/>
-        <source>Run Oceanroute Maintenance Tool</source>
-        <translation>Ejecutar la Herramienta de Mantenimiento de Oceanroute</translation>
+        <source>Run Weathergrib Maintenance Tool</source>
+        <translation>Ejecutar la Herramienta de Mantenimiento de Weathergrib</translation>
     </message>
     <message>
         <location filename="../../src/MenuBar.cpp" line="437"/>
-        <source>To add, update or remove Oceanroute components</source>
-        <translation>Para añadir, actualizar o eliminar componentes de Oceanroute</translation>
+        <source>To add, update or remove Weathergrib components</source>
+        <translation>Para añadir, actualizar o eliminar componentes de Weathergrib</translation>
     </message>
     <message>
         <location filename="../../src/MenuBar.cpp" line="439"/>
@@ -3776,8 +3776,8 @@
     </message>
     <message>
         <location filename="../../src/MenuBar.cpp" line="298"/>
-        <source>Oceanroute</source>
-        <translation>Oceanroute</translation>
+        <source>Weathergrib</source>
+        <translation>Weathergrib</translation>
     </message>
     <message>
         <location filename="../../src/MenuBar.cpp" line="299"/>

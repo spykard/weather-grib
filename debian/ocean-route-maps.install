@@ -1,2 +1,2 @@
-data/maps/gshhs/* /usr/share/Oceanroute/data/maps/gshhs
-data/gis/* /usr/share/Oceanroute/data/gis
+data/maps/gshhs/* /usr/share/Weathergrib/data/maps/gshhs
+data/gis/* /usr/share/Weathergrib/data/gis
