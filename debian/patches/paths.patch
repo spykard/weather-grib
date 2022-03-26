@@ -1,6 +1,6 @@
-diff -ur oceanroute-1.1.0.orig/src/util/Util.h oceanroute-1.1.0/src/util/Util.h
---- oceanroute-1.1.0.orig/src/util/Util.h	2018-06-25 17:05:03.478073575 +0200
-+++ oceanroute-1.1.0/src/util/Util.h	2018-07-10 13:23:47.404056921 +0200
+diff -ur weathergrib-1.1.0.orig/src/util/Util.h weathergrib-1.1.0/src/util/Util.h
+--- weathergrib-1.1.0.orig/src/util/Util.h	2018-06-25 17:05:03.478073575 +0200
++++ weathergrib-1.1.0/src/util/Util.h	2018-07-10 13:23:47.404056921 +0200
 @@ -78,15 +78,15 @@
  							const QString &dir, const QString &filter=QString());
  		
@@ -11,17 +11,17 @@ diff -ur oceanroute-1.1.0.orig/src/util/Util.h oceanroute-1.1.0/src/util/Util.h
 -	static QString pathGis ()    {return pathData()+"data/gis/";}
 -	static QString pathGshhs ()  {return pathData()+"data/maps/gshhs/";}
 -	static QString pathStuff ()  {return pathData()+"data/stuff/";}
-+	static QString pathColors () {return "/usr/share/oceanroute/data/colors/";}
-+	static QString pathConfig () {return "/usr/share/oceanroute/data/config/";}
++	static QString pathColors () {return "/usr/share/weathergrib/data/colors/";}
++	static QString pathConfig () {return "/usr/share/weathergrib/data/config/";}
 +	static QString pathFonts ()  {return "/usr/share/fonts/";}
 +	static QString pathGis ()    {return "/usr/share/maps/gis/";}
 +	static QString pathGshhs ()  {return "/usr/share/maps/gshhs/";}
-+	static QString pathStuff ()  {return "/usr/share/oceanroute/data/stuff/";}
++	static QString pathStuff ()  {return "/usr/share/weathergrib/data/stuff/";}
  	
 -	static QString pathImg (const char *fname) {return pathData()+"data/img/"+fname;}
--    static QString pathTr  (QString lang)   {return pathData()+"data/tr/Oceanroute_"+lang;}
-+	static QString pathImg (const char *fname) {return ((QString) "/usr/share/icons/oceanroute/") +fname;}
-+    static QString pathTr  (QString lang)   {return "/usr/share/qt5/translations/Oceanroute_"+lang;}
+-    static QString pathTr  (QString lang)   {return pathData()+"data/tr/Weathergrib_"+lang;}
++	static QString pathImg (const char *fname) {return ((QString) "/usr/share/icons/weathergrib/") +fname;}
++    static QString pathTr  (QString lang)   {return "/usr/share/qt5/translations/Weathergrib_"+lang;}
  	static QString getServerName ();
  
      static void     setSetting (const QString &key, const QVariant &value);

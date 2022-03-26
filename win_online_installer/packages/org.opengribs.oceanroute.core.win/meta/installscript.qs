@@ -37,39 +37,39 @@ Component.prototype.createOperations = function()
     component.createOperations();
 
     if (systemInfo.productType === "windows") {
-        component.addOperation("CreateShortcut", "@TargetDir@/Oceanroute.exe", "@StartMenuDir@/Oceanroute.lnk",
-            "workingDirectory=@TargetDir@", "iconPath=@TargetDir@/Oceanroute.exe", "IconID=1",
-             "description=Run Oceanroute Weather Visualization");
+        component.addOperation("CreateShortcut", "@TargetDir@/Weathergrib.exe", "@StartMenuDir@/Weathergrib.lnk",
+            "workingDirectory=@TargetDir@", "iconPath=@TargetDir@/Weathergrib.exe", "IconID=1",
+             "description=Run Weathergrib Weather Visualization");
  
-		component.addOperation("CreateShortcut", "@TargetDir@/OceanrouteMaintenanceTool.exe", "@StartMenuDir@/OceanrouteMaintenanceTool.lnk",
-            "workingDirectory=@TargetDir@", "iconPath=@TargetDir@/Oceanroute.exe", "IconID=1",
-             "description=Run Oceanroute Weather Visualization");
+		component.addOperation("CreateShortcut", "@TargetDir@/WeathergribMaintenanceTool.exe", "@StartMenuDir@/WeathergribMaintenanceTool.lnk",
+            "workingDirectory=@TargetDir@", "iconPath=@TargetDir@/Weathergrib.exe", "IconID=1",
+             "description=Run Weathergrib Weather Visualization");
 			 
 		if (installer.isInstaller()) {
 			 
 			component.addOperation("RegisterFileType",
 						   "grb2",
-						   "@TargetDir@\\Oceanroute.exe \"%1\"",
-						   "Oceanroute Files",
+						   "@TargetDir@\\Weathergrib.exe \"%1\"",
+						   "Weathergrib Files",
 						   "application/x-binary",
-						   "@TargetDir@\\Oceanroute.exe",
-						   "ProgId=Oceanroute.grb2");  
+						   "@TargetDir@\\Weathergrib.exe",
+						   "ProgId=Weathergrib.grb2");  
 						   
 			component.addOperation("RegisterFileType",
 						   "grib2",
-						   "@TargetDir@\\Oceanroute.exe \"%1\"",
-						   "Oceanroute Files",
+						   "@TargetDir@\\Weathergrib.exe \"%1\"",
+						   "Weathergrib Files",
 						   "application/x-binary",
-						   "@TargetDir@\\Oceanroute.exe",
-						   "ProgId=Oceanroute.grib2");  
+						   "@TargetDir@\\Weathergrib.exe",
+						   "ProgId=Weathergrib.grib2");  
 						   
 			component.addOperation("RegisterFileType",
 						   "grb",
-						   "@TargetDir@\\Oceanroute.exe \"%1\"",
-						   "Oceanroute Files",
+						   "@TargetDir@\\Weathergrib.exe \"%1\"",
+						   "Weathergrib Files",
 						   "application/x-binary",
-						   "@TargetDir@\\Oceanroute.exe",
-						   "ProgId=Oceanroute.grb");
+						   "@TargetDir@\\Weathergrib.exe",
+						   "ProgId=Weathergrib.grb");
 		}
 					   					   
     }

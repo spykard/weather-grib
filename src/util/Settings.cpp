@@ -1,5 +1,5 @@
 /**********************************************************************
-Oceanroute: meteorological GRIB file viewer
+Weathergrib: meteorological GRIB file viewer
 Copyright (C) 2008-2012 - Jacques Zaninetti - http://www.zygrib.org
 
 This program is free software: you can redistribute it and/or modify
@@ -94,15 +94,15 @@ void Settings::initializeSettingsDir ()
 
 	if (path != "") {
 		GLOB_SettingsDir = path;
-        GLOB_SettingsFilename	 	= GLOB_SettingsDir + "/oceanroute.ini";
-        GLOB_SettingsFilename_POI	= GLOB_SettingsDir + "/oceanroute_poi.ini";
+        GLOB_SettingsFilename	 	= GLOB_SettingsDir + "/weathergrib.ini";
+        GLOB_SettingsFilename_POI	= GLOB_SettingsDir + "/weathergrib_poi.ini";
 
 		// A. Degwerth [Cassidian] added to make sure that the user dir contains an updated .ini file
 
         // TODO remove as there is no default ini file. David
         // TODO methods can also be removed
-//        Settings::checkAndCopyDefaultIni(GLOB_SettingsFilename, QDir::current().absolutePath() + "/" + Util::pathConfig() + "/oceanroute.ini");
-//        Settings::checkAndCopyDefaultIni(GLOB_SettingsFilename_POI, QDir::current().absolutePath() + "/" + Util::pathConfig() + "/oceanroute_poi.ini");
+//        Settings::checkAndCopyDefaultIni(GLOB_SettingsFilename, QDir::current().absolutePath() + "/" + Util::pathConfig() + "/weathergrib.ini");
+//        Settings::checkAndCopyDefaultIni(GLOB_SettingsFilename_POI, QDir::current().absolutePath() + "/" + Util::pathConfig() + "/weathergrib_poi.ini");
 
         GLOB_IniSettings     = new QSettings (GLOB_SettingsFilename, QSettings::IniFormat);
         GLOB_IniSettings_POI = new QSettings (GLOB_SettingsFilename_POI, QSettings::IniFormat);
@@ -114,7 +114,7 @@ void Settings::initializeSettingsDir ()
         GLOB_IniSettings     = nullptr;
         GLOB_IniSettings_POI = nullptr;
 	}
-    GLOB_NatSettings = new QSettings ("Oceanroute");
+    GLOB_NatSettings = new QSettings ("Weathergrib");
 			
 }
 
@@ -320,7 +320,7 @@ QList<uint> Settings::getSettingAllCodesPOIs()
 	}
 	else
 	{	// try to load from native settings
-        QSettings settings("Oceanroute");
+        QSettings settings("Weathergrib");
 		settings.beginGroup("poi");
 		QString poicode;
 		QStringList slist = settings.childGroups();
@@ -338,7 +338,7 @@ QList<uint> Settings::getSettingAllCodesPOIs()
 //---------------------------------------------------------------------
 void Settings::deleteSettingsPOI(uint code)
 {
-    QSettings natSettings("Oceanroute");
+    QSettings natSettings("Weathergrib");
 	natSettings.beginGroup("poi");
 	QStringList allgroups = natSettings.childGroups(); // pois are in groups
 	QStringListIterator it(allgroups);
@@ -370,7 +370,7 @@ void Settings::deleteSettingsPOI(uint code)
 //---------------------------------------------------------------------
 uint Settings::getNewCodePOI()
 {
-    QSettings settings("Oceanroute");
+    QSettings settings("Weathergrib");
 	settings.beginGroup("poi");
 	uint v, max = 0;
 	QStringList slist = settings.childGroups();
@@ -402,10 +402,10 @@ void Settings::initializeGribFilesDir ()
         path = "";
 	}
 	if (path == "")
-    {	// try oceanroute_directory/grib
+    {	// try weathergrib_directory/grib
 		dir = QDir::current();
 		if ( dir.exists("maps") && dir.exists("img") )
-        {   // seem's oceanroute directory, try yo write a file
+        {   // seem's weathergrib directory, try yo write a file
 			if (Util::isDirWritable(dir))
 			{
 				QString path2 = dir.absolutePath()+"/grib";
@@ -424,9 +424,9 @@ void Settings::initializeGribFilesDir ()
 	if (path == "")
 	{	// try user directory
 		#ifdef Q_OS_WIN32
-            dir = QDir( QDir::homePath()+"/oceanroute/grib" );
+            dir = QDir( QDir::homePath()+"/weathergrib/grib" );
 		#else
-            dir = QDir( QDir::homePath()+"/.oceanroute/grib" );
+            dir = QDir( QDir::homePath()+"/.weathergrib/grib" );
 		#endif
 		if (! dir.exists()) {
 			// create a directory in user home if it don't exists
@@ -455,14 +455,14 @@ void Settings::initializeGribFilesDir ()
 // A. Degwerth [Cassidian]
 //void Settings::checkAndCopyDefaultIni(const QString& strIniUser, const QString& strIniDefault)
 //{
-//    // check if we have a default Oceanroute.ini file
+//    // check if we have a default Weathergrib.ini file
 //    if (QFile::exists(strIniDefault))
 //    {
 //        // yes the file exists
 
 //        bool fCopyDefaultIni = false;
 
-//        // check if there exists a Oceanroute.ini in the user profile
+//        // check if there exists a Weathergrib.ini in the user profile
 //        if (!QFile::exists(strIniUser))
 //        {
 //            fCopyDefaultIni = true;

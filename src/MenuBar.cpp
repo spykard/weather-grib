@@ -1,5 +1,5 @@
 /**********************************************************************
-Oceanroute: meteorological GRIB file viewer
+Weathergrib: meteorological GRIB file viewer
 Copyright (C) 2008-2012 - Jacques Zaninetti - http://www.zygrib.org
 
 This program is free software: you can redistribute it and/or modify
@@ -81,7 +81,7 @@ MenuBar::MenuBar (QWidget *parent, bool mbe)
                     tr("Close"), Util::pathImg("fileclose.png"));
         acFile_NewInstance = addAction (menuFile,
                     tr("New instance"), "Ctrl+Shift+N",
-                    tr("Open a new Oceanroute instance"), "");
+                    tr("Open a new Weathergrib instance"), "");
         // menuFile->addSeparator();
         // acFile_Load_GRIB = addAction (menuFile,
         //             tr("Download GRIB"), "Ctrl+D",
@@ -297,7 +297,7 @@ MenuBar::MenuBar (QWidget *parent, bool mbe)
 
 		QMenu *menuProjection = new QMenu(tr("Projection"));
         acMap_GroupProjection = new QActionGroup(menuProjection);
-            acMap_PROJ_ZYGRIB = addGroup (acMap_GroupProjection, menuProjection, tr("Oceanroute"), "", "");
+            acMap_PROJ_ZYGRIB = addGroup (acMap_GroupProjection, menuProjection, tr("Weathergrib"), "", "");
             acMap_PROJ_MERCATOR = addGroup (acMap_GroupProjection, menuProjection, tr("Mercator"), "", "");
             acMap_PROJ_MILLER = addGroup (acMap_GroupProjection, menuProjection, tr("Miller"), "", "");
             acMap_PROJ_CENTRAL_CYL = addGroup (acMap_GroupProjection, menuProjection, tr("Central Cylindric"), "", "");
@@ -433,12 +433,12 @@ MenuBar::MenuBar (QWidget *parent, bool mbe)
         acHelp_Help = addAction (menuHelp,
                         tr("Help"), "Ctrl+H",
         				"",Util::pathImg("help.png"));
-        acHelp_APropos = addAction (menuHelp, tr("About Oceanroute"),"","","");
+        acHelp_APropos = addAction (menuHelp, tr("About Weathergrib"),"","","");
         //acCheckForUpdates = addAction (menuHelp, tr("Check for updates"),"","","");
 
         //if (maintenanceToolExists)
-        //    acRunMaintenanceTool = addAction (menuHelp, tr("Run Oceanroute Maintenance Tool"),"",
-        //                                  tr("To add, update or remove Oceanroute components"),"");
+        //    acRunMaintenanceTool = addAction (menuHelp, tr("Run Weathergrib Maintenance Tool"),"",
+        //                                  tr("To add, update or remove Weathergrib components"),"");
 
         //acHelp_AProposQT = addAction (menuHelp, tr("About Qt"),"","","");
 

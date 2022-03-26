@@ -1,5 +1,5 @@
 /**********************************************************************
-Oceanroute: meteorological GRIB file viewer
+Weathergrib: meteorological GRIB file viewer
 Copyright (C) 2008-2012 - Jacques Zaninetti - http://www.zygrib.org
 
 This program is free software: you can redistribute it and/or modify
@@ -724,7 +724,7 @@ int Grib2Record::analyseProductType ()
 				   parameter number 8 (Total precipitation), category 1 (Moisture), discipline 0 (Meteorological products)."
 				   '''
 
-				   For Oceanroute that's mean GRB_PRECIP_TOT
+				   For Weathergrib that's mean GRB_PRECIP_TOT
 				*/
 				if (pdtnum == 8) {
 					// Used in Meteo France, ICON grib

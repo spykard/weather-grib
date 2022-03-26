@@ -4,24 +4,24 @@
 # Assumes this script being copied to the root of 'qtbuild' in the following folder structure:
 
 # -- qtbuild 
-#		-- deploy 								('Oceanroute.app' as copied from Qt release build folder)
+#		-- deploy 								('Weathergrib.app' as copied from Qt release build folder)
 #		-- mac_online_installer					(structure as copied from the repository clone)
 #				-- config
 #				-- packages
-#						-- org.opengribs.oceanroute.core.mac	
+#						-- org.opengribs.weathergrib.core.mac	
 #								-- data 		(should be empty)
 #								-- meta
-#						-- org.opengribs.oceanroute.data	
-#								-- data			(latest Oceanroute 'data' structure should be copied here under 'data' 2x data !)
+#						-- org.opengribs.weathergrib.data	
+#								-- data			(latest Weathergrib 'data' structure should be copied here under 'data' 2x data !)
 #								-- meta
-#						-- org.opengribs.oceanroute.maps
+#						-- org.opengribs.weathergrib.maps
 #								-- data			(hires map 'data' structure should be copied here under 'data' 2x data !)
 #								-- meta
 #				-- repository
 #						-- mac					(should be empty)
 #
-# Also assumes that 'Oceanroute.app' has been copied from the Qt release build folders to the 'deploy' folder
-# That Oceanroute 'data' structure and hires map 'data' structure are copied to respective 'data' folders ('data' appears in two levels in each case)
+# Also assumes that 'Weathergrib.app' has been copied from the Qt release build folders to the 'deploy' folder
+# That Weathergrib 'data' structure and hires map 'data' structure are copied to respective 'data' folders ('data' appears in two levels in each case)
 #
 # After running the script the installer.app should be in the mac_online_installer folder and the repository should be ready for upload
 #
@@ -42,18 +42,18 @@ if [ -z "$DEPLOY" ]; then
   echo "Tool macdeployqt not found, can't continue"
   exit 1
 fi
-$DEPLOY Oceanroute.app -verbose=2
+$DEPLOY Weathergrib.app -verbose=2
 
 
 ## copy the result to the appropriate package for preparing the repository and installer
-cp -R Oceanroute.app ../mac_online_installer/packages/org.opengribs.oceanroute.core.mac/data
+cp -R Weathergrib.app ../mac_online_installer/packages/org.opengribs.weathergrib.core.mac/data
 
 ## go to the installer build folder
 cd ../mac_online_installer
 
 ## copy the .icns file to the Resource folder
-cp icns/Oceanroute.icns packages/org.opengribs.oceanroute.core.mac/data/Oceanroute.app/Contents/Resources
-if [ -z "packages/org.opengribs.oceanroute.core.mac/data/Oceanroute.app/Contents/Resources/Oceanroute.icns" ]; then
+cp icns/Weathergrib.icns packages/org.opengribs.weathergrib.core.mac/data/Weathergrib.app/Contents/Resources
+if [ -z "packages/org.opengribs.weathergrib.core.mac/data/Weathergrib.app/Contents/Resources/Weathergrib.icns" ]; then
 	echo "icns file not copied. Fix it please and rerun"
 	exit 1
 fi
@@ -86,8 +86,8 @@ if [ -z "$BINARYCREATOR" ]; then
   echo "Tool binarycreator not found, can't continue"
   exit 1
 fi
-$BINARYCREATOR --online-only -v -c config/config.xml -p packages Oceanroute_Mac_Online_Installer_$XVER/Oceanroute_Mac_Online_Installer_$XVER
-$BINARYCREATOR -v -c config/config.xml -p packages -e org.opengribs.oceanroute.maps Oceanroute_Mac_Offline_Installer_$XVER/Oceanroute_Mac_Offline_Installer_$XVER
-$BINARYCREATOR -v --offline-only -c config/config.xml -p packages  Oceanroute_Mac_Testing_Installer_$XVER/Oceanroute_Mac_Testing_Installer_$XVER
+$BINARYCREATOR --online-only -v -c config/config.xml -p packages Weathergrib_Mac_Online_Installer_$XVER/Weathergrib_Mac_Online_Installer_$XVER
+$BINARYCREATOR -v -c config/config.xml -p packages -e org.opengribs.weathergrib.maps Weathergrib_Mac_Offline_Installer_$XVER/Weathergrib_Mac_Offline_Installer_$XVER
+$BINARYCREATOR -v --offline-only -c config/config.xml -p packages  Weathergrib_Mac_Testing_Installer_$XVER/Weathergrib_Mac_Testing_Installer_$XVER
 
 echo "++++ All Done ++++"

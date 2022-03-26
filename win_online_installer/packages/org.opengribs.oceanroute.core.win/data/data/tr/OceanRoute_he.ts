@@ -1967,8 +1967,8 @@
     </message>
     <message>
         <location filename="../../src/DialogUnits.cpp" line="303"/>
-        <source>Current hour seen by oceanroute with those parameters :</source>
-        <translation>השעה הנוכחית כפי ש Oceanroute חישב אותה עם ההגדרות :</translation>
+        <source>Current hour seen by weathergrib with those parameters :</source>
+        <translation>השעה הנוכחית כפי ש Weathergrib חישב אותה עם ההגדרות :</translation>
     </message>
     <message>
         <location filename="../../src/DialogUnits.cpp" line="304"/>
@@ -2452,8 +2452,8 @@
     </message>
     <message>
         <location filename="../../src/MainWindow.cpp" line="1556"/>
-        <source>Oceanroute : GRIB files visualization</source>
-        <translation>Oceanroute : הדמייה של קבצי גריב</translation>
+        <source>Weathergrib : GRIB files visualization</source>
+        <translation>Weathergrib : הדמייה של קבצי גריב</translation>
     </message>
     <message>
         <location filename="../../src/MainWindow.cpp" line="1558"/>
@@ -2576,8 +2576,8 @@
     <message>
         <location filename="../../src/MainWindow.cpp" line="2532"/>
         <location filename="../../src/MainWindow.cpp" line="2540"/>
-        <source>Unable to find the Oceanroute Maintenance Tool. Please start it from the desktop facilities</source>
-        <translation>אננו מוצא את תוכנה השרות של Oceanroute. נא להפעיל אותו ישירות מממשק המשתמש</translation>
+        <source>Unable to find the Weathergrib Maintenance Tool. Please start it from the desktop facilities</source>
+        <translation>אננו מוצא את תוכנה השרות של Weathergrib. נא להפעיל אותו ישירות מממשק המשתמש</translation>
     </message>
     <message>
         <location filename="../../src/MainWindow.cpp" line="1743"/>
@@ -2611,8 +2611,8 @@
     </message>
     <message>
         <location filename="../../src/MainWindow.cpp" line="1853"/>
-        <source>For skin change to take effect Oceanroute needs to be restarted</source>
-        <translation>כדי ששינוי סגנון הנראות יופעל יש להפעיל מחדש את Oceanroute</translation>
+        <source>For skin change to take effect Weathergrib needs to be restarted</source>
+        <translation>כדי ששינוי סגנון הנראות יופעל יש להפעיל מחדש את Weathergrib</translation>
     </message>
     <message>
         <location filename="../../src/MainWindow.cpp" line="1863"/>
@@ -2637,13 +2637,13 @@
     </message>
     <message>
         <location filename="../../src/MainWindow.cpp" line="2526"/>
-        <source>It is recommended to exit Oceanroute while running the Maintenance Tool. Do you wish to exit Oceanroute?</source>
-        <translation>מומלץ לצאת מתוכת Oceanroute בעת ביצוע עדכוני תוכנה. האם לצאת?</translation>
+        <source>It is recommended to exit Weathergrib while running the Maintenance Tool. Do you wish to exit Weathergrib?</source>
+        <translation>מומלץ לצאת מתוכת Weathergrib בעת ביצוע עדכוני תוכנה. האם לצאת?</translation>
     </message>
     <message>
         <location filename="../../src/MainWindow.cpp" line="2527"/>
-        <source>Exit Oceanroute?</source>
-        <translation>לצאת מOceanroute?</translation>
+        <source>Exit Weathergrib?</source>
+        <translation>לצאת מWeathergrib?</translation>
     </message>
     <message>
         <location filename="../../src/MainWindow.cpp" line="2595"/>
@@ -2662,8 +2662,8 @@
     </message>
     <message>
         <location filename="../../src/MainWindow.cpp" line="2601"/>
-        <source>Please use the Oceanroute Maintenance Tool to upgrade. It can be activated from the Help Menu</source>
-        <translation>נא להשתמש בתוכנת העדכון OceanrouteMaintenanceTool לביצוע העדכון. ניתן להפעיל אותו מתפריט העזרה</translation>
+        <source>Please use the Weathergrib Maintenance Tool to upgrade. It can be activated from the Help Menu</source>
+        <translation>נא להשתמש בתוכנת העדכון WeathergribMaintenanceTool לביצוע העדכון. ניתן להפעיל אותו מתפריט העזרה</translation>
     </message>
     <message>
         <location filename="../../src/MainWindow.cpp" line="2613"/>
@@ -2775,7 +2775,7 @@
     </message>
     <message>
         <location filename="../../src/MapDrawer.cpp" line="798"/>
-        <source>Oceanroute</source>
+        <source>Weathergrib</source>
         <translation></translation>
     </message>
 </context>
@@ -2809,8 +2809,8 @@
     </message>
     <message>
         <location filename="../../src/MenuBar.cpp" line="84"/>
-        <source>Open a new Oceanroute instance</source>
-        <translation>פתיחת יישום Oceanroute נוסף</translation>
+        <source>Open a new Weathergrib instance</source>
+        <translation>פתיחת יישום Weathergrib נוסף</translation>
     </message>
     <message>
         <location filename="../../src/MenuBar.cpp" line="87"/>
@@ -3411,8 +3411,8 @@
     </message>
     <message>
         <location filename="../../src/MenuBar.cpp" line="298"/>
-        <source>Oceanroute</source>
-        <translation>Oceanroute</translation>
+        <source>Weathergrib</source>
+        <translation>Weathergrib</translation>
     </message>
     <message>
         <location filename="../../src/MenuBar.cpp" line="299"/>
@@ -3776,8 +3776,8 @@
     </message>
     <message>
         <location filename="../../src/MenuBar.cpp" line="432"/>
-        <source>About Oceanroute</source>
-        <translation>אודות Oceanroute</translation>
+        <source>About Weathergrib</source>
+        <translation>אודות Weathergrib</translation>
     </message>
     <message>
         <location filename="../../src/MenuBar.cpp" line="433"/>
@@ -3786,13 +3786,13 @@
     </message>
     <message>
         <location filename="../../src/MenuBar.cpp" line="436"/>
-        <source>Run Oceanroute Maintenance Tool</source>
-        <translation>הפעלת תוננת OceanrouteMaintenanceTool</translation>
+        <source>Run Weathergrib Maintenance Tool</source>
+        <translation>הפעלת תוננת WeathergribMaintenanceTool</translation>
     </message>
     <message>
         <location filename="../../src/MenuBar.cpp" line="437"/>
-        <source>To add, update or remove Oceanroute components</source>
-        <translation>משמש להורדת תוספות ועדכונים של תוכנת Oceanroute</translation>
+        <source>To add, update or remove Weathergrib components</source>
+        <translation>משמש להורדת תוספות ועדכונים של תוכנת Weathergrib</translation>
     </message>
     <message>
         <source>About QT</source>

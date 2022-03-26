@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Package>
-    <DisplayName>Oceanroute Static Data</DisplayName>
-    <Description>Data needed by Oceanroute such as maps, gis info, color schemes and translations</Description>
+    <DisplayName>Weathergrib Static Data</DisplayName>
+    <Description>Data needed by Weathergrib such as maps, gis info, color schemes and translations</Description>
     <Version>2.3.0</Version>
     <ReleaseDate>2021-01-28</ReleaseDate>
     <Default>true</Default>

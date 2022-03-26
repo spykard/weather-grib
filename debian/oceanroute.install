@@ -1,7 +1,7 @@
-data/colors /usr/share/Oceanroute/data/
-data/img /usr/share/Oceanroute/data/
-data/tr /usr/share/Oceanroute/data/
-data/fonts /usr/share/Oceanroute/data/
-debian/tmp/usr/Oceanroute/Oceanroute /usr/bin
-debian/oceanroute.desktop /usr/share/applications
-debian/oceanroute.png /usr/share/pixmaps
+data/colors /usr/share/Weathergrib/data/
+data/img /usr/share/Weathergrib/data/
+data/tr /usr/share/Weathergrib/data/
+data/fonts /usr/share/Weathergrib/data/
+debian/tmp/usr/Weathergrib/Weathergrib /usr/bin
+debian/weathergrib.desktop /usr/share/applications
+debian/weathergrib.png /usr/share/pixmaps

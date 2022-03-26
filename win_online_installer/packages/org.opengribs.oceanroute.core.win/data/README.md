@@ -19,7 +19,7 @@
  set(ZLIB_INCLUDE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/include")  
  set(ZLIB_LIBRARIES "${CMAKE_CURRENT_SOURCE_DIR}/lib/libz.a")  
 4. Build and Compile, the few errors that occur can be easily fixed one by one.  
-5. Copy the "/Ocean-Route/data/" folder to the output folder that includes the "Oceanroute.exe" executable.
+5. Copy the "/Ocean-Route/data/" folder to the output folder that includes the "Weathergrib.exe" executable.
 
 ### Task: Change Icon
 
@@ -60,7 +60,7 @@ Generally, build the executable and then run the appropriate .sh file.
 - Get the source
 
 ```
-git clone https://github.com/spykard/Oceanroute.git
+git clone https://github.com/spykard/Weathergrib.git
 ```
 
 - Build
@@ -79,7 +79,7 @@ make
 
 ```
 cd ..
-mv build/src/Oceanroute.app .
+mv build/src/Weathergrib.app .
 ./mac-package.sh
 ```
 
@@ -92,20 +92,20 @@ mv build/src/Oceanroute.app .
     - Build: `sudo dnf install gcc cmake make qt5-devel libpng-devel openjpeg2-devel libnova-devel proj-devel zlib-devel bzip2-devel`
     - Run: `libnova openjpeg2 qt5-qtbase qt5-qtbase-gui proj`
   - openSUSE Tumbleweed: `sudo zypper install gcc git cmake libqt5-qtbase-devel libpng-devel openjpeg2-devel libnova-devel libproj-devel zlib-devel libbz2-devel
-  - NIXOS: [`nixpkgs` contains a package for Oceanroute](https://github.com/NixOS/nixpkgs/tree/master/pkgs/applications/misc/oceanroute)
-    - To get a a build environment containing all prerequisities run `nix-shell -p oceanroute`
-    - If you simply want to install it, use `nix-env -i oceanroute`
+  - NIXOS: [`nixpkgs` contains a package for Weathergrib](https://github.com/NixOS/nixpkgs/tree/master/pkgs/applications/misc/weathergrib)
+    - To get a a build environment containing all prerequisities run `nix-shell -p weathergrib`
+    - If you simply want to install it, use `nix-env -i weathergrib`
 
 - Get the source
 
 ```
-git clone https://github.com/spykard/Oceanroute.git
+git clone https://github.com/spykard/Weathergrib.git
 ```
 
 - Build
 
 ```
-git clone https://github.com/spykard/Oceanroute.git
+git clone https://github.com/spykard/Weathergrib.git
 mkdir build
 cd build
 cmake ..
@@ -130,13 +130,13 @@ dpkg-buildpackage -b
 - Get the source
 
 ```
-git clone https://github.com/spykard/Oceanroute.git
+git clone https://github.com/spykard/Weathergrib.git
 ```
 
 - Build
 
 ```
-git clone https://github.com/spykard/Oceanroute.git
+git clone https://github.com/spykard/Weathergrib.git
 mkdir build
 cd build
 cmake ..

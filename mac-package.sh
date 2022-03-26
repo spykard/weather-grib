@@ -14,14 +14,14 @@ if [ -z "$DEPLOY" ]; then
   echo "Tool macdeployqt not found, can't continue"
   exit 1
 fi
-$DEPLOY Oceanroute.app
+$DEPLOY Weathergrib.app
 rm -rf data/config
 if which zip >/dev/null; then
-  echo "ZIP found, creating Oceanroute-mac.zip"
-  zip -r Oceanroute-mac.zip Oceanroute.app data > /dev/null
+  echo "ZIP found, creating Weathergrib-mac.zip"
+  zip -r Weathergrib-mac.zip Weathergrib.app data > /dev/null
 fi
 if which packagesbuild >/dev/null; then
-  echo "Packages found, creating Oceanroute-mac.pkg"
-  packagesbuild mac-installer/Oceanroute.pkgproj
-  mv mac-installer/build/Oceanroute.pkg Oceanroute-mac.pkg
+  echo "Packages found, creating Weathergrib-mac.pkg"
+  packagesbuild mac-installer/Weathergrib.pkgproj
+  mv mac-installer/build/Weathergrib.pkg Weathergrib-mac.pkg
 fi

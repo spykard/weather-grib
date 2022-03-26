@@ -7,24 +7,24 @@
 # Create a sandpit with the following directory and file structure
 -----------------------------------
 # usr-
-#    | bin - create and copy Oceanroute executable to here
+#    | bin - create and copy Weathergrib executable to here
 #    | lib - empty - deploytool will copy stuff needed from the release build
 #    | plugins - empty - deploytool will copy stuff needed from the release build
 #    | share     - create
 #         | doc  - empty - deploy tool will copy stuff needed from the release build
 #         | applications
-#               Oceanroute.desktop (* see contents below)
+#               Weathergrib.desktop (* see contents below)
 #         | icons
 #              | hicolor
-#                   Oceanroute_32.png
+#                   Weathergrib_32.png
 
 # Desktop file needs to be as follows:
 # [Desktop Entry] 
 # Type=Application
-# Name=Oceanroute
+# Name=Weathergrib
 # Comment=Grib reader and weather visualization software
-# Exec=Oceanroute
-# Icon=Oceanroute_32
+# Exec=Weathergrib
+# Icon=Weathergrib_32
 # Categories=Education;Science;Geoscience;
 
 
@@ -49,8 +49,8 @@ if [ -z "$QMK" ]; then
 fi
 
 ## create the AppImage
-$DEPLOY usr/share/applications/oceanroute.desktop -qmake=$QMK -no-translations -bundle-non-qt-libs -appimage -verbose=2
+$DEPLOY usr/share/applications/weathergrib.desktop -qmake=$QMK -no-translations -bundle-non-qt-libs -appimage -verbose=2
 
 ## rename it
-mv Oceanroute-x86_64.AppImage Oceanroute.AppImage
+mv Weathergrib-x86_64.AppImage Weathergrib.AppImage
 

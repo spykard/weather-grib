@@ -37,12 +37,12 @@ Component.prototype.createOperations = function()
     component.createOperations();
 
 	 component.addOperation("CreateDesktopEntry", 
-							"oceanroute.desktop",
-							"Type=Application\nTerminal=false\nExec=@TargetDir@/Oceanroute.AppImage\nName=Oceanroute\nIcon=@TargetDir@/icons/Oceanroute_32.ico\nCategories=Education;");
+							"weathergrib.desktop",
+							"Type=Application\nTerminal=false\nExec=@TargetDir@/Weathergrib.AppImage\nName=Weathergrib\nIcon=@TargetDir@/icons/Weathergrib_32.ico\nCategories=Education;");
 							
 	 component.addOperation("CreateDesktopEntry", 
-							"oceanroutemaintenancetool.desktop",
-							"Type=Application\nTerminal=false\nExec=@TargetDir@/OceanrouteMaintenanceTool\nName=OceanrouteMaintenanceTool\nIcon=@TargetDir@/icons/Oceanroute_32.ico");
+							"weathergribmaintenancetool.desktop",
+							"Type=Application\nTerminal=false\nExec=@TargetDir@/WeathergribMaintenanceTool\nName=WeathergribMaintenanceTool\nIcon=@TargetDir@/icons/Weathergrib_32.ico");
 							
 		 
 }

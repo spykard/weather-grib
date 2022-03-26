@@ -1,21 +1,21 @@
-Source: oceanroute
+Source: weathergrib
 Section: utils
 Priority: optional
 Maintainer: Oleg Roitburd <oroitburd@gmail.com>
 Build-Depends: debhelper (>= 9),cmake,qt5-default,libpng-dev,libopenjp2-7-dev,libnova-dev,libproj-dev,zlib1g-dev,libbz2-dev,qttools5-dev-tools,qttools5-dev
 Standards-Version: 3.9.8
-Homepage: https://github.com/opengribs/Oceanroute.git
-#Vcs-Git: https://anonscm.debian.org/collab-maint/oceanroute.git
-#Vcs-Browser: https://anonscm.debian.org/cgit/collab-maint/oceanroute.git
+Homepage: https://github.com/opengribs/Weathergrib.git
+#Vcs-Git: https://anonscm.debian.org/collab-maint/weathergrib.git
+#Vcs-Browser: https://anonscm.debian.org/cgit/collab-maint/weathergrib.git
 
-Package: oceanroute
+Package: weathergrib
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, oceanroute-maps, fonts-liberation
-Description: Oceanroute is a Grib file reader and visualizes meteorological data 
- Oceanroute is a Grib file reader and visualizes meteorological data providing an off-line capability to analyse weather forecasts or hindcasts. The Oceanroute software is released as open source under the GPLv3 License.
+Depends: ${shlibs:Depends}, ${misc:Depends}, weathergrib-maps, fonts-liberation
+Description: Weathergrib is a Grib file reader and visualizes meteorological data 
+ Weathergrib is a Grib file reader and visualizes meteorological data providing an off-line capability to analyse weather forecasts or hindcasts. The Weathergrib software is released as open source under the GPLv3 License.
 
-Package: oceanroute-maps
+Package: weathergrib-maps
 Architecture: all
 Depends: ${misc:depends}
-Description: Maps for Oceanroute weather visualisation
- This contains maps and country names used by Oceanroute
+Description: Maps for Weathergrib weather visualisation
+ This contains maps and country names used by Weathergrib
