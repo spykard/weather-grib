@@ -54,8 +54,6 @@ Alternatively follow the detailed steps
 
 1. [Download](https://github.com/opengribs/XyGrib/releases/download/v1.1.1/XyGrib___High_Resolution_Maps.tar.gz) and copy.
 
-<br/>
-
 ## General Build & Package Instructions
 
 Generally, build the executable and then run the appropriate .sh file.
@@ -150,3 +148,8 @@ cd build
 cmake ..
 cmake --build .
 ```
+
+## Credits
+
+- [Spyridon Kardakis](https://www.linkedin.com/in/kardakis/)
+- [Opengribs](https://opengribs.org/)
