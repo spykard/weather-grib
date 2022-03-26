@@ -22,7 +22,7 @@
  set(ZLIB_LIBRARIES "${CMAKE_CURRENT_SOURCE_DIR}/lib/libz.a")  
 4. Build and Compile, the few errors that occur can be easily fixed one by one.  
 5. Copy the "/Ocean-Route/data/" folder to the output folder that includes the "Weathergrib.exe" executable.
-
+ 
 ### Task: Change Icon
 
 1. Change icons at "/win_online_installer/".
